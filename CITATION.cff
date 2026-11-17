@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this data or analysis, please cite it as below."
+title: "Teardown Index"
+abstract: "Index of which countries' firms make the foreign electronics found in Russian weapons, built from Ukrainian intelligence (GUR) teardown data, weighted by part criticality, counted once per weapon family and attributed to parent companies."
+authors:
+  - family-names: "Di Domenico"
+    given-names: "Thomas"
+date-released: 2026-11-03
+version: "1.0"
+license: CC-BY-4.0
+repository-code: "https://github.com/thomasdido08-code/teardown-index"
+keywords:
+  - OSINT
+  - Russia
+  - Ukraine
+  - sanctions
+  - export controls
+  - semiconductors
+  - supply chains

@@ -1,0 +1,7 @@
+/* Archivo Narrow (display), Public Sans (text), IBM Plex Mono (figures): SIL Open Font License 1.1, latin subset via Fontsource. */
+@font-face{font-family:'GX Display';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/display-600.woff2) format('woff2');}
+@font-face{font-family:'GX Display';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/display-700.woff2) format('woff2');}
+@font-face{font-family:'GX Sans';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/sans-400.woff2) format('woff2');}
+@font-face{font-family:'GX Sans';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/sans-600.woff2) format('woff2');}
+@font-face{font-family:'GX Mono';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/mono-400.woff2) format('woff2');}
+@font-face{font-family:'GX Mono';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/mono-500.woff2) format('woff2');}

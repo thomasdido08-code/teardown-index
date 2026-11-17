@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teardown Index</title>
+<meta name="description" content="Which countries' firms make the foreign electronics inside Russia's weapons: an index built from Ukrainian intelligence teardown data. Open data and method.">
+<meta name="author" content="Thomas Di Domenico">
+<meta property="og:title" content="Teardown Index">
+<meta property="og:description" content="Who makes the foreign electronics in Russia's weapons.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: #FFFFFF; }
+  body.gx-dark-body { background: #0A1219; }
+  :root { --font-anthropic-sans: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  /* Layout: 12-column grid, cool paper or navy-black canvas, hairline rules; condensed grotesque display, ultramarine signal. */
+  .gx {
+    --gx-canvas: #FFFFFF; --gx-raised: #F5F6F7; --gx-ink: #0C1B26; --gx-muted: #52606A; --gx-faint: #84909A;
+    --gx-rule: #D9DDE0; --gx-rule-strong: #0C1B26; --gx-bar: #AEB8BF; --gx-bar-ink: #3B4A55;
+    --gx-signal: #2433D6; --gx-signal-text: #1F2CC0; --gx-signal-wash: rgba(36, 51, 214, 0.09);
+    --gx-display: "GX Display", "Arial Narrow", "Roboto Condensed", var(--font-anthropic-sans), sans-serif;
+    --gx-sans: "GX Sans", var(--font-anthropic-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+    --gx-mono: "GX Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    background: var(--gx-canvas); color: var(--gx-ink); font-family: var(--gx-sans);
+    padding-block: 0 56px;
+  }
+  .gx.gx-dark {
+    --gx-canvas: #0A1219; --gx-raised: #101A23; --gx-ink: #E4EAEE; --gx-muted: #9AA7B1; --gx-faint: #6F7D88;
+    --gx-rule: #1F2C37; --gx-rule-strong: #E4EAEE; --gx-bar: #4D5C69; --gx-bar-ink: #B9C4CC;
+    --gx-signal: #8A97FF; --gx-signal-text: #A3AEFF; --gx-signal-wash: rgba(138, 151, 255, 0.14);
+  }
+  .gx-in { max-width: 80rem; margin-inline: auto; padding-inline: clamp(16px, 4vw, 48px); }
+  .gx *:focus-visible { outline: 2px solid var(--gx-signal); outline-offset: 2px; }
+  .gx .num, .gx td, .gx .gx-fig { font-variant-numeric: tabular-nums; }
+
+  /* nav */
+  .gx-nav { border-bottom: 1px solid var(--gx-rule); }
+  .gx-nav .gx-in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-block: 12px; }
+  .gx-mark { font-family: var(--gx-display); font-size: 15px; letter-spacing: .01em; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .gx-mark b { font-weight: 600; color: var(--gx-ink); }
+  .gx-mark b { font-weight: 700; }
+  .gx-mark span { color: var(--gx-muted); font: 400 12px/1.4 var(--gx-sans); }
+  .gx-links { display: flex; flex-wrap: wrap; gap: 2px 16px; }
+  .gx-links button { font: 500 12px/1.6 var(--gx-sans); color: var(--gx-muted); background: none; border: 0; padding: 2px 0; cursor: pointer; border-bottom: 1px solid transparent; }
+  .gx-links button:hover { color: var(--gx-ink); border-bottom-color: var(--gx-ink); }
+
+  /* eyebrow + headings */
+  .gx-eyebrow { font: 600 12.5px/1.3 var(--gx-sans); color: var(--gx-muted); margin: 0; }
+  .gx-h2 { font-family: var(--gx-display); font-weight: 700; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.08; letter-spacing: -.005em; margin: 0; text-wrap: balance; }
+  .gx-lede { font-size: 15px; line-height: 1.55; color: var(--gx-muted); margin: 0; max-width: 62ch; }
+  .gx-lede b, .gx-note b { color: var(--gx-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .gx-note { font-size: 13px; line-height: 1.5; color: var(--gx-muted); margin: 0; max-width: 70ch; }
+
+  /* title */
+  .gx-title .gx-in { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px 24px; padding-block: 40px 28px; }
+  .gx-title .gx-eyebrow { grid-column: 1 / -1; }
+  .gx-title h1 { grid-column: 1 / span 7; font-family: var(--gx-display); font-weight: 700; font-size: clamp(44px, 6.4vw, 84px); line-height: .92; letter-spacing: -.015em; margin: 0; text-wrap: balance; }
+  .gx-title .gx-lede { grid-column: 8 / -1; align-self: end; }
+
+  .gx-meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13px; color: var(--gx-muted); }
+  .gx-actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+  .gx-btn { font: 600 13px/1 var(--gx-sans); padding: 11px 16px; border: 1px solid var(--gx-rule-strong); background: transparent; color: var(--gx-ink); text-decoration: none; cursor: pointer; border-radius: 2px; }
+  .gx-btn-primary { background: var(--gx-ink); color: var(--gx-canvas); }
+  .gx-btn:hover { background: var(--gx-signal); border-color: var(--gx-signal); color: #FFFFFF; }
+  .gx-kj { border-top: 1px solid var(--gx-rule-strong); }
+  .gx-kj .gx-in { padding-block: 32px 36px; display: grid; gap: 18px; }
+  .gx-kj ol { margin: 0; padding-left: 0; list-style: none; counter-reset: kj; display: grid; gap: 14px; max-width: 78ch; }
+  .gx-kj li { counter-increment: kj; position: relative; padding-left: 2.4rem; font-size: 16px; line-height: 1.55; color: var(--gx-ink); }
+  .gx-kj li::before { content: counter(kj); position: absolute; left: 0; top: 0; font: 700 22px/1.2 var(--gx-display); color: var(--gx-signal); }
+  .gx-kj li b, .gx-kj li span { font-variant-numeric: tabular-nums; }
+  .gx-kj li b:first-child { font-weight: 600; }
+  .gx-band { border-top: 1px solid var(--gx-rule); }
+  .gx-band .gx-in { padding-block: 28px 4px; }
+  .gx-title .gx-lede { grid-column: 1 / span 8; font-size: 17px; color: var(--gx-ink); }
+  .gx-title h1 { grid-column: 1 / -1; }
+  .gx-sub { grid-column: 1 / -1; margin: -4px 0 0; font: 600 clamp(18px, 2vw, 24px)/1.25 var(--gx-display); color: var(--gx-muted); }
+
+  /* hero band */
+  .gx-hero { border-top: 0; border-bottom: 1px solid var(--gx-rule); }
+  .gx-hero .gx-in { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+  .gx-cell { padding-block: 22px 24px; padding-right: 24px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .gx-cell + .gx-cell { border-left: 1px solid var(--gx-rule); padding-left: 24px; }
+  .gx-score { grid-column: span 5; }
+  .gx-rank { grid-column: span 3; }
+  .gx-ctx { grid-column: span 4; }
+  .gx-big { font-family: var(--gx-display); font-weight: 700; font-size: clamp(72px, 10vw, 136px); line-height: .86; color: var(--gx-signal); letter-spacing: -.02em; }
+  .gx-mid { font-family: var(--gx-display); font-weight: 700; font-size: clamp(36px, 4vw, 52px); line-height: .95; }
+  .gx-kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; font-size: 13px; }
+  .gx-kv dt { font: 600 12px/1.5 var(--gx-sans); color: var(--gx-muted); }
+  .gx-kv dd { margin: 0; color: var(--gx-ink); }
+  .gx-range { position: relative; height: 30px; max-width: 360px; }
+  .gx-pill { display: inline-flex; align-items: center; gap: 6px; font: 500 11.5px/1.4 var(--gx-mono); color: var(--gx-muted); border: 1px solid var(--gx-rule); padding: 2px 8px; border-radius: 2px; width: fit-content; }
+  .gx-pill i { width: 6px; height: 6px; border-radius: 50%; background: var(--gx-faint); display: inline-block; }
+
+  /* trust strip */
+  .gx-trust .gx-in { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .gx-trust { border-bottom: 1px solid var(--gx-rule); }
+  .gx-check { padding: 16px 24px 18px 0; display: grid; gap: 4px; align-content: start; min-width: 0; }
+  .gx-check + .gx-check { border-left: 1px solid var(--gx-rule); padding-left: 24px; }
+  .gx-check .gx-fig { font-family: var(--gx-display); font-weight: 600; font-size: 28px; line-height: 1.05; }
+  .gx-check p { font-size: 12.5px; line-height: 1.45; color: var(--gx-muted); margin: 0; }
+
+  /* sections */
+  .gx-sec { border-bottom: 1px solid var(--gx-rule); }
+  .gx-sec > .gx-in { padding-block: 36px 40px; display: grid; gap: 20px; }
+  .gx-sechead { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 8px 24px; align-items: end; }
+  .gx-sechead > div { grid-column: 1 / span 7; display: grid; gap: 8px; }
+  .gx-sechead > .gx-note { grid-column: 8 / -1; }
+  .gx-split { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 24px; }
+  .gx-main { grid-column: span 8; min-width: 0; }
+  .gx-side { grid-column: span 4; min-width: 0; border-left: 1px solid var(--gx-rule); padding-left: 24px; display: grid; gap: 14px; align-content: start; }
+  .gx-half { grid-column: span 6; min-width: 0; display: grid; gap: 12px; align-content: start; }
+  .gx-half + .gx-half { border-left: 1px solid var(--gx-rule); padding-left: 24px; }
+
+  /* controls */
+  .gx-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+  .gx-seg { display: inline-flex; border: 1px solid var(--gx-rule-strong); border-radius: 2px; }
+  .gx-seg button { font: 500 12px/1 var(--gx-sans); padding: 8px 12px; background: transparent; color: var(--gx-ink); border: 0; cursor: pointer; }
+  .gx-seg button + button { border-left: 1px solid var(--gx-rule-strong); }
+  .gx-seg button[aria-pressed="true"] { background: var(--gx-signal); color: #FFFFFF; }
+  .gx.gx-dark .gx-seg button[aria-pressed="true"] { color: #0A1219; }
+  .gx-hint { font-size: 12px; color: var(--gx-muted); margin: 0; }
+  .gx-search { font: 13px/1.2 var(--gx-sans); color: var(--gx-ink); background: var(--gx-raised); border: 1px solid var(--gx-rule); border-radius: 2px; padding: 8px 10px; min-width: 0; width: min(100%, 260px); }
+  .gx-search::placeholder { color: var(--gx-faint); }
+
+  /* charts */
+  .gx-chart { position: relative; min-height: 240px; }
+  .gx-chart svg text { font-family: var(--gx-sans); }
+  .gx-tip { position: absolute; pointer-events: none; background: var(--gx-raised); color: var(--gx-ink); border: 1px solid var(--gx-rule-strong); padding: 6px 9px; font-size: 12px; line-height: 1.45; white-space: nowrap; z-index: 3; }
+  .gx-tip .k { font: 600 12px/1.4 var(--gx-sans); color: var(--gx-ink); }
+
+  /* compare */
+  .gx-cmp { display: grid; gap: 0; }
+  .gx-cmp-head { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--gx-rule-strong); }
+  .gx-slot { display: grid; gap: 2px; min-width: 0; }
+  .gx-slot .tag { font: 500 11px/1.3 var(--gx-mono); color: var(--gx-muted); }
+  .gx-slot .name { font-family: var(--gx-display); font-weight: 600; font-size: 22px; line-height: 1.1; overflow-wrap: anywhere; }
+  .gx-slot.a .tag { color: var(--gx-signal-text); }
+  .gx-cmp-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding-block: 8px; border-bottom: 1px solid var(--gx-rule); }
+  .gx-cmp-row .lab { grid-column: 1 / -1; font: 600 12px/1.3 var(--gx-sans); color: var(--gx-muted); }
+  .gx-cmp-row .v { font-size: 15px; font-variant-numeric: tabular-nums; }
+  .gx-cmp-row .v.lead { font-weight: 600; }
+
+  /* pillars */
+  .gx-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--gx-rule-strong); }
+  .gx-step { padding: 16px 20px 18px 0; display: grid; gap: 6px; align-content: start; min-width: 0; }
+  .gx-step + .gx-step { border-left: 1px solid var(--gx-rule); padding-left: 20px; }
+  .gx-step .n { font: 500 11px/1 var(--gx-mono); color: var(--gx-muted); }
+  .gx-step h3 { font-size: 14px; font-weight: 600; margin: 0; }
+  .gx-step .gx-fig { font-family: var(--gx-display); font-weight: 600; font-size: 36px; line-height: 1; }
+  .gx-step p { font-size: 12.5px; color: var(--gx-muted); line-height: 1.45; margin: 0; }
+
+  /* tables */
+  .gx-tablewrap { overflow-x: auto; }
+  .gx table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .gx th { font: 600 12px/1.3 var(--gx-sans); color: var(--gx-muted); text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--gx-rule-strong); vertical-align: bottom; white-space: nowrap; }
+  .gx td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--gx-rule); vertical-align: top; }
+  .gx th.n, .gx td.n { text-align: right; }
+  .gx th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+  .gx th button:focus-visible { outline: 2px solid var(--gx-signal); outline-offset: 2px; }
+  .gx th[aria-sort="ascending"] button::after { content: "▲"; font-size: 8px; }
+  .gx th[aria-sort="descending"] button::after { content: "▼"; font-size: 8px; }
+  .gx tbody tr.sel td { background: var(--gx-signal-wash); }
+  .gx tbody tr.pick { cursor: pointer; }
+  .gx tbody tr.pick:hover td { background: color-mix(in srgb, var(--gx-ink) 5%, transparent); }
+  .gx tbody tr.sel:hover td { background: var(--gx-signal-wash); }
+  .gx td .tag { font: 500 10.5px/1 var(--gx-mono); color: var(--gx-muted); margin-left: 6px; }
+  .gx tr.strong td { font-weight: 600; }
+
+  /* term definitions */
+  .gx-term { border-bottom: 1px dotted var(--gx-faint); cursor: help; position: relative; }
+  .gx-term::after { content: attr(data-def); position: absolute; left: 0; top: calc(100% + 6px); width: max-content; max-width: min(280px, 70vw); white-space: normal; background: var(--gx-raised); color: var(--gx-ink); border: 1px solid var(--gx-rule-strong); padding: 6px 9px; font: 400 12px/1.45 var(--gx-sans); letter-spacing: 0; text-transform: none; z-index: 4; pointer-events: none; display: none; }
+  .gx-term:hover::after, .gx-term:focus::after { display: block; }
+  .gx-hint .gx-term::after { left: auto; right: 0; }
+
+  .gx-method ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 8px; max-width: 72ch; }
+  .gx-method li { font-size: 14px; line-height: 1.55; color: var(--gx-muted); }
+  .gx-method li b { color: var(--gx-ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  [data-dash-source-state=empty] { color: transparent; }
+
+  @media (max-width: 960px) {
+    .gx-title h1, .gx-title .gx-lede { grid-column: 1 / -1; }
+    .gx-score { grid-column: 1 / -1; }
+    .gx-rank { grid-column: span 6; border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--gx-rule); }
+    .gx-ctx { grid-column: span 6; border-top: 1px solid var(--gx-rule); }
+    .gx-trust .gx-in { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gx-check:nth-child(3) { border-left: 0; padding-left: 0; }
+    .gx-check:nth-child(n+3) { border-top: 1px solid var(--gx-rule); }
+    .gx-main, .gx-side, .gx-half { grid-column: 1 / -1; }
+    .gx-side, .gx-half + .gx-half { border-left: 0; padding-left: 0; border-top: 1px solid var(--gx-rule); padding-top: 18px; }
+    .gx-sechead > div, .gx-sechead > .gx-note { grid-column: 1 / -1; }
+    .gx-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gx-step:nth-child(3) { border-left: 0; padding-left: 0; }
+    .gx-step:nth-child(n+3) { border-top: 1px solid var(--gx-rule); }
+  }
+  @media (max-width: 560px) {
+    .gx-rank, .gx-ctx { grid-column: 1 / -1; }
+    .gx-ctx { border-left: 0 !important; padding-left: 0 !important; }
+    .gx-trust .gx-in, .gx-steps { grid-template-columns: 1fr; }
+    .gx-check + .gx-check, .gx-step + .gx-step { border-left: 0; padding-left: 0; border-top: 1px solid var(--gx-rule); }
+    .gx td.hide-n, .gx th.hide-n { display: none; }
+  }
+
+  /* site footer (GitHub version) */
+  .gx-foot .gx-in { padding-block: 24px 8px; display: grid; gap: 8px; }
+  .gx-foot p { font-size: 12.5px; line-height: 1.5; color: var(--gx-muted); margin: 0; max-width: 90ch; }
+  .gx-foot a { color: inherit; }
+
+</style>
+<script src="assets/d3.min.js"></script>
+<script>
+  // Minimal stand-in for the dashboard runtime: loads the CSVs in data/raw,
+  // runs the page's calculations in order, and draws every [data-draw] element.
+  window.dash = (() => {
+    const files = {
+      index: 'data/raw/index.csv', groups: 'data/raw/groups.csv', years: 'data/raw/years.csv',
+      ledgers: 'data/raw/ledgers.csv', ratio: 'data/raw/ratio.csv', crosscheck: 'data/raw/crosscheck.csv',
+      markcheck: 'data/raw/markcheck.csv', stats: 'data/raw/stats.csv',
+    };
+    const raw = {}, calcs = {}, draws = {}, cache = {};
+    let state = 'loading';
+    const compute = (id) => {
+      if (id in raw) return raw[id];
+      if (id in cache) return cache[id];
+      const c = calcs[id];
+      if (!c) return null;
+      const args = c.inputs.map(compute);
+      if (args.some((a) => a == null)) return null;
+      return (cache[id] = c.fn(...args));
+    };
+    const runOne = (name) => {
+      const fn = draws[name];
+      if (!fn) return;
+      document.querySelectorAll(`[data-draw="${name}"]`).forEach((el) => {
+        try { fn(el); } catch (e) { console.error(`Drawing "${name}" failed`, e); }
+      });
+    };
+    const api = {
+      data(id) {
+        if (state !== 'ok') return {status: state, data: []};
+        const v = compute(id);
+        return v == null ? {status: 'missing', data: []} : {status: 'ok', data: v};
+      },
+      calc(id, spec) { calcs[id] = spec; },
+      draw(name, fn) { if (fn) draws[name] = fn; else runOne(name); },
+      onData(fn) { fn(); },
+      setLink(id) { try { history.replaceState(null, '', '#' + id); } catch (e) {} },
+      run() { Object.keys(draws).forEach(runOne); },
+      async load() {
+        try {
+          await Promise.all(Object.entries(files).map(async ([id, path]) => { raw[id] = await d3.csv(path); }));
+          state = 'ok';
+        } catch (e) { console.error('Data failed to load', e); state = 'error'; }
+        api.run();
+      },
+    };
+    return api;
+  })();
+</script>
+</head>
+<body>
+<div class="gx">
+  <nav class="gx-nav" aria-label="Sections">
+    <div class="gx-in">
+      <div class="gx-mark"><b>Teardown Index</b><span>Edition 1 · GUR snapshot 30 Oct 2026</span></div>
+      <div class="gx-links">
+        <button type="button" data-go="summary">Key judgments</button>
+        <button type="button" data-go="ranking">Ranking</button>
+        <button type="button" data-go="pillars">How it's scored</button>
+        <button type="button" data-go="trend">Over time</button>
+        <button type="button" data-go="trust">Trust</button>
+        <button type="button" data-go="explore">Data</button>
+        <button type="button" data-go="method">Method</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="gx-title" id="top">
+    <div class="gx-in">
+      <p class="gx-eyebrow">Data report · Edition 1</p>
+      <h1>Teardown Index</h1>
+      <p class="gx-sub">Who makes the foreign electronics in Russia's weapons</p>
+      <p class="gx-lede">Which countries' firms make the foreign electronics inside Russia's weapons? This index scores every country by its share of the parts Ukrainian intelligence has recovered, weighted by how critical each part is, counted once per weapon type and traced to the parent company that owns the brand.</p>
+      <div class="gx-meta">
+        <span>Published 3 Nov 2026</span><span>Data to 30 Oct 2026</span><span>By Thomas Di Domenico</span>
+      </div>
+      <div class="gx-actions">
+        <a class="gx-btn gx-btn-primary" data-repo-file="METHODOLOGY.md" href="METHODOLOGY.md" target="_blank" rel="noopener">Read the method note</a>
+        <button type="button" class="gx-btn" data-go="ranking">Explore the index</button>
+        <a class="gx-btn" href="data/raw/index.csv" download>Download the index (CSV)</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="gx-kj" id="summary" aria-label="Key judgments">
+    <div class="gx-in">
+      <h2 class="gx-h2">Key judgments</h2>
+      <ol>
+        <li><b>The EU is the second-largest source.</b> Traced to parent companies, EU firms make <b data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=EU%20total">—</b> of the weighted foreign parts in Russian weapons (90% range <span data-draw="pct" data-source="index" data-field="ci_low" data-where="method=group&amp;country=EU%20total">—</span> to <span data-draw="pct" data-source="index" data-field="ci_high" data-where="method=group&amp;country=EU%20total">—</span>), behind the United States at <span data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=United%20States">—</span>.</li>
+        <li><b>Ukraine's own labels understate Europe.</b> By the headquarters GUR lists, the EU share is <span data-draw="pct" data-source="index" data-field="index_share" data-where="method=hq&amp;country=EU%20total">—</span>. Tracing STMicroelectronics and Infineon's US units to their owners adds <span data-draw="pts" data-source="hero" data-field="value" data-where="metric=attribution_delta">—</span>.</li>
+        <li><b>Europe's exposure tracks company size.</b> STMicroelectronics (<span data-draw="x" data-source="ratio" data-field="ratio" data-where="firm=STMicroelectronics">—</span>), Infineon (<span data-draw="x" data-source="ratio" data-field="ratio" data-where="firm=Infineon">—</span>) and NXP (<span data-draw="x" data-source="ratio" data-field="ratio" data-where="firm=NXP">—</span>) turn up less often than their revenue predicts. Switzerland's u-blox is the exception at <span data-draw="x" data-source="ratio" data-field="ratio" data-where="firm=u-blox">—</span>.</li>
+        <li><b>Much of the supply came after the sanctions.</b> <span data-draw="pct" data-source="calc" data-field="value" data-where="metric=post22_share">—</span> of dated parts were made in 2022 or later.</li>
+        <li><b>The result survives the checks run so far.</b> The EU share stays between <span data-draw="pct" data-source="index" data-field="index_share" data-where="method=strict&amp;country=EU%20total">—</span> and <span data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=EU%20total">—</span> under both ownership methods, and the US share here (<span data-draw="pct" data-source="crosscheck" data-field="gur" data-where="measure=United%20States%20share%20of%20foreign%20parts">—</span>) is close to RUSI's independent teardowns (<span data-draw="pct" data-source="crosscheck" data-field="rusi_2022" data-where="measure=United%20States%20share%20of%20foreign%20parts">—</span>).</li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="gx-band"><div class="gx-in"><h2 class="gx-h2">At a glance</h2></div></div>
+  <section class="gx-hero" aria-label="Headline score">
+    <div class="gx-in">
+      <div class="gx-cell gx-score">
+        <p class="gx-eyebrow">EU · exposure index · parent group</p>
+        <div class="gx-big gx-fig" data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=EU%20total">—</div>
+        <p class="gx-note"><span class="gx-term" tabindex="0" data-def="Share of all foreign parts found, after counting each part once per weapon type and weighting chips by how critical they are.">Share of weighted foreign parts</span>. 90% range <b data-draw="pct" data-source="index" data-field="ci_low" data-where="method=group&amp;country=EU%20total">—</b> to <b data-draw="pct" data-source="index" data-field="ci_high" data-where="method=group&amp;country=EU%20total">—</b>.</p>
+        <div class="gx-range" data-draw="herorange" data-source="index"></div>
+      </div>
+      <div class="gx-cell gx-rank">
+        <p class="gx-eyebrow">Rank</p>
+        <div class="gx-mid gx-fig">#<span data-draw="int" data-source="hero" data-field="value" data-where="metric=eu_rank">—</span></div>
+        <p class="gx-note">Behind the United States at <b data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=United%20States">—</b>, ahead of China at <b data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=China">—</b>.</p>
+        <p class="gx-eyebrow" style="margin-top:8px">Movement</p>
+        <span class="gx-pill"><i></i>First edition · no prior reading</span>
+        <p class="gx-note">Tracing parts to owners adds <b data-draw="pts" data-source="hero" data-field="value" data-where="metric=attribution_delta">—</b> to GUR's own headquarters labels (<b data-draw="pct" data-source="index" data-field="index_share" data-where="method=hq&amp;country=EU%20total">—</b>).</p>
+      </div>
+      <div class="gx-cell gx-ctx">
+        <p class="gx-eyebrow">Source and scope</p>
+        <dl class="gx-kv">
+          <dt>Parts</dt><dd><span data-draw="num" data-source="stats" data-field="value" data-where="metric=components">—</span> foreign components, GUR War &amp; Sanctions database</dd>
+          <dt>Weapons</dt><dd><span data-draw="num" data-source="stats" data-field="value" data-where="metric=weapon_families">—</span> <span class="gx-term" tabindex="0" data-def="Airframes and missiles of the same model, merged so heavily studied weapons don't count many times.">weapon families</span></dd>
+          <dt>Snapshot</dt><dd>30 Oct 2026</dd>
+          <dt>Aid data</dt><dd>Kiel Institute Ukraine Support Tracker, release 31 (to Aug 2026)</dd>
+          <dt>Families hit</dt><dd><span data-draw="pct" data-source="index" data-field="incidence" data-where="method=group&amp;country=EU%20total">—</span> contain an EU-owned part</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-trust" aria-label="Why trust the score">
+    <div class="gx-in">
+      <div class="gx-check">
+        <p class="gx-eyebrow">Stable across methods</p>
+        <span class="gx-fig"><span data-draw="pct" data-source="index" data-field="index_share" data-where="method=strict&amp;country=EU%20total">—</span> to <span data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=EU%20total">—</span></span>
+        <p>EU share under strict and parent-group ownership. Only GUR's raw headquarters labels move it much.</p>
+      </div>
+      <div class="gx-check">
+        <p class="gx-eyebrow">Matches RUSI 2022</p>
+        <span class="gx-fig"><span data-draw="pct" data-source="crosscheck" data-field="gur" data-where="measure=United%20States%20share%20of%20foreign%20parts">—</span> vs <span data-draw="pct" data-source="crosscheck" data-field="rusi_2022" data-where="measure=United%20States%20share%20of%20foreign%20parts">—</span></span>
+        <p>US share of parts here against RUSI's independent teardowns. Japan differs most.</p>
+      </div>
+      <div class="gx-check">
+        <p class="gx-eyebrow">Photo spot-check</p>
+        <span class="gx-fig"><span data-draw="num" data-source="stats" data-field="value" data-where="metric=photo_confirmed">—</span> of <span data-draw="num" data-source="stats" data-field="value" data-where="metric=photo_sample">—</span></span>
+        <p>Random entries whose photo confirms the maker. <span data-draw="num" data-source="stats" data-field="value" data-where="metric=photo_contradicted">—</span> contradicted it; the rest were unreadable.</p>
+      </div>
+      <div class="gx-check">
+        <p class="gx-eyebrow">Date parser accuracy</p>
+        <span class="gx-fig" data-draw="pct" data-source="calc" data-field="value" data-where="metric=calib_exact_rate">—</span>
+        <p>Exact year match on parts GUR had already dated, out of <span data-draw="num" data-source="stats" data-field="value" data-where="metric=calib_parsed">—</span> checked.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="ranking">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">Ranking</p><h2 class="gx-h2">Who supplies the parts</h2></div>
+        <p class="gx-note">Dot is the index, line the 90% range from resampling weapon families. Click any two rows to compare them. The axis stops at 20%; longer bars are cut and labelled.</p>
+      </div>
+      <div class="gx-bar">
+        <div class="gx-seg" role="group" aria-label="Attribution method">
+          <button type="button" id="m-group" data-m="group" aria-pressed="true">Parent group</button>
+          <button type="button" id="m-strict" data-m="strict" aria-pressed="false">Strict ownership</button>
+          <button type="button" id="m-hq" data-m="hq" aria-pressed="false">Listed HQ</button>
+        </div>
+        <p class="gx-hint"><span class="gx-term" tabindex="0" data-def="Parent group moves STMicroelectronics (split between France and Italy) and Infineon's and NXP's US units home. Strict also moves Chinese-owned Nexperia and Ampleon to China and EPCOS to Japan. Listed HQ uses GUR's labels unchanged.">What the methods mean</span></p>
+      </div>
+      <div class="gx-split">
+        <div class="gx-main"><div class="gx-chart" data-draw="rank" data-source="index"></div></div>
+        <aside class="gx-side" aria-label="Comparison">
+          <p class="gx-eyebrow">Compare</p>
+          <div class="gx-cmp" data-draw="compare" data-source="index"></div>
+          <p class="gx-hint">Selection follows the method above. Click a selected row again to clear it.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="pillars">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">How it's scored</p><h2 class="gx-h2">From raw counts to the index</h2></div>
+        <p class="gx-note">Each step changes how parts are counted. The EU's value is shown at each stage, under parent-group ownership.</p>
+      </div>
+      <div class="gx-steps">
+        <div class="gx-step">
+          <span class="n">1</span><h3>Raw count</h3>
+          <span class="gx-fig" data-draw="pct" data-source="index" data-field="raw_share" data-where="method=group&amp;country=EU%20total">—</span>
+          <p>Share of all <span data-draw="num" data-source="stats" data-field="value" data-where="metric=components">—</span> recovered parts, every find counted.</p>
+        </div>
+        <div class="gx-step">
+          <span class="n">2</span><h3>Once per weapon type</h3>
+          <span class="gx-fig" data-draw="num" data-source="stats" data-field="value" data-where="metric=unique_in_family">—</span>
+          <p>Part entries left after repeat finds within the same weapon family are dropped.</p>
+        </div>
+        <div class="gx-step">
+          <span class="n">3</span><h3>Weighted by criticality</h3>
+          <span class="gx-fig" data-draw="pct" data-source="index" data-field="index_share" data-where="method=group&amp;country=EU%20total">—</span>
+          <p>Chips ×4, navigation and radio modules ×3, discrete parts ×2, the rest ×1, following the allies' <span class="gx-term" tabindex="0" data-def="The Common High Priority List used by the EU, US, UK and Japan to target the items Russia most needs for weapons.">priority list</span>.</p>
+          <div class="gx-chart" style="min-height:56px" data-draw="tiers" data-source="stats"></div>
+        </div>
+        <div class="gx-step">
+          <span class="n">4</span><h3>Reach</h3>
+          <span class="gx-fig" data-draw="pct" data-source="index" data-field="incidence" data-where="method=group&amp;country=EU%20total">—</span>
+          <p>Weapon families with at least one EU-owned part. Shown beside the index, not inside it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="trend">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">Over time</p><h2 class="gx-h2">When the parts were made</h2></div>
+        <p class="gx-note">This is the index's first edition, so there is no earlier score to compare. What can be dated is the parts: <b data-draw="pct" data-source="calc" data-field="value" data-where="metric=post22_share">—</b> of the <b data-draw="num" data-source="stats" data-field="value" data-where="metric=dated">—</b> dated parts were made in 2022 or later. <b data-draw="num" data-source="stats" data-field="value" data-where="metric=pre_2005">—</b> parts from before 2005 are left off the chart.</p>
+      </div>
+      <div class="gx-chart" data-draw="years" data-source="years"></div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="size">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">Size-adjusted</p><h2 class="gx-h2">More or less often than size predicts</h2></div>
+        <p class="gx-note">Each chipmaker's share of the index among these 13 firms, divided by its share of their combined 2021 revenue. Above 1×, its parts turn up more than its size predicts. The large European firms sell mostly into cars and industry, so below 1× reflects what they make, not better compliance.</p>
+      </div>
+      <div class="gx-chart" data-draw="ratio" data-source="ratio"></div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="trust">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">Trust</p><h2 class="gx-h2">Checks on the score</h2></div>
+        <p class="gx-note">If the EU share holds across every method and the source agrees with independent teardowns, the conclusion doesn't rest on one choice.</p>
+      </div>
+      <div class="gx-split">
+        <div class="gx-half">
+          <p class="gx-eyebrow">EU share under every method</p>
+          <div class="gx-tablewrap">
+            <table data-source="index" data-row-key="method,country">
+              <thead><tr>
+                <th data-field="method">Attribution</th>
+                <th data-field="raw_share" class="n">Raw</th>
+                <th data-field="index_share" class="n">Index</th>
+                <th data-field="ci_low" class="n hide-n">Low</th>
+                <th data-field="ci_high" class="n hide-n">High</th>
+                <th data-field="incidence" class="n">Families</th>
+              </tr></thead>
+              <tbody data-draw="robust"></tbody>
+            </table>
+          </div>
+          <p class="gx-eyebrow" style="margin-top:12px">Against RUSI's 2022 teardowns</p>
+          <div class="gx-tablewrap">
+            <table data-source="crosscheck" data-row-key="measure">
+              <thead><tr><th data-field="measure">Measure</th><th data-field="gur" class="n">GUR</th><th data-field="rusi_2022" class="n">RUSI 2022</th></tr></thead>
+              <tbody data-draw="crosscheck"></tbody>
+            </table>
+          </div>
+          <p class="gx-note">RUSI's 27 weapons date from early in the war, before Chinese-made drones became common. Its figures here come from press reports of the study. The International Working Group on Russian Sanctions (2023) names seven leading makers; <b data-draw="num" data-source="stats" data-field="value" data-where="metric=iwg_top7_overlap">—</b> are in our top seven groups.</p>
+        </div>
+        <div class="gx-half">
+          <p class="gx-eyebrow">Marking consistency</p>
+          <p class="gx-note">Share of each firm's entries whose marking carries that firm's part-number prefix or name. Misses are mostly short codes that don't name the part.</p>
+          <div class="gx-tablewrap">
+            <table data-source="markcheck" data-row-key="firm">
+              <thead><tr><th data-field="firm">Firm</th><th data-field="checked" class="n">Entries</th><th data-field="consistent" class="n">Consistent</th><th data-source="markcalc" data-field="rate" class="n">Rate</th></tr></thead>
+              <tbody data-draw="markcheck"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-sec" id="explore">
+    <div class="gx-in">
+      <div class="gx-sechead">
+        <div><p class="gx-eyebrow">Data</p><h2 class="gx-h2">Every country in the index</h2></div>
+        <p class="gx-note">Uses the method chosen in the ranking. Sort by any column, search by name, click a row to add it to the comparison.</p>
+      </div>
+      <div class="gx-bar">
+        <input class="gx-search" id="gx-q" type="search" placeholder="Search countries" aria-label="Search countries">
+        <p class="gx-hint"><span class="gx-term" tabindex="0" data-def="Weapon families with at least one part from that country's firms.">Families</span> · <span class="gx-term" tabindex="0" data-def="Parts as found, before counting once per weapon type or weighting.">Raw share</span></p>
+      </div>
+      <div class="gx-tablewrap">
+        <table data-source="index" data-row-key="method,country" id="gx-table">
+          <thead><tr>
+            <th data-field="country" data-sort="country"><button type="button">Country</button></th>
+            <th data-field="components" data-sort="components" class="n hide-n"><button type="button">Parts</button></th>
+            <th data-field="raw_share" data-sort="raw_share" class="n hide-n"><button type="button">Raw share</button></th>
+            <th data-field="index_share" data-sort="index_share" class="n" aria-sort="descending"><button type="button">Index</button></th>
+            <th data-field="ci_low" data-sort="ci_low" class="n hide-n"><button type="button">Low</button></th>
+            <th data-field="ci_high" data-sort="ci_high" class="n hide-n"><button type="button">High</button></th>
+            <th data-field="incidence" data-sort="incidence" class="n"><button type="button">Families</button></th>
+          </tr></thead>
+          <tbody data-draw="table"></tbody>
+        </table>
+      </div>
+      <div class="gx-split" style="margin-top:12px">
+        <div class="gx-half">
+          <p class="gx-eyebrow">European manufacturer groups</p>
+          <div class="gx-tablewrap">
+            <table data-source="groups" data-row-key="group">
+              <thead><tr>
+                <th data-field="group">Group</th>
+                <th data-field="home">Home</th>
+                <th data-field="components" class="n">Parts</th>
+                <th data-field="weapon_families" class="n hide-n">Families</th>
+                <th data-field="high_priority" class="n hide-n">Chips &amp; modules</th>
+                <th data-field="dated_2022_on" class="n">From 2022</th>
+              </tr></thead>
+              <tbody data-draw="groups"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="gx-half">
+          <p class="gx-eyebrow">Two ledgers: aid and exposure</p>
+          <p class="gx-note">Military aid to Ukraine beside each donor's exposure index. One does not cause the other; read them separately.</p>
+          <div class="gx-tablewrap">
+            <table data-source="ledgers" data-row-key="country">
+              <thead><tr>
+                <th data-field="country">Country</th>
+                <th data-field="mil_aid_bn" class="n">Aid, €bn</th>
+                <th data-source="ledger_calc" data-field="aid_pct_gdp" class="n hide-n">% GDP</th>
+                <th data-field="index_share" class="n">Index</th>
+              </tr></thead>
+              <tbody data-draw="ledgers"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gx-sec gx-method" id="method">
+    <div class="gx-in">
+      <div class="gx-sechead"><div><p class="gx-eyebrow">Annex</p><h2 class="gx-h2">Methodology and sources</h2></div></div>
+      <ul>
+        <li><b>Base data.</b> All <b data-draw="num" data-source="stats" data-field="value" data-where="metric=components">—</b> components in GUR's War &amp; Sanctions database as of 30 Oct 2026, duplicates removed. GUR is the intelligence service of a country at war; check individual items before citing them.</li>
+        <li><b>Weapon families.</b> Airframes and missiles of one model are merged into <b data-draw="num" data-source="stats" data-field="value" data-where="metric=weapon_families">—</b> families and each part counts once per family, leaving <b data-draw="num" data-source="stats" data-field="value" data-where="metric=unique_in_family">—</b> entries.</li>
+        <li><b>Weighting.</b> Tiers follow the Common High Priority List: <b data-draw="num" data-source="stats" data-field="value" data-where="metric=tier1">—</b> integrated circuits, <b data-draw="num" data-source="stats" data-field="value" data-where="metric=tier2">—</b> navigation and radio modules, <b data-draw="num" data-source="stats" data-field="value" data-where="metric=tier3">—</b> discrete and passive parts, <b data-draw="num" data-source="stats" data-field="value" data-where="metric=tier4">—</b> other. Tiers come from GUR's part names by keyword, so a few are misfiled.</li>
+        <li><b>Range.</b> 1,000 resamples of the weapon families give the 90% range.</li>
+        <li><b>Dates.</b> GUR dates <b data-draw="num" data-source="stats" data-field="value" data-where="metric=gur_dated">—</b> parts; year-week codes read from markings raise that to <b data-draw="num" data-source="stats" data-field="value" data-where="metric=dated">—</b>. GUR's own dates alone give <b data-draw="pct" data-source="calc" data-field="value" data-where="metric=gur_post22_share">—</b> made from 2022, because it tends to publish dates on newer parts.</li>
+        <li><b>Size adjustment.</b> 2021 revenue or the nearest fiscal year from company releases: Analog Devices plus Maxim, Xilinx before AMD bought it, Intel's programmable-chip unit for Altera; euro and franc converted at 1.19 $/€ and 1.094 $/CHF. Total revenue is a rough stand-in for market share in the parts Russia buys.</li>
+        <li><b>Not yet included.</b> A firm-by-firm match against CAR iTrace and RUSI's full company tables. This measures brand exposure in recovered weapons, not trade volumes or who shipped the parts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="gx-foot">
+    <div class="gx-in">
+      <p><b>Sources.</b> Components: <a href="https://war-sanctions.gur.gov.ua/en/components">GUR War &amp; Sanctions</a>, scraped 30 Oct 2026. Military aid and GDP: <a href="https://www.kielinstitut.de/publications/ukraine-support-tracker-data-6453/">Kiel Institute Ukraine Support Tracker</a>, release 31. Cross-checks: RUSI, <i>Silicon Lifeline</i> (Aug 2022), as reported by <a href="https://www.eenewseurope.com/en/report-details-restricted-european-and-us-tech-in-russian-weapons-in-ukraine/">eeNews Europe</a> and <a href="https://www.voanews.com/a/silicon-lifeline-report-reveals-western-technology-guiding-russia-s-weapons-in-ukraine/6708050.html">VOA</a>; International Working Group on Russian Sanctions (2023). Revenue: company annual results (see METHODOLOGY.md). This project is independent and not affiliated with any of these sources.</p>
+      <p>Analysis and text © Thomas Di Domenico, licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Code MIT. Fonts: Archivo Narrow, Public Sans and IBM Plex Mono, SIL Open Font License 1.1.</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  dash.calc('calc', {
+    inputs: ['stats'],
+    title: 'Date and parser rates',
+    description: 'Post-2022 share of dated parts, with and without parsed date codes, and the parser\'s exact-year match rate.',
+    fn: (stats) => {
+      const v = (m) => Number((stats.find((r) => r.metric === m) || {}).value);
+      return [
+        {metric: 'post22_share', value: v('dated_2022_on') / v('dated')},
+        {metric: 'gur_post22_share', value: v('gur_dated_2022_on') / v('gur_dated')},
+        {metric: 'calib_exact_rate', value: v('calib_exact') / v('calib_parsed')},
+      ];
+    },
+  });
+  dash.calc('hero', {
+    inputs: ['index'],
+    title: 'EU rank and attribution effect',
+    description: 'Rank of the EU bloc among non-EU countries under parent-group attribution, and how much tracing parts to owners adds to the listed-HQ share.',
+    fn: (index) => {
+      const eu = ['Germany', 'Netherlands', 'France', 'Italy', 'Ireland', 'Sweden'];
+      const g = index.filter((r) => r.method === 'group');
+      const share = (m, c) => Number((index.find((r) => r.method === m && r.country === c) || {}).index_share);
+      const e = share('group', 'EU total');
+      const ahead = g.filter((r) => r.country !== 'EU total' && !eu.includes(r.country) && Number(r.index_share) > e).length;
+      return [
+        {metric: 'eu_rank', value: ahead + 1},
+        {metric: 'attribution_delta', value: e - share('hq', 'EU total')},
+      ];
+    },
+  });
+  dash.calc('ledger_calc', {
+    inputs: ['ledgers'],
+    title: 'Military aid as share of GDP',
+    description: 'Bilateral military aid allocated, divided by 2021 GDP.',
+    fn: (ledgers) => ledgers.map((r) => ({country: r.country, aid_pct_gdp: Number(r.mil_aid_bn) / Number(r.gdp_2021_bn)})),
+  });
+  dash.calc('markcalc', {
+    inputs: ['markcheck'],
+    title: 'Marking consistency rate',
+    description: 'Consistent entries divided by entries checked, per firm.',
+    fn: (markcheck) => markcheck.map((r) => ({firm: r.firm, rate: Number(r.consistent) / Number(r.checked)})),
+  });
+
+  window.gxState = window.gxState || {method: 'group', sel: ['EU total', 'China'], sort: 'index_share', dir: -1, q: ''};
+  window.gxEU = ['Germany', 'Netherlands', 'France', 'Italy', 'Ireland', 'Sweden'];
+  window.gxLabel = (c) => c === 'EU total' ? 'European Union' : c;
+  window.gxRedraw = () => ['rank', 'compare', 'table'].forEach((n) => dash.draw(n));
+  window.gxToggle = (c) => {
+    const s = gxState.sel;
+    const i = s.indexOf(c);
+    if (i >= 0) s.splice(i, 1); else { s.push(c); if (s.length > 2) s.shift(); }
+    gxRedraw();
+  };
+  window.gxReduce = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const gxTheme = () => {
+    const root = document.querySelector('.gx');
+    if (!root) return;
+    const dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.classList.toggle('gx-dark', dark);
+    document.body.classList.toggle('gx-dark-body', dark);
+  };
+  gxTheme();
+  if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', gxTheme);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => ['rank', 'ratio', 'years', 'tiers', 'herorange'].forEach((n) => dash.draw(n)));
+
+  document.querySelectorAll('.gx-links button[data-go], .gx-actions button[data-go]').forEach((b) => b.addEventListener('click', () => {
+    const el = document.getElementById(b.dataset.go);
+    if (el) { el.scrollIntoView({behavior: gxReduce() ? 'auto' : 'smooth', block: 'start'}); dash.setLink(el.id); }
+  }));
+  document.querySelectorAll('.gx-seg button[data-m]').forEach((b) => b.addEventListener('click', () => {
+    gxState.method = b.dataset.m;
+    document.querySelectorAll('.gx-seg button[data-m]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    gxRedraw();
+  }));
+  document.querySelectorAll('#gx-q').forEach((q) => q.addEventListener('input', () => { gxState.q = q.value.trim().toLowerCase(); dash.draw('table'); }));
+  document.querySelectorAll('#gx-table th[data-sort]').forEach((th) => th.querySelector('button').addEventListener('click', () => {
+    const k = th.dataset.sort;
+    gxState.dir = gxState.sort === k ? -gxState.dir : (k === 'country' ? 1 : -1);
+    gxState.sort = k;
+    document.querySelectorAll('#gx-table th[data-sort]').forEach((x) => x.setAttribute('aria-sort', x === th ? (gxState.dir > 0 ? 'ascending' : 'descending') : 'none'));
+    dash.draw('table');
+  }));
+
+  window.gxPick = (el) => {
+    const d = dash.data(el.dataset.source);
+    if (d.status !== 'ok') return null;
+    const conds = (el.dataset.where || '').split('&').map((p) => p.split('=').map(decodeURIComponent));
+    const row = d.data.find((r) => conds.every(([k, val]) => String(r[k]) === val));
+    return row ? Number(row[el.dataset.field]) : null;
+  };
+  dash.draw('num', (el) => { const v = gxPick(el); el.textContent = v == null || isNaN(v) ? '—' : d3.format(',')(v); });
+  dash.draw('int', (el) => { const v = gxPick(el); el.textContent = v == null || isNaN(v) ? '—' : String(Math.round(v)); });
+  dash.draw('pct', (el) => { const v = gxPick(el); el.textContent = v == null || isNaN(v) ? '—' : d3.format('.1%')(v); });
+  dash.draw('x', (el) => { const v = gxPick(el); el.textContent = v == null || isNaN(v) ? '—' : `${d3.format('.2f')(v)}×`; });
+  dash.draw('pts', (el) => { const v = gxPick(el); el.textContent = v == null || isNaN(v) ? '—' : `${v >= 0 ? '+' : '−'}${d3.format('.1f')(Math.abs(v) * 100)} pts`; });
+
+  window.gxTip = (box) => {
+    let t = box.querySelector('.gx-tip');
+    if (!t) { t = document.createElement('div'); t.className = 'gx-tip'; t.hidden = true; box.appendChild(t); }
+    return {
+      show(ev, lines) {
+        t.replaceChildren(...lines.map(([cls, txt]) => { const d = document.createElement('div'); if (cls) d.className = cls; d.textContent = txt; return d; }));
+        t.hidden = false;
+        const b = box.getBoundingClientRect();
+        let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+        if (x + t.offsetWidth > b.width) x = Math.max(0, ev.clientX - b.left - t.offsetWidth - 12);
+        if (y + t.offsetHeight > b.height) y = Math.max(0, ev.clientY - b.top - t.offsetHeight - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  };
+  window.gxMeasure = (svg, strings, size, weight) => { const t = svg.append('text').attr('font-size', size || 12).attr('font-weight', weight || 400).attr('visibility', 'hidden'); let m = 0; strings.forEach((s) => { t.text(s); m = Math.max(m, t.node().getComputedTextLength()); }); t.remove(); return m; };
+  window.gxAxis = (g) => { g.attr('font-size', null).attr('font-family', null); g.select('.domain').remove(); g.selectAll('line').attr('stroke', 'var(--gx-rule)'); g.selectAll('text').attr('fill', 'var(--gx-muted)').attr('font-size', 11).attr('font-family', 'var(--gx-mono)'); };
+
+</script>
+<script>
+  dash.draw('herorange', (el) => {
+    const d = dash.data('index');
+    el.replaceChildren();
+    if (d.status !== 'ok') return;
+    const r = d.data.find((x) => x.method === 'group' && x.country === 'EU total');
+    if (!r) return;
+    const W = Math.max(200, Math.min(360, el.clientWidth)), H = 30;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'EU index with its 90% range on a 0 to 20% scale');
+    const x = d3.scaleLinear([0, 0.2], [1, W - 1]);
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0.2)).attr('y1', 9).attr('y2', 9).attr('stroke', 'var(--gx-rule)');
+    [0, 0.1, 0.2].forEach((t) => svg.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', 5).attr('y2', 13).attr('stroke', 'var(--gx-rule)'));
+    svg.append('line').attr('x1', x(Number(r.ci_low))).attr('x2', x(Number(r.ci_high))).attr('y1', 9).attr('y2', 9).attr('stroke', 'var(--gx-signal)').attr('stroke-width', 3);
+    [0, 0.1, 0.2].forEach((t, i) => svg.append('text').attr('x', x(t)).attr('y', 26).attr('text-anchor', i === 0 ? 'start' : i === 2 ? 'end' : 'middle').attr('font-size', 10).attr('font-family', 'var(--gx-mono)').attr('fill', 'var(--gx-muted)').text(d3.format('.0%')(t)));
+    svg.append('circle').attr('cx', x(Number(r.index_share))).attr('cy', 9).attr('r', 5).attr('fill', 'var(--gx-signal)').attr('stroke', 'var(--gx-canvas)').attr('stroke-width', 2);
+  });
+
+  dash.draw('rank', (el) => {
+    const d = dash.data('index');
+    el.replaceChildren();
+    if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const m = gxState.method;
+    const rows = d.data.filter((r) => r.method === m)
+      .map((r) => ({c: r.country, v: Number(r.index_share), lo: Number(r.ci_low), hi: Number(r.ci_high), inc: Number(r.incidence), n: Number(r.components), raw: Number(r.raw_share)}))
+      .sort((a, b) => b.v - a.v);
+    const W = Math.max(300, el.clientWidth), rowH = 30, top = 4, bottom = 26, cap = 0.2;
+    const H = top + rows.length * rowH + bottom;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Exposure index by country, ranked');
+    const labelOf = (r) => gxLabel(r.c) + (gxEU.includes(r.c) ? '  EU' : '');
+    const left = gxMeasure(svg, rows.map(labelOf), 12.5, 600) + 30;
+    const right = gxMeasure(svg, ['00.0%'], 12) + 14;
+    const x = d3.scaleLinear([0, cap], [left, W - right]);
+    const y = d3.scaleBand(rows.map((r) => r.c), [top, H - bottom]).padding(0.2);
+    const ticks = W < 480 ? [0, 0.1, 0.2] : [0, 0.05, 0.1, 0.15, 0.2];
+    gxAxis(svg.append('g').attr('transform', `translate(0,${H - bottom})`).call(d3.axisBottom(x).tickValues(ticks).tickSize(-(H - top - bottom)).tickFormat(d3.format('.0%'))));
+    const pct = d3.format('.1%');
+    const tip = gxTip(el);
+    const sel = gxState.sel;
+    const color = (r) => sel[0] === r.c ? 'var(--gx-signal)' : sel[1] === r.c ? 'var(--gx-ink)' : 'var(--gx-bar)';
+    const cy = (r) => y(r.c) + y.bandwidth() / 2;
+    const anim = !gxReduce() && el.dataset.m && el.dataset.m !== m;
+    el.dataset.m = m;
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('rect').attr('x', 0).attr('width', W).attr('y', (r) => y(r.c) - 2).attr('height', y.bandwidth() + 4)
+      .attr('fill', (r) => sel.includes(r.c) ? 'var(--gx-signal-wash)' : 'transparent');
+    g.filter((r) => sel.includes(r.c)).append('text').attr('x', 2).attr('y', cy).attr('dy', '0.35em').attr('font-size', 11).attr('font-family', 'var(--gx-mono)').attr('fill', (r) => sel[0] === r.c ? 'var(--gx-signal-text)' : 'var(--gx-ink)').text((r) => sel[0] === r.c ? 'A' : 'B');
+    g.append('text').attr('x', left - 10).attr('y', cy).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12.5)
+      .attr('font-weight', (r) => sel.includes(r.c) || r.c === 'EU total' ? 600 : 400).attr('fill', 'var(--gx-ink)')
+      .text((r) => gxLabel(r.c)).append('tspan').attr('font-size', 9.5).attr('font-family', 'var(--gx-mono)').attr('fill', 'var(--gx-muted)').text((r) => gxEU.includes(r.c) ? '  EU' : '');
+    const range = g.append('line').attr('y1', cy).attr('y2', cy).attr('stroke', color).attr('stroke-width', 2).attr('stroke-linecap', 'round').attr('opacity', 0.55);
+    const dot = g.append('circle').attr('cy', cy).attr('r', (r) => sel.includes(r.c) ? 5.5 : 4.5).attr('fill', color).attr('stroke', 'var(--gx-canvas)').attr('stroke-width', 1.5);
+    const val = g.append('text').attr('y', cy).attr('dy', '0.35em').attr('font-size', 12).attr('fill', (r) => sel[0] === r.c ? 'var(--gx-signal-text)' : 'var(--gx-ink)').attr('font-weight', (r) => sel.includes(r.c) ? 600 : 400).style('font-variant-numeric', 'tabular-nums').text((r) => pct(r.v));
+    const clip = (v) => x(Math.min(v, cap));
+    const place = () => {
+      range.attr('x1', (r) => clip(r.lo)).attr('x2', (r) => clip(r.hi));
+      dot.attr('cx', (r) => clip(r.v));
+      val.attr('x', (r) => r.hi > cap ? W - right + 6 : clip(r.hi) + 8).attr('text-anchor', 'start');
+    };
+    if (anim) {
+      range.attr('x1', x(0)).attr('x2', x(0)); dot.attr('cx', x(0)); val.attr('x', x(0) + 8);
+      range.transition().duration(260).attr('x1', (r) => clip(r.lo)).attr('x2', (r) => clip(r.hi));
+      dot.transition().duration(260).attr('cx', (r) => clip(r.v));
+      val.transition().duration(260).attr('x', (r) => r.hi > cap ? W - right + 6 : clip(r.hi) + 8);
+    } else place();
+    const over = g.filter((r) => r.v > cap);
+    over.append('line').attr('x1', x(cap * 0.82)).attr('x2', x(cap) - 6).attr('y1', cy).attr('y2', cy).attr('stroke', color).attr('stroke-width', 2).attr('stroke-dasharray', '2 3');
+    over.append('path').attr('d', (r) => { const xx = x(cap), yy = cy(r); return `M${xx - 7},${yy - 5} L${xx},${yy} L${xx - 7},${yy + 5} Z`; }).attr('fill', color);
+    over.select('circle').attr('display', 'none');
+    g.append('rect').attr('x', 0).attr('width', W).attr('y', (r) => y(r.c) - 2).attr('height', y.bandwidth() + 4).attr('fill', 'transparent').style('cursor', 'pointer')
+      .attr('tabindex', 0).attr('role', 'button').attr('aria-pressed', (r) => String(sel.includes(r.c))).attr('aria-label', (r) => `${gxLabel(r.c)}, index ${pct(r.v)}`)
+      .on('mousemove', (ev, r) => tip.show(ev, [['k', gxLabel(r.c)], ['', `Index ${pct(r.v)}  (90% range ${pct(r.lo)} to ${pct(r.hi)})`], ['', `In ${d3.format('.0%')(r.inc)} of weapon families`], ['', `${d3.format(',')(r.n)} parts found`]]))
+      .on('mouseleave', () => tip.hide())
+      .on('click', (ev, r) => gxToggle(r.c))
+      .on('keydown', (ev, r) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); gxToggle(r.c); } });
+  });
+
+  dash.draw('compare', (el) => {
+    const d = dash.data('index');
+    el.replaceChildren();
+    if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const m = gxState.method;
+    const get = (c) => d.data.find((r) => r.method === m && r.country === c);
+    const sel = gxState.sel.map(get).filter(Boolean);
+    const mk = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    const head = mk('div', 'gx-cmp-head');
+    ['A', 'B'].forEach((t, i) => { const s = mk('div', 'gx-slot ' + (i === 0 ? 'a' : 'b')); s.append(mk('span', 'tag', t), mk('span', 'name', sel[i] ? gxLabel(sel[i].country) : 'Select a row')); head.appendChild(s); });
+    el.appendChild(head);
+    const pct = d3.format('.1%');
+    const rows = [
+      ['Index', (r) => Number(r.index_share), pct],
+      ['90% range', null, (r) => `${pct(Number(r.ci_low))} – ${pct(Number(r.ci_high))}`],
+      ['Weapon families hit', (r) => Number(r.incidence), d3.format('.0%')],
+      ['Parts found', (r) => Number(r.components), d3.format(',')],
+      ['Raw share', (r) => Number(r.raw_share), pct],
+    ];
+    rows.forEach(([lab, val, fmt]) => {
+      const row = mk('div', 'gx-cmp-row');
+      row.appendChild(mk('span', 'lab', lab));
+      const vals = sel.map((r) => val ? val(r) : null);
+      const lead = vals.length === 2 && val ? (vals[0] > vals[1] ? 0 : vals[1] > vals[0] ? 1 : -1) : -1;
+      [0, 1].forEach((i) => row.appendChild(mk('span', 'v' + (i === lead ? ' lead' : ''), sel[i] ? (val ? fmt(vals[i]) : fmt(sel[i])) : '—')));
+      el.appendChild(row);
+    });
+    if (sel.length === 2) {
+      const a = Number(sel[0].index_share), b = Number(sel[1].index_share);
+      const overlap = Number(sel[0].ci_low) <= Number(sel[1].ci_high) && Number(sel[1].ci_low) <= Number(sel[0].ci_high);
+      const p = mk('p', 'gx-note');
+      p.style.marginTop = '10px';
+      p.textContent = overlap ? 'Their ranges overlap, so the data cannot separate them.' : `${gxLabel(a > b ? sel[0].country : sel[1].country)} is higher by ${d3.format('.1f')(Math.abs(a - b) * 100)} points, and the ranges do not overlap.`;
+      el.appendChild(p);
+    }
+  });
+
+  dash.draw('tiers', (el) => {
+    const d = dash.data('stats');
+    el.replaceChildren();
+    if (d.status !== 'ok') return;
+    const v = (k) => Number((d.data.find((r) => r.metric === k) || {}).value);
+    const parts = [['Chips ×4', v('tier1'), 4], ['Modules ×3', v('tier2'), 3], ['Discrete ×2', v('tier3'), 2], ['Other ×1', v('tier4'), 1]];
+    const tot = d3.sum(parts, (p) => p[1] * p[2]);
+    const W = Math.max(160, el.clientWidth), H = 44;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Share of index weight by part tier');
+    let x0 = 0;
+    const tip = gxTip(el);
+    const fills = ['var(--gx-ink)', 'var(--gx-bar-ink)', 'var(--gx-bar)', 'var(--gx-rule)'];
+    parts.forEach(([lab, n, w], i) => {
+      const wd = (n * w / tot) * W;
+      svg.append('rect').attr('x', x0).attr('y', 4).attr('width', Math.max(0, wd - 1)).attr('height', 10).attr('fill', fills[i])
+        .on('mousemove', (ev) => tip.show(ev, [['k', lab], ['', `${d3.format(',')(n)} parts, ${d3.format('.0%')(n * w / tot)} of weight`]]))
+        .on('mouseleave', () => tip.hide());
+      if (wd > 46) svg.append('text').attr('x', x0).attr('y', 30).attr('font-size', 10).attr('font-family', 'var(--gx-mono)').attr('fill', 'var(--gx-muted)').text(lab.split(' ')[0]);
+      x0 += wd;
+    });
+  });
+
+</script>
+<script>
+  dash.draw('table', (tb) => {
+    const d = dash.data('index');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const s = gxState;
+    let rows = d.data.filter((r) => r.method === s.method && (!s.q || gxLabel(r.country).toLowerCase().includes(s.q) || r.country.toLowerCase().includes(s.q)));
+    rows = rows.sort((a, b) => s.sort === 'country' ? s.dir * gxLabel(a.country).localeCompare(gxLabel(b.country)) : s.dir * (Number(a[s.sort]) - Number(b[s.sort])));
+    const pct = d3.format('.1%');
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = `${encodeURIComponent(r.method)},${encodeURIComponent(r.country)}`;
+      tr.className = 'pick' + (s.sel.includes(r.country) ? ' sel' : '');
+      tr.tabIndex = 0;
+      const cells = [[r.country, ''], [d3.format(',')(Number(r.components)), 'n hide-n'], [pct(Number(r.raw_share)), 'n hide-n'], [pct(Number(r.index_share)), 'n'], [pct(Number(r.ci_low)), 'n hide-n'], [pct(Number(r.ci_high)), 'n hide-n'], [d3.format('.0%')(Number(r.incidence)), 'n']];
+      cells.forEach(([t, c], i) => {
+        const td = document.createElement('td'); td.className = c; td.textContent = t;
+        if (i === 0) {
+          const tags = [];
+          if (r.country === 'EU total') tags.push('BLOC'); else if (gxEU.includes(r.country)) tags.push('EU');
+          if (s.sel[0] === r.country) tags.push('A'); else if (s.sel[1] === r.country) tags.push('B');
+          if (tags.length) { const tag = document.createElement('span'); tag.className = 'tag'; tag.textContent = tags.join(' · '); td.appendChild(tag); }
+        }
+        tr.appendChild(td);
+      });
+      tr.addEventListener('click', () => gxToggle(r.country));
+      tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); gxToggle(r.country); } });
+      tb.appendChild(tr);
+    });
+    if (!rows.length) { const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = 7; td.textContent = 'No country matches that search.'; td.style.color = 'var(--gx-muted)'; tr.appendChild(td); tb.appendChild(tr); }
+  });
+
+  dash.draw('robust', (tb) => {
+    const d = dash.data('index');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const label = {group: 'Parent group', strict: 'Strict ownership', hq: 'Listed HQ'};
+    const pct = d3.format('.1%');
+    ['group', 'strict', 'hq'].forEach((m) => {
+      const r = d.data.find((x) => x.method === m && x.country === 'EU total');
+      if (!r) return;
+      const tr = document.createElement('tr');
+      tr.dataset.key = `${encodeURIComponent(m)},${encodeURIComponent('EU total')}`;
+      if (m === 'group') tr.className = 'strong';
+      [[label[m], ''], [pct(Number(r.raw_share)), 'n'], [pct(Number(r.index_share)), 'n'], [pct(Number(r.ci_low)), 'n hide-n'], [pct(Number(r.ci_high)), 'n hide-n'], [pct(Number(r.incidence)), 'n']].forEach(([t, c]) => { const td = document.createElement('td'); td.className = c; td.textContent = t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('crosscheck', (tb) => {
+    const d = dash.data('crosscheck');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    d.data.forEach((r) => {
+      const tr = document.createElement('tr');
+      [[r.measure, ''], [d3.format('.1%')(Number(r.gur)), 'n'], [d3.format('.1%')(Number(r.rusi_2022)), 'n']].forEach(([t, c]) => { const td = document.createElement('td'); td.className = c; td.textContent = t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('markcheck', (tb) => {
+    const d = dash.data('markcheck'), c = dash.data('markcalc');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const rate = new Map((c.status === 'ok' ? c.data : []).map((r) => [r.firm, r.rate]));
+    [...d.data].sort((a, b) => (rate.get(b.firm) || 0) - (rate.get(a.firm) || 0)).forEach((r) => {
+      const tr = document.createElement('tr');
+      const v = rate.get(r.firm);
+      [[r.firm, ''], [d3.format(',')(Number(r.checked)), 'n'], [d3.format(',')(Number(r.consistent)), 'n'], [v == null ? '—' : d3.format('.0%')(v), 'n']].forEach(([t, cl]) => { const td = document.createElement('td'); td.className = cl; td.textContent = t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('groups', (tb) => {
+    const d = dash.data('groups');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const f = d3.format(',');
+    [...d.data].sort((a, b) => Number(b.components) - Number(a.components)).forEach((r) => {
+      const tr = document.createElement('tr');
+      [[r.group, ''], [r.home, ''], [f(Number(r.components)), 'n'], [f(Number(r.weapon_families)), 'n hide-n'], [f(Number(r.high_priority)), 'n hide-n'], [f(Number(r.dated_2022_on)), 'n']].forEach(([t, c]) => { const td = document.createElement('td'); td.className = c; td.textContent = t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('ledgers', (tb) => {
+    const d = dash.data('ledgers'), c = dash.data('ledger_calc');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const pg = new Map((c.status === 'ok' ? c.data : []).map((r) => [r.country, r.aid_pct_gdp]));
+    [...d.data].sort((a, b) => Number(b.mil_aid_bn) - Number(a.mil_aid_bn)).forEach((r) => {
+      const tr = document.createElement('tr');
+      const v = pg.get(r.country);
+      [[r.country, ''], [d3.format('.1f')(Number(r.mil_aid_bn)), 'n'], [v == null ? '—' : d3.format('.2%')(v), 'n hide-n'], [d3.format('.1%')(Number(r.index_share)), 'n']].forEach(([t, cl]) => { const td = document.createElement('td'); td.className = cl; td.textContent = t; tr.appendChild(td); });
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('years', (el) => {
+    const d = dash.data('years');
+    el.replaceChildren();
+    if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const rows = d.data.map((r) => ({year: String(r.year), n: Number(r.components)}));
+    const W = Math.max(280, el.clientWidth), H = 220, m = {t: 18, r: 4, b: 24, l: 34};
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Dated parts by production year');
+    const x = d3.scaleBand(rows.map((r) => r.year), [m.l, W - m.r]).padding(0.28);
+    const y = d3.scaleLinear([0, d3.max(rows, (r) => r.n)], [H - m.b, m.t]).nice();
+    const every = W < 480 ? 4 : W < 760 ? 2 : 1;
+    gxAxis(svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(4).tickSize(-(W - m.l - m.r))));
+    gxAxis(svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickSize(0).tickPadding(8).tickValues(rows.map((r) => r.year).filter((_, i) => i % every === 0)).tickFormat((v) => every > 1 ? `'${v.slice(2)}` : v)));
+    const bw = Math.min(28, x.bandwidth());
+    const tip = gxTip(el);
+    svg.append('g').selectAll('rect').data(rows).join('rect')
+      .attr('x', (r) => x(r.year) + (x.bandwidth() - bw) / 2).attr('width', bw).attr('y', (r) => y(r.n)).attr('height', (r) => y(0) - y(r.n)).attr('rx', 1)
+      .attr('fill', (r) => Number(r.year) >= 2022 ? 'var(--gx-ink)' : 'var(--gx-bar)')
+      .on('mousemove', (ev, r) => tip.show(ev, [['k', r.year], ['', `${d3.format(',')(r.n)} parts made`]]))
+      .on('mouseleave', () => tip.hide());
+    const inv = x('2022');
+    if (inv != null) {
+      const lx = inv - x.step() * x.paddingInner() / 2;
+      svg.append('line').attr('x1', lx).attr('x2', lx).attr('y1', m.t - 8).attr('y2', H - m.b).attr('stroke', 'var(--gx-signal)').attr('stroke-dasharray', '3 3');
+      svg.append('text').attr('x', lx + 6).attr('y', m.t - 2).attr('font-size', 11.5).attr('font-weight', 600).attr('fill', 'var(--gx-signal-text)').text('Invasion');
+    }
+  });
+
+  dash.draw('ratio', (el) => {
+    const d = dash.data('ratio');
+    el.replaceChildren();
+    if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const rows = d.data.map((r) => ({f: r.firm, home: r.home, v: Number(r.ratio), ps: Number(r.share_of_13), rs: Number(r.revenue_share), rev: Number(r.revenue_bn)})).sort((a, b) => b.v - a.v);
+    const W = Math.max(300, el.clientWidth), rowH = 26, top = 4, bottom = 26;
+    const H = top + rows.length * rowH + bottom;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Size-adjusted ratio by firm');
+    const left = gxMeasure(svg, rows.map((r) => r.f), 12.5) + 14;
+    const right = gxMeasure(svg, ['0.00×'], 12) + 12;
+    const x = d3.scaleLog([0.1, 5], [left, W - right]);
+    const y = d3.scaleBand(rows.map((r) => r.f), [top, H - bottom]).padding(0.32);
+    gxAxis(svg.append('g').attr('transform', `translate(0,${H - bottom})`).call(d3.axisBottom(x).tickValues(W < 480 ? [0.1, 0.5, 1, 4] : [0.1, 0.25, 0.5, 1, 2, 4]).tickSize(-(H - top - bottom)).tickFormat((v) => `${v}×`)));
+    svg.append('line').attr('x1', x(1)).attr('x2', x(1)).attr('y1', top).attr('y2', H - bottom).attr('stroke', 'var(--gx-ink)');
+    const eu = (r) => r.home !== 'United States' && r.home !== 'Japan';
+    const tip = gxTip(el);
+    const fx = d3.format('.2f'), pc = d3.format('.1%');
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('text').attr('x', left - 8).attr('y', (r) => y(r.f) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end').attr('font-size', 12.5).attr('font-weight', (r) => eu(r) ? 600 : 400).attr('fill', 'var(--gx-ink)').text((r) => r.f);
+    g.append('rect').attr('x', (r) => Math.min(x(1), x(r.v))).attr('width', (r) => Math.abs(x(r.v) - x(1))).attr('y', (r) => y(r.f)).attr('height', y.bandwidth()).attr('fill', (r) => eu(r) ? 'var(--gx-ink)' : 'var(--gx-bar)');
+    g.append('text').attr('x', (r) => r.v >= 1 ? x(r.v) + 5 : x(1) + 5).attr('y', (r) => y(r.f) + y.bandwidth() / 2).attr('dy', '0.35em').attr('font-size', 11.5).attr('fill', 'var(--gx-muted)').style('font-variant-numeric', 'tabular-nums').text((r) => `${fx(r.v)}×`);
+    g.append('rect').attr('x', 0).attr('width', W).attr('y', (r) => y(r.f)).attr('height', y.bandwidth()).attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => tip.show(ev, [['k', `${r.f} · ${r.home}`], ['', `Share of index among 13 firms: ${pc(r.ps)}`], ['', `Share of their revenue: ${pc(r.rs)} ($${d3.format('.1f')(r.rev)}bn)`], ['', `Ratio ${fx(r.v)}×`]]))
+      .on('mouseleave', () => tip.hide());
+  });
+
+</script>
+<script>
+  (() => {
+    const host = location.hostname, seg = location.pathname.split('/').filter(Boolean)[0];
+    if (host.endsWith('.github.io')) {
+      const user = host.replace('.github.io', '');
+      const repo = seg || `${user}.github.io`;
+      document.querySelectorAll('[data-repo-file]').forEach((a) => { a.href = `https://github.com/${user}/${repo}/blob/main/${a.dataset.repoFile}`; });
+    }
+    let t;
+    window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => dash.run(), 150); });
+    dash.load().then(() => {
+      const el = location.hash && document.getElementById(location.hash.slice(1));
+      if (el) el.scrollIntoView();
+    });
+  })();
+</script>
+</body>
+</html>

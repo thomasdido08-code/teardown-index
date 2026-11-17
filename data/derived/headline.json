@@ -1,0 +1,34 @@
+{
+  "edition": 1,
+  "gur_snapshot": "2026-10-30",
+  "eu_index_group": 0.14512,
+  "eu_range_group": [
+    0.13206,
+    0.15828
+  ],
+  "eu_rank": 2,
+  "ahead_of_eu": [
+    "United States"
+  ],
+  "us_index_group": 0.65779,
+  "china_index_group": 0.0577,
+  "eu_index_strict": 0.14068,
+  "eu_index_hq": 0.05037,
+  "attribution_delta": 0.09475,
+  "eu_family_incidence": 0.89899,
+  "components": 6252,
+  "weapon_families": 99,
+  "post_2022_share_of_dated": 0.4663,
+  "date_parser_exact_rate": 0.9485,
+  "size_ratio": {
+    "STMicroelectronics": 0.813,
+    "Infineon": 0.646,
+    "NXP": 0.401,
+    "u-blox": 3.889
+  },
+  "us_share_vs_rusi_2022": [
+    0.6718,
+    0.7067
+  ],
+  "checks_failed": []
+}
