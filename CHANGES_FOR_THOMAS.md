@@ -70,7 +70,7 @@ The EU is second under every weighting, and the top four never change order.
 - No secrets or local paths in the repository.
 - **Font licence was missing**: README promised SIL OFL, but the OFL file wasn't there. Added, with the copyright notices for all three fonts, taken from the official repositories.
 - All paths in `index.html` are relative and the page renders locally with edition 1.1 data and no console errors.
-- External links: GUR, Kiel, RUSI coverage, u-blox, Renesas, Evertiq and Mezha return 200. **Please click these once in a browser** (they refuse automated requests): the SEC filings (Intel, Micron, Maxim, Microchip, TI), Analog Devices, Vishay and NXP investor pages, GlobeNewswire (STMicro) and Business Wire (Xilinx, onsemi).
+- External links: all resolve. GUR, Kiel, RUSI coverage, u-blox, Renesas, Evertiq and Mezha answered a scripted check; the 11 that refuse scripts (SEC filings for Intel, Micron, Maxim, Microchip and TI; Analog Devices, Vishay and NXP investor pages; GlobeNewswire for STMicro; Business Wire for Xilinx and onsemi) were opened in a browser on 25 November and each shows the right 2021 results release.
 - CITATION.cff updated to version 1.1, 25 November 2026.
 
 ## Things you need to decide or do
@@ -81,4 +81,4 @@ The EU is second under every weighting, and the top four never change order.
    `[Diversion Risk Scorer](https://thomasdido08-code.github.io/diversion-risk-scorer/): which recipient states carry the highest risk that arms sold to them are diverted.`
 4. **Out of scope, as you asked:** the firm-by-firm match against CAR iTrace and RUSI.
 
-**Ready to go public:** yes, after you click the links in section 5 and decide point 2.
+**Ready to go public:** yes, once you decide point 2.
