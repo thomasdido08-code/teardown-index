@@ -73,6 +73,17 @@ The EU share holds at 14–15% under every method except GUR's raw headquarters 
 | Strict ownership | 13.7% | 14.1% | 12.8–15.4% | 90% |
 | Listed HQ | 6.1% | 5.0% | 4.3–5.9% | 76% |
 
+**Weighting.** The priority-list weights (×4/×3/×2/×1) are a judgement. Re-scoring with other weights barely moves the EU share, and the EU stays second behind the United States every time:
+
+| Weights (tiers 1/2/3/4) | EU share | 90% range | United States | China | Top 10 single countries, in order |
+|---|---|---|---|---|---|
+| 4/3/2/1 (headline) | 14.5% | 13.2–15.9% | 65.7% | 5.8% | US, China, Germany, Japan, Taiwan, France, Italy, Netherlands, Switzerland, South Korea |
+| 1/1/1/1 (unweighted) | 14.7% | 13.5–16.2% | 61.3% | 7.4% | US, China, Germany, Japan, Taiwan, Netherlands, France, Italy, Switzerland, Russia |
+| 3/2/1/1 | 14.5% | 13.1–15.9% | 66.5% | 5.5% | US, China, Germany, Japan, Netherlands, France, Taiwan, Italy, Switzerland, South Korea |
+| 5/3/2/1 | 14.5% | 13.2–15.9% | 66.8% | 5.4% | US, China, Germany, Japan, France, Taiwan, Italy, Netherlands, Switzerland, South Korea |
+
+Weighting matters for the United States and China, not for the EU: the US share rises with the weight on integrated circuits, China's falls, because Chinese parts are more often discrete and passive ones. The first four places never change. Taiwan, France, Italy and the Netherlands swap places, as their overlapping ranges already said they could. Full table: `data/raw/weighting.csv`, from `scripts/pipeline/robustness.py`.
+
 - **Cross-check with RUSI.** RUSI's *Silicon Lifeline* (Aug 2022) took apart 27 Russian weapons. As reported by eeNews Europe and VOA, US firms made 318 of more than 450 foreign parts (about 71%), against 67% here. Japan differs most (about 13% in RUSI, 4% here), likely because RUSI's early-war sample predates the shift to Chinese-made drone parts. RUSI's company tables were not checked.
 - **Cross-check with the International Working Group on Russian Sanctions (2023).** Six of the seven leading makers it names are in this index's top seven groups.
 - **Photo spot-check.** Of 10 random GUR entries, the logo or part number in GUR's own photo confirmed the maker in 7; 3 were too blurry to read; none contradicted it.
@@ -94,7 +105,7 @@ The index measures brand exposure in recovered weapons; it cannot show trade vol
 
 **Open questions**
 
-1. Is the priority-list weighting (4/3/2/1) defensible, or should the headline be unweighted?
+1. ~~Is the priority-list weighting (4/3/2/1) defensible, or should the headline be unweighted?~~ **Answered (November 2026):** the EU share is 14.5–14.7% under every weighting tested, unweighted included (see Weighting above). The weights change the US and China shares, not the EU finding. The headline keeps 4/3/2/1 because it tracks the priority list the EU itself uses.
 2. Is the parent-group attribution, especially the STMicroelectronics split, the right default?
 3. Is total revenue an acceptable denominator for the size adjustment, or should that section be dropped?
 4. What independent dataset would best test GUR's attributions?

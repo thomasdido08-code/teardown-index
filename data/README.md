@@ -13,6 +13,7 @@ All shares are fractions (0–1). These tables are the published output of the s
 | `ledgers.csv` | donor country | `country`, `mil_aid_bn` (bilateral military aid allocated, €bn, Jan 2022–Aug 2026), `gdp_2021_bn`, `index_share`, `ci_low`, `ci_high` |
 | `crosscheck.csv` | measure | `measure`, `gur` (share in GUR data, listed HQ, raw count), `rusi_2022` (RUSI *Silicon Lifeline* as reported), `note` |
 | `markcheck.csv` | firm | `firm`, `checked` (entries checked), `consistent` (marking carries the firm's part-number prefix or name) |
+| `weighting.csv` | tier weighting | `weights` (tiers 1/2/3/4), `label`, `eu_index`, `eu_ci_low`, `eu_ci_high` (parent-group method), `us_index`, `china_index`, `germany_index`, `eu_rank_vs_countries` (EU bloc against single countries), `top10` (single countries with their shares, in order) |
 | `stats.csv` | metric | `metric`, `value`: counts behind the method (parts, families, tiers, dated parts, parser calibration, photo spot-check, overlap with the International Working Group's top makers) |
 
 ## derived/
