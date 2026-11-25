@@ -41,20 +41,24 @@ Full method, validation and open questions: [METHODOLOGY.md](METHODOLOGY.md).
 ```
 index.html                 the report page (open locally or via GitHub Pages)
 data/raw/                  the published index tables (see data/README.md)
+data/raw/gur/              the GUR snapshot the tables are built from
+data/pipeline/             lookup tables: weapon families, owners, tiers, chipmakers
 data/derived/headline.json headline figures, written by scripts/build.py
 scripts/build.py           checks the tables and recomputes the headline figures
+scripts/pipeline/          scraper and scoring code that rebuilds data/raw/ from GUR
 METHODOLOGY.md             full method, validation, limits and open questions
 assets/                    bundled d3 library and fonts
 ```
 
-The tables in `data/raw/` are the output of the scoring pipeline run on GUR's database on 30 October 2026. **The scraping and scoring code is not in this repository yet**, so the index itself cannot be rebuilt from scratch here; `scripts/build.py` recomputes everything derived from the published tables.
+The tables in `data/raw/` are the output of the scoring pipeline in `scripts/pipeline/`, run on the GUR snapshot of 30 October 2026 in `data/raw/gur/`. See [scripts/pipeline/README.md](scripts/pipeline/README.md) to rebuild them from the snapshot or from a fresh scrape.
 
 ## Reproduce
 
 Requires Python 3 only (no packages):
 
 ```
-python scripts/build.py
+python scripts/build.py                                                   # headline from the tables
+python scripts/pipeline/score.py data/raw/gur/gur_components_2026-10-30.csv  # tables from the snapshot
 ```
 
 To view the page locally, run `python -m http.server` in the repository folder and open http://localhost:8000.
