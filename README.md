@@ -82,6 +82,7 @@ This project is independent and not affiliated with any of these sources.
 
 - **Analysis, derived data and text:** © Thomas Di Domenico, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - **Code** (`scripts/`, `index.html`): [MIT](LICENSE).
+- **GUR snapshot** (`data/raw/gur/`): data published by Ukraine's Defence Intelligence (GUR) on its [War & Sanctions portal](https://war-sanctions.gur.gov.ua/en/components), republished here unchanged, with credit, so that the index can be reproduced. It stays under GUR's terms and is not covered by the licences above.
 - **Fonts** in `assets/fonts/` (Archivo Narrow, Public Sans, IBM Plex Mono): SIL Open Font License 1.1.
 - **Third-party data** remains under its publishers' terms. Credit each source as listed above.
 
