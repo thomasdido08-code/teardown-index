@@ -55,7 +55,7 @@ def main():
              and r["country"] not in EU_MEMBERS and float(r["index_share"]) > eu_share]
 
     headline = {
-        "edition": 1,
+        "edition": "1.1",
         "gur_snapshot": "2026-10-30",
         "eu_index_group": eu_share,
         "eu_range_group": [float(eu["ci_low"]), float(eu["ci_high"])],

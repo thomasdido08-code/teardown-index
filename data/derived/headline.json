@@ -1,30 +1,30 @@
 {
-  "edition": 1,
+  "edition": "1.1",
   "gur_snapshot": "2026-10-30",
-  "eu_index_group": 0.14512,
+  "eu_index_group": 0.14523,
   "eu_range_group": [
-    0.13206,
-    0.15828
+    0.13207,
+    0.15856
   ],
   "eu_rank": 2,
   "ahead_of_eu": [
     "United States"
   ],
-  "us_index_group": 0.65779,
-  "china_index_group": 0.0577,
-  "eu_index_strict": 0.14068,
-  "eu_index_hq": 0.05037,
-  "attribution_delta": 0.09475,
+  "us_index_group": 0.65737,
+  "china_index_group": 0.05765,
+  "eu_index_strict": 0.1408,
+  "eu_index_hq": 0.05032,
+  "attribution_delta": 0.09491,
   "eu_family_incidence": 0.89899,
   "components": 6252,
   "weapon_families": 99,
-  "post_2022_share_of_dated": 0.4663,
-  "date_parser_exact_rate": 0.9485,
+  "post_2022_share_of_dated": 0.4024,
+  "date_parser_exact_rate": 0.9684,
   "size_ratio": {
-    "STMicroelectronics": 0.813,
-    "Infineon": 0.646,
-    "NXP": 0.401,
-    "u-blox": 3.889
+    "STMicroelectronics": 0.812,
+    "Infineon": 0.65,
+    "NXP": 0.4,
+    "u-blox": 3.884
   },
   "us_share_vs_rusi_2022": [
     0.6718,

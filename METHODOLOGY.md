@@ -1,10 +1,10 @@
 # Teardown Index: method note
 
-Edition 1 · 3 November 2026 · Thomas Di Domenico
+Edition 1.1 · 25 November 2026 · Thomas Di Domenico
 
 ## Summary
 
-Traced to the parent companies that own the brands, EU firms supply 14.5% of the weighted foreign parts Ukrainian intelligence has recovered from Russian weapons (90% range 13.2–15.8%). That makes the EU, taken as a bloc, the second-largest source after the United States (65.8%).
+Traced to the parent companies that own the brands, EU firms supply 14.5% of the weighted foreign parts Ukrainian intelligence has recovered from Russian weapons (90% range 13.2–15.9%). That makes the EU, taken as a bloc, the second-largest source after the United States (65.7%).
 
 The Teardown Index answers one question: whose firms make the foreign electronics found inside Russia's weapons? It does not measure trade volumes or who shipped the parts.
 
@@ -31,13 +31,13 @@ GUR is the intelligence service of a country at war. Its attributions are treate
 
 The index is a country's share of all weighted foreign parts, after each part is counted once per weapon type and attributed to its parent company.
 
-1. **Clean.** All 522 pages of GUR's list were collected; 10 duplicate entries were removed, leaving 6,252 parts.
+1. **Clean.** All 522 pages of GUR's list were collected; 10 entries listed twice (the same GUR id) were removed, leaving 6,252 parts.
 2. **Merge weapon families.** Airframes and missiles of the same model (for example 21 separate Shahed-136 teardowns) are merged into 99 weapon families. A part counts once per family, leaving 5,536 entries. This stops heavily studied weapons from dominating.
 3. **Weight by criticality.** Each part gets the weight of its tier on the Common High Priority List used by the EU, US, UK and Japan: integrated circuits ×4 (2,959 entries), navigation and radio modules ×3 (177), discrete and passive parts ×2 (1,454), everything else ×1 (946). Tiers are assigned from GUR's part names by keyword.
 4. **Attribute to owners.** Three methods are reported: GUR's listed headquarters; parent group, which moves subsidiaries home (Infineon's International Rectifier, Cypress and Spansion; NXP's Freescale) and splits STMicroelectronics evenly between France and Italy, its two state shareholders; and strict ownership, which also moves Chinese-owned Nexperia and Ampleon to China and EPCOS to Japan's TDK. Parent group is the headline.
 5. **Score.** Index = a country's weighted parts ÷ all weighted parts. Weapon-family incidence (share of families containing at least one part from that country) is reported beside it.
 6. **Range.** The 99 weapon families are resampled with replacement 1,000 times; the 5th and 95th percentiles give the 90% range.
-7. **Date the parts.** GUR publishes production dates for 563 parts. Year-week codes in chip markings (for example "2303" = 2023, week 3) raise this to 1,083.
+7. **Date the parts.** GUR publishes production dates for 563 parts. Year-week codes in chip markings (for example "2303" = 2023, week 3) raise this to 1,178. The parser skips the part-number line, accepts only a four-digit code (optionally with "#" before it or up to three letters after it), and rejects impossible weeks and dates after the snapshot.
 8. **Adjust for size.** For 13 chipmakers, each firm's share of the index among them is divided by its share of their combined 2021 revenue. Euro and Swiss franc revenue are converted at 1.19 $/€ and 1.094 $/CHF.
 
 ## Results
@@ -46,22 +46,22 @@ Under parent-group attribution the United States leads by far, the EU bloc is se
 
 | Country | Index | 90% range | Weapon families hit | Parts found |
 |---|---|---|---|---|
-| United States | 65.8% | 62.5–69.2% | 99% | 3,936 |
-| **EU (bloc)** | **14.5%** | **13.2–15.8%** | **90%** | **888** |
-| China | 5.8% | 3.6–7.9% | 51% | 453 |
-| Germany | 5.4% | 4.5–6.3% | 75% | 352 |
-| Japan | 4.2% | 3.4–4.9% | 65% | 286 |
+| United States | 65.7% | 62.6–69.3% | 99% | 3,936 |
+| **EU (bloc)** | **14.5%** | **13.2–15.9%** | **90%** | **888** |
+| China | 5.8% | 3.6–7.8% | 51% | 453 |
+| Germany | 5.4% | 4.6–6.4% | 75% | 352 |
+| Japan | 4.2% | 3.4–5.0% | 65% | 286 |
 | Taiwan | 3.0% | 2.5–3.6% | 61% | 174 |
-| France | 2.9% | 2.5–3.4% | 71% | 162 |
+| France | 2.9% | 2.4–3.4% | 71% | 162 |
 | Italy | 2.9% | 2.4–3.3% | 69% | 153 |
-| Netherlands | 2.8% | 2.3–3.4% | 55% | 173 |
+| Netherlands | 2.8% | 2.3–3.5% | 55% | 173 |
 | Switzerland | 1.6% | 1.2–2.1% | 36% | 115 |
 
 France, Italy and the Netherlands have overlapping ranges and cannot be ranked against each other. France's and Italy's places depend on the STMicroelectronics split.
 
-**Size-adjusted.** Among 13 chipmakers, the ratio of index share to revenue share runs from 3.9× (u-blox) and 3.75× (Analog Devices) down to 0.14× (Micron). Russia's dependence concentrates in analog and RF chips, programmable chips (Xilinx 2.2×, Altera 3.1×) and satellite navigation. The large European firms sit below 1×, which most likely reflects their automotive-heavy product mix rather than better compliance; that explanation is untested.
+**Size-adjusted.** Among 13 chipmakers, the ratio of index share to revenue share runs from 3.9× (u-blox) and 3.7× (Analog Devices) down to 0.14× (Micron). Russia's dependence concentrates in analog and RF chips, programmable chips (Xilinx 2.2×, Altera 3.1×) and satellite navigation. The large European firms sit below 1×, which most likely reflects their automotive-heavy product mix rather than better compliance; that explanation is untested.
 
-**Timing.** Of 1,083 dated parts, 47% were made in 2022 or later, after the first EU export bans. GUR's own dates alone give 62%, because GUR tends to publish dates on newer parts.
+**Timing.** Of 1,178 dated parts, 40% were made in 2022 or later, after the first EU export bans. GUR's own dates alone give 62%, because GUR tends to publish dates on newer parts. (Edition 1 gave 47%: its date parser read some part numbers as date codes; see the change log.)
 
 ## Robustness and validation
 
@@ -69,7 +69,7 @@ The EU share holds at 14–15% under every method except GUR's raw headquarters 
 
 | EU share under | Raw count | Index | 90% range | Families hit |
 |---|---|---|---|---|
-| Parent group | 14.2% | 14.5% | 13.2–15.8% | 90% |
+| Parent group | 14.2% | 14.5% | 13.2–15.9% | 90% |
 | Strict ownership | 13.7% | 14.1% | 12.8–15.4% | 90% |
 | Listed HQ | 6.1% | 5.0% | 4.3–5.9% | 76% |
 
@@ -88,7 +88,7 @@ Weighting matters for the United States and China, not for the EU: the US share 
 - **Cross-check with the International Working Group on Russian Sanctions (2023).** Six of the seven leading makers it names are in this index's top seven groups.
 - **Photo spot-check.** Of 10 random GUR entries, the logo or part number in GUR's own photo confirmed the maker in 7; 3 were too blurry to read; none contradicted it.
 - **Marking check.** For eight firms, 61–90% of entries carry that firm's part-number prefix or name in the marking text. Most misses are short codes that do not name the part.
-- **Date parser.** On the 563 parts GUR had already dated, the parser read a year for 330 and matched it exactly for 313 (95%).
+- **Date parser.** On the 563 parts GUR had already dated, the parser read a year for 348 and matched it exactly for 337 (97%).
 
 ## Limits and open questions
 
@@ -121,3 +121,8 @@ The index measures brand exposure in recovered weapons; it cannot show trade vol
 ## Change log
 
 - **3 November 2026**: edition 1.
+- **25 November 2026**: edition 1.1. The scraping and scoring code is now in `scripts/pipeline/` and the tables are its output on the same 30 October snapshot. Changes against edition 1:
+  - EU share (parent group) 14.512% → 14.523%, range 13.2–15.8% → 13.2–15.9%; United States 65.8% → 65.7%. Cause: edition 1 used tier assignments for a few parts that the snapshot does not record (16,221 weighted points against 16,236 now). Every shift is under 0.1 point.
+  - Parts made in 2022 or later: 46.6% → 40.2% of dated parts. Cause: a stricter date parser. Edition 1's parser read year-week codes out of part numbers (for example "LMX2306" as 2023) and missed codes after a "#". The new parser dates more parts (1,178 against 1,083) and matches GUR's own dates more often (97% against 95%).
+  - The European groups table now lists every European group with at least seven parts (19), instead of a hand-picked 13; Freescale is counted with NXP.
+  - Weighting robustness table added; open questions 1–3 answered or narrowed.

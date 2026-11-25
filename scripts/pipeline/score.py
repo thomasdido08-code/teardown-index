@@ -255,7 +255,7 @@ def groups_table(clean, unique, min_components=7):
         if len(rs) < min_components:
             continue
         out.append({
-            "group": g, "home": rs[0]["home_group"], "owner_strict": rs[0]["home_strict"],
+            "group": rules.GROUP_LABEL.get(g, g), "home": rs[0]["home_group"], "owner_strict": rs[0]["home_strict"],
             "components": len(rs),
             "unique_parts": len({(r["part_name"], first_line(r["marking"])) for r in rs}),
             "weapon_families": len({r["family"] for r in rs}),

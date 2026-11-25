@@ -26,6 +26,9 @@ EUROPE = EU | {"Switzerland", "Great Britain", "Norway"}
 # For the European groups table only: subsidiaries kept as separate parent
 # groups in owners.csv but owned by a larger group.
 GROUP_MERGE = {"Freescale Semiconductor": "NXP Semiconductors"}
+# Display names used in edition 1 for groups whose GUR spelling differs.
+GROUP_LABEL = {"U-blox": "u-blox", "EPCOS AG": "EPCOS", "Wurth Elektronik": "Würth Elektronik",
+               "TT electronics Semelab": "TT Electronics"}
 
 # ---------------------------------------------------------------- tiers
 # Common High Priority List tiers, simplified to four weights:
