@@ -106,8 +106,8 @@ The index measures brand exposure in recovered weapons; it cannot show trade vol
 **Open questions**
 
 1. ~~Is the priority-list weighting (4/3/2/1) defensible, or should the headline be unweighted?~~ **Answered (November 2026):** the EU share is 14.5–14.7% under every weighting tested, unweighted included (see Weighting above). The weights change the US and China shares, not the EU finding. The headline keeps 4/3/2/1 because it tracks the priority list the EU itself uses.
-2. Is the parent-group attribution, especially the STMicroelectronics split, the right default?
-3. Is total revenue an acceptable denominator for the size adjustment, or should that section be dropped?
+2. **Partly answered (November 2026): the STMicroelectronics split.** How STMicroelectronics is divided between France and Italy changes only those two countries' shares: the EU share is 14.5% whether it goes half and half, all to France or all to Italy. The choice that matters is whether STMicroelectronics counts as EU-owned at all. Counted under Switzerland, where GUR lists it and where its headquarters are, the EU share falls to 8.9%. Its main shareholders, through a joint holding, are the French and Italian states, so this index counts it as European; readers who disagree can use the listed-HQ method. **Still open:** whether the parent-group rule is the right default for other cross-border groups.
+3. **Partly answered (November 2026): the size adjustment.** The finding that the three large European chipmakers turn up less often than their size predicts survives every weighting tested: STMicroelectronics 0.76–0.86×, Infineon 0.54–0.70×, NXP 0.40–0.42× (headline, unweighted and integrated-circuits-only points). u-blox's 3.9× holds unweighted (4.4×) but disappears if only integrated circuits are counted (0.12×), because its parts are navigation modules, not chips; it is a finding about modules. **Still open:** total revenue remains a stand-in for revenue in the product lines Russia buys, which is only available from paid market research. The section stays, labelled as indicative.
 4. What independent dataset would best test GUR's attributions?
 
 ## Sources
