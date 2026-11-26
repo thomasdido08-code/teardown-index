@@ -1,0 +1,202 @@
+weapon,weapon_family
+"""Granat-4"" UAV",Granat-4
+"""Scalpel"" loitering munition","""Scalpel"" loitering munition"
+"""Supercam S350"" UAV №2212S350SP19017",Supercam
+"""Supercam-S350"" UAV",Supercam
+"""Tornado-C"" 9M544 MLRS guided missile",Tornado-S
+"""Tornado-C"" 9M549 MLRS guided missile (researched in December 2024)",Tornado-S
+"""Tornado-C"" 9M549 MLRS guided missile (researched in May 2024)",Tornado-S
+"122 mm MLRS 9K51 ""Tornado-G""","122 mm MLRS 9K51 ""Tornado-G"""
+"2S19M1 ""Msta-S","2S19M1 ""Msta-S"
+"300 mm 9M549 ""Tornado-S"" MLRS",Tornado-S
+3M22 Zircon ballistic missile,3M22 Zircon ballistic missile
+9M727 cruise missile from the Iskander-K missile system,Iskander-K
+Active radar homing head ARGS-14 of the 3M-14 Kalibr missile,Kalibr
+"Aeroballistic missile 9-S-7760 ""Kinzhal"" (Kh-47M2)",Kinzhal
+All-day wearable reconnaissance device VNPR 1PN142,All-day wearable reconnaissance device VNPR 1PN142
+"AR-2C ""Arakhis"" radio station",R-392 Arakhis radios
+"Army self-propelled gun 2S5M ""Hyacinth-S""","Army self-propelled gun 2S5M ""Hyacinth-S"""
+Automated radio jamming station R-330 BMW,R-330 jammers
+"Automated station for placing obstacles R-330Zh ""Zhitel""",R-330 jammers
+"Automated workplace of the 1B1003 command and observation vehicle of the 1B198 ""Cannonade"" complex of automated artillery fire control equipment","Automated workplace of the 1B1003 command and observation vehicle of the 1B198 ""Cannonade"" complex of automated artillery fire control equipment"
+"Autonomous signaling system ""Radio Barrier""","Autonomous signaling system ""Radio Barrier"""
+"Ballistic missile 9M723 ""Iskander-M""",Iskander-M
+"Ballistic missile 9M723K5 ""Iskander-M""",Iskander-M
+Ballistic missile KN-23/KN-24,KN-23/24
+Ballistic missile KN-24,KN-23/24
+Barrage munition with artificial intelligence V2U,Barrage munition with artificial intelligence V2U
+"Basic set of the intelligence, management and communication complex of military intelligence KRUZ-VR ""Strilets""","Basic set of the intelligence, management and communication complex of military intelligence KRUZ-VR ""Strilets"""
+Block of automation of communication management BAUS2,Block of automation of communication management BAUS2
+"BMD-4M ""Sadovnitsa"" landing combat vehicle with the combat module ""Bakhcha-U""","BMD-4M ""Sadovnitsa"" landing combat vehicle with the combat module ""Bakhcha-U"""
+"Combat attack helicopter Ka-52, code: ""Alligator"", index ""800.06""",Ka-52
+"Combat vehicle BM 9A331M tactical anti-aircraft missile complex ""TOR-M2""","Combat vehicle BM 9A331M tactical anti-aircraft missile complex ""TOR-M2"""
+Communication encryption equipment T-231-2A №163А-006634,T-231 crypto
+"Complex 1K144-E ""Sectant""","Complex 1K144-E ""Sectant"""
+Components from other Kh-101 missiles,Kh-101
+Corsair UAV,Corsair
+"CRP-antenna of UAV ""Shahed-136""",Shahed-136 / Geran-2
+"Delta (CBTS.611000, sample No.1)",Delta
+"Delta (CBTS.611000, sample No.2)",Delta
+"Electronic computer ""BAGET-43""","Electronic computer ""BAGET-43"""
+"Electronic computing machine ""Baget-62-037"" of the Kh-101 missile",Kh-101
+"Electronic computing machine ""Baget-83V"" from the 9-S-7760 ""Kinzhal"" aeroballistic missile (Kh-47M2)",Kinzhal
+Eleron UAV №204,Eleron-3
+Eleron-3SV UAV,Eleron-3
+Elins personal electronic computing machine,Elins personal electronic computing machine
+Equipment GLONASS and GPS for individualBreeze-KM-I (index 14C853) for individual use,Sat-nav receivers 14Ts82x
+"Equipment of internal communication, switching and control","Equipment of internal communication, switching and control"
+"Fiber-optic UAV ""Knyaz Vandal Novgorodsky""",Knyaz drones
+Filin cruise missile,Filin cruise missile
+Forpost-R UAV,Forpost-R
+"FPV drone ""Molniya-1""",Molniya FPV
+FPV drone of the airplane type Molniya-2R,Molniya FPV
+GERAN-2 (Shahed-136) ЬІ-8465,Shahed-136 / Geran-2
+Geran-2 UAV,Shahed-136 / Geran-2
+"Geran-2 UAV (series ""Э"", with R-60 missile)",Shahed-136 / Geran-2
+"Geran-2 UAV (series ""Э"", with Verba MPADS)",Shahed-136 / Geran-2
+Geran-3 UAV,Shahed-238 / Geran-3
+Geran-4 UAV,Geran-4
+Geran-4 UAV (October 2026),Geran-4
+Geran-5 UAV,Geran-5
+Gerbera UAV,Gerbera
+"Gerbera UAV, Tail Number ЫЫ 748",Gerbera
+"GLONASS/GPS receiver ""ORION"" 14C8009 (No. B0063018886)",Orion nav receiver
+Granat-3 UAV,Granat-3
+Guided missile 9M549 Tornado S MLRS,Tornado-S
+Guided missile R-77,Guided missile R-77
+"Gyro-stabilized optical-electronic system QIR50TPro of ""Fenix"" UAV",Fenix
+"Hardware machine of the automated mobile complex ""Thorn - MDM""","Hardware machine of the automated mobile complex ""Thorn - MDM"""
+Iindividual use Grot-M (index 14C822),GROT receivers
+Inertial measuring unit of the 9M544 MLRS Tornado-S missile,Tornado-S
+"Jammer S200A1-2 of the 9-S-7760 ""Kinzhal"" aeroballistic missile (Kh-47M2)",Kinzhal
+"KamAZ-63968 ""Typhoon-K""",KamAZ Typhoon-K
+"KamAZ-63968 ""Typhoon-K"" (chassis serial number ХТС 639680H1353076)",KamAZ Typhoon-K
+Kartograf UAV,Kartograf
+Kartograf UAV №2264,Kartograf
+Kartograf UAV №3121,Kartograf
+Kh-101 Missile,Kh-101
+Kh-59M2/M2A Missile,Kh-59
+Klyn UAV,Klyn UAV
+Knyaz Veschyi Oleg UAV,Knyaz drones
+Lancet loitering munition (Izdeliye-51),Lancet
+Lancet UAV,Lancet
+"MC1 (provides: Support for radio station control protocols R-168-25U-2, R-168-5UV, etc)",R-168 radios
+"Missile ""Iskander-K"" (April 2022)",Iskander-K
+Missile 3M-14 Kalibr,Kalibr
+Missile 3M-14 Kalibr (May 2022),Kalibr
+Missile 3M-14 Kalibr (produced not earlier than 2021),Kalibr
+"Missile 9M727 ""Iskander-K"" (Chernihiv, 19.08.2023)",Iskander-K
+Missile 9M727 Iskander-K,Iskander-K
+Missile Kh-101,Kh-101
+Missile Kh-101 (usage from June 2022),Kh-101
+Missile Kh-101 № 3152631318006,Kh-101
+Missile Kh-101 №3152631314019 (produced 1Q2023),Kh-101
+Missile Kh-101 №3152638829015 (used on 02.01.2024),Kh-101
+Missile Kh-101 №580844502,Kh-101
+Missile Kh-32 (No.3920603314015),Kh-32
+Missile Kh-59,Kh-59
+Missile Kh-59MK (used from March 2022),Kh-59
+Missile Kh-59Mk-2 №4262652337019,Kh-59
+Missile Kh-69 (No.9504514305003 and No.9504513406014),Kh-69
+"Mobile artillery reconnaissance and fire control point 1B119 ""Rheostat""","Mobile artillery reconnaissance and fire control point 1B119 ""Rheostat"""
+Mobile VHF radio station R-168-25U-2,R-168 radios
+Navigation equipment Kometa R8 of the 9M723-1 Iskander-M missile,Iskander-M
+Navigation equipment Orion (sample 1),Orion nav receiver
+Navigation equipment Orion (sample 2),Orion nav receiver
+Navigation equipment Orion (sample 3),Orion nav receiver
+Navigation system of the russian-made Shahed-136 UAV,Shahed-136 / Geran-2
+Navigation system SN-99 (produced in March 2023),Navigation system SN-99
+Operator terminal of the software and hardware complex for armoured vehicles of the Unified Control Systemof the Sozvezdiye Tactical Link (hereinafter referred to as the USS TK),Operator terminal of the software and hardware complex for armoured vehicles of the Unified Control Systemof the Sozvezdiye Tactical Link
+"Optoelectronic surveillance system of the ""All-Seeing Eye"" of the Corsair UAV",Corsair
+ORION UAV system,Orion UAV
+Orlan-10 UAV (June 2022),Orlan-10
+Orlan-10 UAV No. 14662,Orlan-10
+Orlan-10 UAV №11333 (May 2022),Orlan-10
+Parodya UAV,Parodya UAV
+Passive radar homing head for the ‘Geran-2’ UAV (PRGS-UAV),Shahed-136 / Geran-2
+Portable detector of non-contact explosive devices НР-900 (ШНВП “НР-900”),Portable detector of non-contact explosive devices НР-900
+"Portable KH/VHF radio station R-353NK Code ""Namotka-KS""","Portable KH/VHF radio station R-353NK Code ""Namotka-KS"""
+"Portable radio station R-187-P1 ""Azart-P1""","Portable radio station R-187-P1 ""Azart-P1"""
+"Portable radio station R-392, code ""Arakhis"" №35161090",R-392 Arakhis radios
+Portable receiver-indicator 14Ц822 (№7522736875),GROT receivers
+"Portable solid-state radar station for reconnaissance of short-range ground targets 1L277 ""Sobolyatnik""",1L277 radar
+"Portable VHF radio station R-168-5UN-1 Code ""Aqueduct-5UN-1""",R-168 radios
+Portable VHF radio station R-168-5UN-2,R-168 radios
+Printing device UD-M312,Printing device UD-M312
+PUKM-01,PUKM-01
+PUN-01,PUN-01
+"R-170V Exciter of HF-VHF radio transmitters ""Artek-Sirius"" (ЦЛ2.209.029)",R-166 Artek
+"R-438-M ""Belozer""",R-438 satcom
+R-438-N,R-438 satcom
+"Radio station R-166, code ""Artek""",R-166 Artek
+Radio station R-168-0.5UM,R-168 radios
+Radio station R-168-25U-2,R-168 radios
+"Radio station R-392ACM ""Arachis""",R-392 Arakhis radios
+"Radio station R-392AK2M ""Arakhis""",R-392 Arakhis radios
+"Receiver-indicator ""GROT-N"" (index 14Ц820, No. 7527730704)",GROT receivers
+"Remote control radar 1L111M-1 ""Fara-VR"" / radar 1L277 ""Sobolyatnik""",1L277 radar
+RM-48U strike missile,RM-48U strike missile
+"S-71K ""Kover"" cruise air missile",S-71 missiles
+"S-71M ""Monochrome"" cruise air missile",S-71 missiles
+S8000 Banderol cruise missile,S8000 Banderol cruise missile
+"Satellite communication station R-448 ""Auriga 1.2V""","Satellite communication station R-448 ""Auriga 1.2V"""
+Satellite navigation equipment 14Ц821C,Sat-nav receivers 14Ts82x
+Satellite navigation equipment 14Ц821С (№7524225841),Sat-nav receivers 14Ts82x
+Search receiver R-168PP,R-168 radios
+Shahed-107 UAV,Shahed-107
+Shahed-136 (GERAN-2) MS001,Shahed-136 / Geran-2
+Shahed-136 UAV (157 components),Shahed-136 / Geran-2
+Shahed-136 UAV № М214,Shahed-136 / Geran-2
+Shahed-238 UAV,Shahed-238 / Geran-3
+"Simulator of maneuverable air targets type E95M ""ENIKS""",E95M target drone
+Small-sized interference transmitter RP-377UVM1L,Small-sized interference transmitter RP-377UVM1L
+Small-sized laser device of the scout LPR-3,Small-sized laser device of the scout LPR-3
+"Strike UAV ""KUB""","Strike UAV ""KUB"""
+"Striking UAV ""Lastochka-M""","Striking UAV ""Lastochka-M"""
+Supercam-S150 UAV,Supercam
+T-72B3 tank,T-72
+T-72B3M Tank,T-72
+Tactical terminal TT-6.5 (№ 290287),Tactical terminal TT-6.5
+Takhion UAV,Takhion UAV
+The Izdelie-30 cruise missile,The Izdelie-30 cruise missile
+The Silok-01 electronic warfare (EW) system.,The Silok-01 electronic warfare  system.
+Thermal imaging observation device TPN-1NM,Thermal imaging observation device TPN-1NM
+"Transceiver of the global navigation system of satellite positioning ""Kometa"" (CRPA-antenna)",Kometa nav
+"Transportable transceiver ""GROT-V""",GROT receivers
+"U508 active radar homing head of the 9-S-7760 ""Kinzhal"" aeroballistic missile (Kh-47M2)",Kinzhal
+"UAV ""E95M"" air target type (No. 816)",E95M target drone
+"UAV ""Eleron-3SV""",Eleron-3
+"UAV ""Fenix""",Fenix
+"UAV ""Fenix"", Tail Number 20385",Fenix
+"UAV ""GERAN-2"" (Shahed-136) (K series)",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) black",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) Ы-12686",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) Ы-1276",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) Ы-1311",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) Ы-391",Shahed-136 / Geran-2
+"UAV ""GERAN-2"" (Shahed-136) Ы-954",Shahed-136 / Geran-2
+"UAV ""Lancet""",Lancet
+"UAV ""Lancet-3""",Lancet
+"UAV ""Lancet-3"", Tail Number 56. 024Z111 525",Lancet
+"UAV ""Mohajer-6""",Mohajer-6
+"UAV ""Orlan-10"" (July 2022)",Orlan-10
+"UAV ""Shahed-136""",Shahed-136 / Geran-2
+"UAV ""Shahed-136"" (use in 2025)",Shahed-136 / Geran-2
+"UAV ""Shahed-136"" №13084",Shahed-136 / Geran-2
+"UAV ""Shahed-136"" №13678",Shahed-136 / Geran-2
+"UAV ""Supercam S350"", tail number 2308S350FFC53535",Supercam
+"UAV ""Supercam-S350"" (April 2023)",Supercam
+UAV BM-35,UAV BM-35
+UAV Mugin-5 Pro,UAV Mugin-5 Pro
+"UAV S-70 ""Ohotnik""","UAV S-70 ""Ohotnik"""
+UAV Shahed-131,Shahed-131
+UAV Zala T-20,Zala T-20
+UMPC,Glide-bomb kits
+UMPC №КН23-002-7876,Glide-bomb kits
+Unified command and staff vehicle 1B186,Unified command and staff vehicle 1B186
+Unified interspecies guided munition (UMPB),Glide-bomb kits
+Unit CA249E of the T-231-2A communication channel classification equipment,T-231 crypto
+Universal gliding and correction module extended range (UMPK-PD),Glide-bomb kits
+Zala 421-16E UAV (captured in April 2022),Zala 421-16E
+Zala421-16E UAV,Zala 421-16E
+"ZSA-T ""Linza"" No. Z87539490М0000034","ZSA-T ""Linza"""

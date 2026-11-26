@@ -1,0 +1,4 @@
+build/
+__pycache__/
+# live scrapes are large; keep only the edition snapshots in git
+data/raw/gur/gur_raw_*.jsonl.gz

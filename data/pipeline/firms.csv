@@ -1,0 +1,14 @@
+firm,home,manufacturer_pattern
+u-blox,Switzerland,^u-blox
+Analog Devices,United States,Analog Devices|Maxim|Linear Technology|Dallas Semiconductor
+Altera,United States,Altera
+Xilinx,United States,Xilinx
+Texas Instruments,United States,Texas Instruments|Burr-Brown|National Semiconductor|Unitrode
+Microchip,United States,Microchip|Atmel|Micrel|Microsemi
+STMicroelectronics,France–Italy,STMicroelectronics
+Vishay,United States,Vishay
+Infineon,Germany,Infineon|International Rectifier|Cypress|Spansion
+onsemi,United States,ON Semiconductor|ONSEMI|Fairchild|Axsem
+NXP,Netherlands,NXP|Freescale
+Renesas,Japan,^Renesas$|Integrated Device Technology|Intersil
+Micron,United States,Micron Technology

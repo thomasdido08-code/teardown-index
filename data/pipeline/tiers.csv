@@ -1,0 +1,2494 @@
+part_name,tier
+"(256-position digital potentiometer, maximum supply current 1 μA in static mode, power supply 2.7 – 5.5 Volts, temperature range: from -40 ° C to +125 ° C)",3
+0 MSPS 100 MSPS 3V A/D converter,3
+0.37 GHz to 6.39 GHz Integer-N Synthesizer with Built-in VCO,1
+1 to 4 Clock Buffer,1
+1.2 GHz Low Noise Wide Band Amplifier,1
+"1/4"" Multi-Turn Miniature Square Kermet Trimmer for Surface Mount, Fully Sealed",3
+10 watt MOS transistor,3
+10-/12-bit digital to analog converter,3
+10-Bit Digital Temperature Sensor (ADC),1
+10-Bit Dual DAC,1
+10-Bit SD/HD Video Encoder,4
+10-bit video decoder,1
+10-channel general-purpose FET bus switch,3
+10-MHz to 50-MHz Bi-Directional control serializer,4
+10/100 Ethernet Transceiver,1
+10/100-Mbps Ethernet PHY transceiver,1
+10/100BASE-T with one port and different wrapping ratios,4
+100 MHz bandpass filter,2
+1000BASE-T magnetic module to support transceivers with 1:1 match ratios,1
+12-Bit ADC,1
+12-bit ADC,1
+12-bit ADC with differential input,1
+12-bit analog-to-digital converter,1
+12-bit dual DAC,1
+12-Bit Dual DAC,1
+12-Bit R/D Converter with Reference Oscillator,1
+12-bit serial,4
+12/14-Bit DAC,1
+128 KB × 36 cache memory is designed for interaction with high-speed microprocessors,1
+128Mb FLASH memory chip,1
+14-Bit ADC,1
+14-bit ADC,1
+14-bit analog-to-digital converter,1
+14-Bit DAC,1
+14-bit digital-to-analog converter,1
+14-bit high-speed digital-to-analog converter TxDAC+,1
+14-Bit Low Power Dual ADC,1
+14-channel configurable power management integrated circuit,1
+14bit Low Power Dual ADCs,4
+15-300mm F4 Continous Zoom Thermal Camera,3
+16 bit buffer and line driver with 3 outputs,1
+16 Mbit flash memory,1
+16 Mbit memory,1
+16-/24-Bit ADC,1
+16-bit (double-octal) non-inverting 3-position receivers,4
+"16-bit (suspended high) non-inverting 3-stand receivers, expandable for low voltage 3.3V",4
+16-bit ADC,1
+16-Bit ADC,1
+16-bit analog-to-digital converter,1
+16-bit analog-to-digital converter (ADC),1
+16-bit audio controller with 32K x 16 flash memory,1
+"16-bit buffer and line driver, for low voltage applications (3.3 V)",1
+16-bit buffer and linear driver,1
+16-bit buffer driver,1
+16-bit buffer/driver,1
+16-Bit Buffer/Driver with 3-State Outputs,1
+16-bit bus transceiver,1
+16-bit DAC,1
+16-bit drivers,1
+16-bit DSC for Precision Motor Control,4
+16-bit dual supply translating transceiver,1
+16-bit finite matrix of Schottky diodes,3
+16-bit microcircuit,1
+16-bit non-inverting 3-state receivers designed for low voltage 3.3V,4
+16-bit processor,1
+16-bit Registered Transceiver with 3-state outputs,1
+16-bit single-chip microcontroller,1
+16-bit transceiver,1
+16-bit Transceiver with 3-state outputs,1
+16-bit trigger,4
+16-Mbit flash memory boot sector chip,1
+16-megabit flash memory with a voltage of 3.0V,1
+16Kb/32Kb/64k ATMEL Flash System Programmable 8-Bit Microcontroller,1
+16MB RAM memory chip,1
+1755 Low Dropout Linear CMOS Regulators,4
+18-bit sequential approximation analog-to-digital converter (ADC).,1
+1A power supply module with maximum input voltage),3
+1M x 16 HIGH-SPEED LOW POWER ASYNCHRONOUS CMOS STATIC RAM,1
+1Mx4 bit high-speed statistical RAM,1
+2 GB flash memory,1
+2 × 2 RF transceiver with built-in 12-bit DAC and ADC,1
+2-channel driver,1
+2-channel interface device,1
+2-channel manchester code transceiver,1
+2-channel radio frequency power splitter,4
+2-channel relay module,3
+2-pin Schottky diode,3
+2-wire digital thermometer and thermostat,4
+2-wire serial EEPROM (memory) FM24C08A 1040JOR,1
+2.5 V or 3.0 ultra-high-accuracy reference voltage source,1
+2.5-V/3.3-V 16-bit buffer/driver,1
+2.5-V/3.3-V 16-bit buffer/driver with 3-stage outputs,1
+2.5-V/3.3-V 16-bit transceiver with 3-stage outputs,1
+2.5A IGBT/MOSFET driver,1
+2.7-volt 32-megabit flash memory,1
+20-Bit Dual Supply Bus Transceiver,1
+20-bit level-shift bus switch with 10-bit output resolution,3
+200 MHz High-Speed Multi-Phase PLL Clock Buffer,1
+226D 98LU1,4
+24-bit high-precision ADC with high bandwidth,1
+25 MHz crystal oscillator,3
+256 kbit RAM memory,1
+256Kb F-RAM memory,1
+28/40-pin 8-bit CMOS FLASH microcontroller,1
+29F2F08ABAGA,4
+2K Microwire Compatible Serial EEPROM - serial PPROM,1
+2×2 RF transceiver with built-in 12-bit DAC and ADC,1
+3 V voltage monitoring microcircuits,1
+3-axis digital accelerometer,3
+3-Axis Digital Compass,4
+3-axis MEMS accelerometer,3
+3-channel digital isolator,1
+3-pin adjustable current source,4
+3.3-V CAN Bus Transceiver,1
+3.3-V CAN transceiver,1
+3.3V CAN bus transceiver,1
+3.3V voltage regulator,1
+32 megabit flash memory,1
+32-bit 64 MHz microcontroller based on ARM Cortex M0+ RISC,1
+32-bit 80 MHz microcontroller based on ARM Cortex M4F,1
+32-bit ARM based microcontroller,1
+32-bit ARM-based MCU,4
+32-bit binary counter,1
+32-bit microcontroller,1
+32-bit microcontroller based on the ARM Cortex-M0 core,1
+32-bit microcontroller on the base,1
+32-bit microcontroller with ARM architecture on the Cortex-M4 core,1
+32-bit microcontroller with ARM architecture on the Cortex-M4 core (F3xx series),1
+32-bit processor,1
+32-bit watchdog timer chip DS1374C - 33,1
+32-megabit flash memory attachment,1
+32-megabit flash memory device,1
+36 V low cost high side current sensor,3
+3A Low Voltage LDO Regulator with Dual Input Voltages,1
+3G/4G USB modem,2
+"3Gbps HD/SD SDI interface chip, configurable I/O, adaptive cable EQ / cable driver 48-TLGA",1
+3GHz Surface Mount Frequency Synthesizer -40°C ~ 85°C 1899/12/30 2:01:00 16-TSSOP Clock/Frequency (RF) Synthesizer 2.7V ~ 5.5V,1
+3V – 5V multi-channel RS232 linear driver/receiver with 15kV ESD protection,1
+4 ADCs,4
+4 megabit flash memory,1
+4-bit bidirectional voltage-level translator,4
+4-bit binary counter,1
+4-Bit Dual-Supply Bus Transceiver,1
+4-bit high-speed statistical RAM,1
+4-bit transceiver,1
+4-bit transceiver VC4T245,1
+4-channel analogue-to-digital converter,3
+4-channel digital potentiometer,4
+4-channel frequency synthesizer,1
+4-channel optocoupler,3
+4-channel relay module,3
+4-input positive-NAND gate,4
+4-Port 10/100 Managed Switch,3
+4/8-channel high-performance analog multiplexer,1
+4/8-channel multiplexer,1
+4Mb static RAM (512K x 8),1
+5-channel power mgmt IC,4
+5.7-inch VGA display,4
+"50 kΩ, 0.25 W potentiometer",4
+"50 kΩ, potentiometer 0.25 W",4
+"512Kx8 low-power, low-voltage CMOS statistical RAM",1
+5A low-drop linear regulator that provides low voltage and high current MIC,1
+5th generation intelligent module,4
+6-axis inertial module,3
+6-Axis MEMS MotionTracking Device,4
+6-axis MEMS wide range motion tracker,4
+6-Bit Bus Transceivers With 3-State Outputs,1
+6-Bit Digital Attenuator,4
+6-bit digital step attenuator with an attenuation adjustment range of 31.5 dB in 0.5 dB steps,4
+6-channel inverter,4
+6-pin DIP optoisolator Darlington output (built-in resistors),3
+6-W stereo power amplifier,1
+64 MB flash memory,1
+64 MB flash memory chip,1
+64 Mbit flash memory,1
+64-bit microcontroller in QFP144 package,1
+64-bit Microprocessor,1
+64-megabit flash memory device,1
+64Mbit Serial Flash Memory,1
+7 V voltage monitoring microcircuits,1
+70 MHz bandpass filter,2
+72 MHz microcontroller,1
+74HC373A,4
+74НС54 1D,4
+75 watt MOSFET,3
+78M06,4
+"8 Bit (1Mbx8 or 512Kbx16, boot block) flash memory with 3V power supply",1
+8 MB CMOS 3.0 boot sector flash memory,1
+8-Bit AVR Microcontroller,1
+8-bit AVR microcontroller with programmable in-system flash memory of,1
+8-bit bidirectional voltage translator,4
+8-Bit bidirectional voltage-level translator,4
+8-Bit bidirectional voltage-level translator TXB0108,4
+8-bit Bus Switch,3
+"8-bit bus switch, temperature range from −40°C to +85°C",3
+8-bit CMOS,4
+8-bit CMOS microcontroller with EEPROM data memory,1
+8-bit DAC,1
+8-Bit Dual-Supply Bus Transceiver,1
+8-bit microcontroller,1
+8-Bit Microcontroller,1
+8-bit microcontroller - MCU,1
+"8-Bit Microcontroller ADuC8xx 8052 CISC 62KB Flash 3.3V/5V 52-Pin MQFP. Microconverter, 12-bit ADCs and DACs with built-in 62KB Flash MCU.",1
+8-bit microcontroller with 128 KB of ISP flash memory and CAN controller,1
+8-bit microcontroller with 128 KB programmable flash,1
+8-bit microcontroller with 16Kb/32Kb/64Kb flash system programming,1
+8-bit microprocessor,1
+8-bit register,4
+8-bit register SNx4LVC573A,4
+8-Bit Shift Register,4
+8-bit shift registers with 3-state output registers,4
+8-bit transceiver bus with dual power supply,1
+8-channel 12-bit A/D converter,3
+8-channel 12-bit analog-to-digital converter,1
+8-channel bidirectional logic level translator low voltage 1.15V - 5.5V,1
+8-channel bidirectional transceiver with three output states,1
+8-channel bus transceiver with 3 outputs,1
+8-channel dual directional transceiver,1
+8-channel high performance analog multiplexer,1
+8-pin 1-channel optocoupler,3
+8-pin 8-bit CMOS microcontroller with nanoWatt technology,1
+8-port network switch board,3
+8-watt amplifier module,1
+8/16-bit microcontroller,1
+800-1000MHz GaAs InGaP HBT Medium Power MMIC Amplifier adesio1517,1
+8ch Darlington driver,1
+9-axis device,4
+A 32-bit microcontroller,1
+A 32-bit microcontroller with Wi-Fi and Bluetooth,2
+A 32-bit real-time microcontroller for signal processing,1
+A 4-input 2-input NAND gate,4
+A component of the block,4
+A high-performance CMOS-based programmable logic device (PLD).,1
+A high-speed silicon CMOS device,4
+A linear regulator with two outputs and a small drop,1
+A microcircuit of an electronic component with a variable resistor with digital control,1
+"A module that combines a 3-A DC-DC converter, shielded inductor, and passives in a low-profile package.",3
+A non-volatile memory device,1
+A rare miniature non-isolated point-of-load DC converter for embedded applications.,3
+A real-time microcontroller with a connection manager,1
+A single-chip microcomputer optimized for digital signal processing,1
+A single-chip microcomputer optimized for digital signal processing (DSP) and other high-speed numerical processing applications,1
+A transceiver with a serial port,1
+A wide-range step-up/step-down voltage converter,3
+Absorbing (matched) wrench with shunt supports 50 ADG918,4
+AC coupled HDMI level shifter,3
+AC04 series microcircuits,1
+AC31041,4
+AC74 series microcircuits,1
+Accelerometer,3
+Accelerometer and gyroscope,3
+Accumulator elements,4
+Accumulator fuel supply system (Common rail),4
+Accurate 16 digit digital SPI temperature sensor,4
+Accurate real-time clock with built-in crystal oscillator,3
+ACEX,4
+Active amplifier X2,1
+Active continuous filter of 4th and 8th order,2
+Active frequency multiplier,4
+Actuator,4
+AD9861,4
+AD9958 direct digital synthesis synthesizer,1
+Adapter,4
+Adaptive cable equalizer,4
+Adaptive cable equalizer / cable driver,1
+ADC,1
+ADC driver	AD8138A,1
+ADC microcircuit,1
+ADC of the data stream,1
+"Addressable double digital potentiometer 100 kΩ, I2C, 8bit, DIP16, THT.",1
+ADG736 two-channel switch,3
+Adjustable current source,4
+Adjustable shunt regulator,4
+Advanced regulating pulse width modulator,4
+Advanced RS-485 common mode transceiver,1
+"Aeronaut ""Cam Carbon"" Blades",4
+AGC amplifier,1
+Aiming head control board,4
+Air blades,4
+Air compressor,4
+Air conditioner compressor,4
+Air conditioner cooling fan,4
+Air data processing module,4
+Air filter (engine air supply system),2
+Air pressure measurement sensor,4
+Air pressure measuring unit,4
+air pressure receiver,4
+Airspeed sensor,4
+Airspeed Sensor with Pitot tube,4
+ALLIANCE D microcircuit,1
+Allwinner H3 processor with 4 ARM Cortex-A7 cores,1
+ALTERA Stratix II FPGA chip,2
+Aluminium electrolytic capacitor,3
+Aluminum capacitor,3
+Aluminum electrolytic capacitor,3
+AMD chip,1
+Amplifier,1
+Amplifier of the radio path,1
+"Amplifier with variable gain, digital control",1
+An integrated circuit with a built-in complex programmable logic device,1
+"An open-drain, ultra-low-power, dual-supply comparator",1
+Analog - digital 12 bit converter,3
+Analog Devices analog-to-digital converter,1
+Analog Devices signal processor,1
+Analog jumper,4
+Analog key,4
+Analog multiplexer,1
+Analog Multiplexer,1
+Analog peripherals 8-bit ADC,1
+Analog switch,3
+analog switch,3
+"Analog Switch Chip (SPDT, 4 Channel, 14 Ohm, 9 V to 40 V, ± 9 V to ± 22 V, TSSOP, 20 Pin)",1
+"Analog switches, multiplexers",1
+Analog to digital converter,3
+Analog-digital converter,3
+Analog-Digital Converter,3
+Analog-to-digital converter,1
+Analog-to-Digital Converter,1
+"Analog-to-digital converter (6 channels, 16 bits, 2.7V, 5.5V, SOIC-28)",1
+Analog-to-Digital Converter 12 bit,1
+Analog-to-Digital Converter 20 bit,1
+Analog-to-Digital Converter 24 bit,1
+Analogue comparator,1
+Analogue extensions,4
+Analogue matrix switcher,3
+Analogue multiplexer,1
+Analogue potentiometer,4
+Analogue-to-digital converter,3
+AND logic,1
+Angle Position Encoder Sensor,4
+Angle sensor of the system of adjusting the level of the hydropneumatic suspension of the car,4
+Antenna cable,3
+Antenna for receiving CRPA satellite signals,3
+Antenna grid,3
+Antenna RTK,3
+anti-mine seats,4
+"Apacer SSD drive (serial ATA Flash Drive, capacity 256GB)",1
+Aquila Unistrong 638009C14 AQ-005 chip,1
+architecture,4
+ARM microcontroller,1
+ARM processor,1
+ARM Y,4
+ARMz microcontroller,1
+ASPD-4525 Air Speed Sensor,4
+Assembly of Darlington transistors,3
+Assembly of inverters,4
+Asymmetric protection diode,3
+Asynchronous memory,1
+ATmega 324,4
+ATmega microcontroller,1
+ATMEGA microcontroller128,1
+ATMEGA microcontroller2560,1
+ATmega1284P,4
+ATmega128A,4
+ATMEGA128A AU 1315,4
+ATmega2560,4
+ATMEGA2560 16U-TW,4
+Atmel microcircuit,1
+ATMEL microcircuit,1
+ATMEL XMEGA64A3U,4
+Attachment of EPC divisions into two main blocks - configuration controller and flash memory,1
+Attachment of memory,1
+Attenuato,4
+Attenuatorof the type,4
+Audio amplifier,1
+Audio codec,1
+Audio codec microcircuit,1
+Audio signal transformer,3
+"Audio transformer / signal transformer 1000BaseT SMD NonPoE 350uH, 65 Ohm, 1 Pulse Port",3
+Audio/video controller,1
+Audio/Video Decoder,1
+Audio/video encoder,4
+Automatic gearbox,4
+Automatic switches,3
+"Autonomous CAN controller, bitrate up to 1 Mbit/s",1
+Autonomous lithium-ion charger,4
+AXICOM relay,3
+Axicom signal relay,3
+Balanced mixer,4
+Band pass filter,2
+Bandpass filter for surface acoustic waves TA1163A,2
+Bandpass filter on surface acoustic waves,2
+Barometric pressure sensor MS561101BA03,4
+Battery,4
+Battery element,4
+Battery fast charge controller,1
+Battery housing,4
+Battery pack,4
+Battery protection and charge control module,4
+Battery type,4
+"Battery, lithium 3V",4
+"BC856A 
+ Transistor",3
+BCD-To-Seven-Segment decoder/driver,1
+Bearings,4
+"Bearings (main, connecting rod) (car engine)",4
+Bi-Directional Control Serializer and Deserializer,4
+Bidirectional buck-boost battery charge controller,1
+Bidirectional connector,3
+Bidirectional splitter,4
+Bidirectional universal shift register,4
+Bimetallic thermostat,4
+Binary logic chip SN54LVC02A,1
+Binary logic chip SN54LVC08A,1
+Binary logic chip SN54LVC32A,1
+Binary logic chip SNx4HCT374,1
+Bipolar transistor,3
+Blackfin processor with CAN connection for automotive and industrial applications Analog devices,1
+Bluetooth module,2
+Bluetooth module WT32i,2
+Bluetooth transceiver and receiver module,2
+Board,4
+Board element,4
+Board level pressure sensor,4
+Bootable flash memory,1
+Bosch boost pressure sensor,4
+BPF-A335,4
+Brake calipers in knorr-bremse assembly,4
+Brake mechanism model SN7307 series SN7 (brake system),4
+Brake pads,4
+Brake pneumatic chambers knorr-bremse,4
+Bridge rectifier,3
+Bridge Rectifier,3
+Broadband,4
+Broadband amplifier,1
+Broadband DA converter chip MxFE 175000KSPS 12Bit 72Pin LFCSP EP T/R,1
+Broadband interference suppression filter,2
+Broadband operational amplifier with high output power,1
+Broadband receiver interface,1
+Broadband RF power amplifier,1
+Broadband RF transistor,3
+Broadband synthesizer with built-in VCO,1
+"Broadband, digital down-converter",3
+Brushless Gimbal Motor,4
+Brushless motor,4
+Brushless resolver,4
+Buck DC to DC Converter,3
+Buck Regulator,4
+Buck regulator,4
+Buck voltage converter,3
+Bucket stretchers (orthopedic),4
+Buffer,4
+Buffer amplifier HMC311SC70,1
+Buffer CY2309ZXI,4
+Buffer gateway,4
+Buffer/driver,1
+Buffer/Driver with 3-State Outputs,1
+Built-in 10/100/1000 Ultra Gigabit Ethernet transceiver,1
+Built-in integrated circuit,1
+Built-in Intel386 EX microprocessor,1
+Built-in microprocessor,1
+Built-in processor,1
+Built-in silicon pressure sensor for measuring absolute pressure in the altimeter or barometer manifold,4
+Bus conversion bridge PCI Express to PCI,4
+Bus Switch,3
+Bus switch,3
+Bus switch (CMOS),3
+Cable bundle,4
+Camera,3
+camera,3
+Camera block,3
+Camera controller,1
+Camera microprocessor,1
+Camera module,3
+Camera sensor,3
+Camera with 3-axis gimbal,3
+CAN Bus Controller,1
+CAN Bus Transceiver,1
+CAN bus transceiver,1
+CAN transceiver,1
+CAN transceiver interface,1
+CAN TRANSCEIVERS,1
+Capacitor,3
+Capacitor (chip capacitor for surface mounting),1
+Capacitor for suppression of electromagnetic interference,3
+Capacitor SMD tantalum,3
+Car armoring (Combined: armored steel and ceramic armor protection),4
+Car suspension elements,4
+"Car tire Michelin XZL+, (undercarriage)",4
+Carburettor,4
+Card reader,4
+Card reader for installing an SD card,4
+"Cardan shaft (main, additional) of the car transmission",4
+"Cardan shaft in the drive assembly of the left wheel gearbox (front, middle, rear axle)",4
+Cardan transmission,4
+Carrier board,4
+CCD Matrix surveillance camera,3
+Cellular communication module,2
+Central cross board,4
+Ceramic capacitor,3
+Ceramic chip capacitor,1
+Ceramic GPS/GLONASS antenna,2
+Charge controller,1
+Charge controller microcircuit,1
+Charge meter interface and digital battery management,1
+"Charger for Li, NiCd, NiMH, lead-acid batteries",4
+Chip,1
+Chip (16-bit buffer/driver with 3-state outputs),1
+Chip (4-Megabit (512K x 8-bit) CMOS 5.0V Uniform Sector Flash Memory),1
+Chip (buffer driver),1
+Chip (buffer/line driver with open collector outputs),1
+Chip (double D-type set-and-reset flip-flop; positive-edge flip-flop),1
+Chip (fast buffer line driver),1
+Chip (flash memory),1
+Chip (microprocessor with low power consumption),1
+"Chip (Mixed Signal Microcontroller, Supply Voltage, 1.8 . . . 3.6 Volts, 16-bit RISC Architecture with Ultra-Low Power Consumption, 60 KB Flash, 2048 Bytes RAM, 12-bit ADC, Dual DAC, 2 ports USART, I2C, HW Mult, DMA 64-VQFN from -40 to 85 ˚С)",1
+"Chip (op amp, input bias voltage 100 µV, input bias current 3 nA, operating temperature -40 ℃ to +85 ℃)",1
+"Chip (ULP 16 MHz mixed-signal microcontroller with 256 KB FRAM, 8 KB SRAM, 48 IO, ADC12, with IF scanning, AES 64-VQFN from -55 to 95°C, supply voltage 1.8 to 3.6 Volts)",1
+"Chip AM29F016D (16Mbit (2M x 8bit) CMOS, flash memory with unified sectors)",1
+Chip ceramic filters for communication,2
+Chip charge controller LTC4155EUFD,1
+Chip CPLD,1
+Chip CPLD ALTERA MAX II Family 440 Macrocells 201.1MHz 0.18µm Technology 1.8V 100 Pins EPM570GF 100I5N,2
+Chips,1
+Chipset,1
+Chipset Intel Express Chipsets,1
+Choke,3
+Chokes with shielded wire,3
+Clock,4
+Clock buffer,1
+Clock Buffer,1
+Clock driver,1
+Clock fan-out buffer,4
+Clock generator,1
+Clock multiplexer,1
+Clock Multiplier,4
+Clock OSCaR,4
+Clock oscillator,3
+Clock oscillator 50MHz,3
+Clock oscillator HCMOS/TTL 20MHz,3
+Clock oscillator of low voltage,3
+Clock signal distributor,4
+Clutch,4
+CMOS Clock Buffer,1
+CMOS hex inverter,4
+CMOS integrated circuit,1
+CMOS logic chip (HE),1
+CMOS logic Triple 3-input AND gates,1
+CMOS non-volatile EEPROM (High Speed ​​Memory),1
+CMOS Optocoupler,3
+CMOS RS-232 driver/receiver,1
+"CMOS RS-232 driver/receiver, 120 kb/s data transfer rate, built-in DC-DC converters",1
+CMOS STATIC RAM 256K (32 thousand x 8-bit),1
+CMOS switched-capacitor voltage converter,3
+CMOS transceiver,1
+CMOS transistor,3
+CMOS TTL-compatible dual 4:1 multiplexer/demultiplexer,1
+CMOS-buffer with quad bus,4
+Coilcraft,3
+Combined Bluetooth and Wi-Fi module,2
+Combined gyroscope and 3-axis accelerometer with digital SPI interface,1
+Combined LC filter,2
+Common Rail CR Bosch High Pressure Fuel Pump (Engine Fuel Supply System),4
+Communication cable,4
+Communication interface,1
+Communication interface MAX3224E,1
+Compact solid-state microwave amplifier,1
+Comparator,1
+Comparator ),1
+Comparator microcircuit,1
+Comparator of low power,1
+Complex programmable logic device,1
+Complex programmable logic device (CPLD),1
+Complex Programmable Logic Integrated Circuit (CPLD),1
+Component,4
+"Components of the cylinder-piston group (sleeve, piston, rings, fingers) (car engine)",4
+Computer module,4
+Condenser,4
+Configuration device,1
+Configuration Device for memory chips,1
+Connecting cable,4
+Connecting cable loop,4
+Connection cable,4
+Connector,3
+Connector 234,3
+Connector 940,3
+"Connector F, plug, RG-58, screw-on 
+(Twist-on)",3
+Constant frequency controller with PWM,1
+Constant voltage converter,3
+Control driver,1
+Control scheme,4
+Controlled zener diode 2.5...36V with temperature stability,3
+Controller,1
+Controller interface,1
+Controller module,1
+Controller of digital signals,1
+Converter,3
+Converter (DC/DC TSM series; 1W; Input: 4.5÷5.5V; Output: 5BDC; Output: 200mA,3
+Converter of information from a serial port,3
+Converter: DC/DC; 2 W; Uin: 18÷36V; U output: 5 V DC; Output: 400 mA; SIP8,3
+Cooler ebmpapst 8414 NML,4
+Cooling cooler,4
+Cooling fan,4
+Cooling system (Stirling machine),4
+Corner socket,4
+Course camera,3
+CPLD,1
+"CPLD microcircuit ALTERA MAX II family 192 macro elements 201.1 MHz, 0.18 μm technology 2.5/3.3 V, 100 FBGA contacts",2
+CPLD-Complex Programmable Logic Device CPLD –256MC 10NS 208RQFP,1
+CPU,4
+CPU microcircuit with differential outputs,1
+CPU regulator,4
+Crosspoint switch,3
+CRP antenna,3
+Cryocooler,4
+Crystal oscillator 50MHz,3
+Crystal unit NX2016SA for OA/AV wireless short radius communication,3
+Current Amplifier,1
+Current and voltage monitor,4
+Current and voltage sensor	MAX471,4
+Current converter,3
+Current feedback amplifier,1
+Current Feedback Differential ADC Driver Dual ±5.5V/11V 24-Pin LFCSP EP T/R,1
+Current measurement amplifier (high-voltage bidirectional shunt current monitor in an 8-pin NSOIC package),1
+Current monitoring sensor amplifier,1
+Current Sense Amplifier,1
+Current sensor,3
+Current Sensor,3
+Current Transformer,3
+Current-Sense Amplifiers,1
+CY7C009V RAM,1
+Cyclone IV programmable logic device,1
+Cylinder assembly,4
+D-trigger,4
+D-type double trigger,4
+D-type latches for load management,4
+D-type trigger,4
+D9WVC memory chip,1
+DAC microcircuit (12-bit),1
+Damper of torsional oscillations of the PNVT (high-pressure fuel pump) drive,4
+DAS1575R1602H4,4
+DAT-31R5A+ series digital step attenuator,4
+Data Selector/Multiplexer,1
+Data transfer module,4
+Databus Interface Transformer,1
+DC contactor,4
+DC converter,3
+DC line filter,2
+DC regulator,4
+DC to DC converter,3
+DC voltage converter,3
+DC-DC Converter,3
+DC-DC converter,3
+DC-DC converter 3.1V to 32V,3
+"DC-DC converter 36V to 15V, 5A",3
+"DC-DC converter 4V to 36V, 200kHz simple step-down regulator 3A",3
+DC-DC converter PSD-0509,3
+DC-DC integrated converter,1
+DC-DC voltage regulator,1
+DC-to-DC controller,1
+DC/DC controller,1
+DC/DC converter,3
+DC/DC Converter,3
+DC/DC module,3
+DC/DC power module with integrated inductor,1
+DC/DC step-down regulator,3
+DC/DC voltage converter,3
+DDR SDRAM chip,1
+DDR2 memory,1
+DDS signal generator,4
+DDS synthesizer,1
+Decoder/demultiplexer,1
+"Delphi Series V36SE, power modules, up to 50W",3
+Demodulating logarithmic amplifier with limiter output,1
+Demultiplexer SN74LVC138A,1
+Deserializer,4
+Diesel engine KamAZ–740.354.450,4
+Differential ADC driver,1
+Differential ADC Driver,1
+Differential ADC driver with low level of distortion,1
+Differential amplifier,1
+Differential amplifier with unipolar power supply,1
+Differential data transmitter,4
+Differential line driver with 3-way output,1
+Differential linear receiver,4
+Differential pressure sensor,4
+Digital accelerometer,3
+Digital analog converter,3
+Digital attenuator,4
+"Digital Attenuator, 31 dB, 5-Bit",4
+Digital camera,3
+digital clock,4
+Digital differential pressure sensor,4
+Digital gyroscope,3
+Digital isolator,1
+Digital Isolator,1
+Digital magnetic field sensor,4
+Digital media processor,1
+Digital Potentiometer,4
+Digital potentiometer,4
+Digital potentiometer AD8400,4
+Digital pressure and altitude sensor,4
+Digital servo drive,4
+Digital signal controller,1
+Digital signal converter,3
+Digital signal processor,1
+Digital Signal Processor,1
+"Digital signal processor (C2000 real-time microcontroller, 32-bit MCU with 100-MHz, 128-kb flash, 12 PWM)",1
+Digital signal processor and controller,1
+Digital SPI temperature sensor,4
+Digital Synthesizer (DDS),1
+Digital thermometer,4
+Digital thermometer and thermostat,4
+Digital to analogue converter,3
+Digital video camera,3
+Digital video camera in the IR range,3
+Digital video decoder,1
+Digital-analog converter,3
+Digital-to-analog converter,1
+Digital-to-Analog Converter,1
+Diode,3
+Diode couple,3
+diode couple of a linear voltage regulator,1
+Diode matrix,3
+Diode module,3
+Diode pair,3
+Diode rectifier bridge,3
+Direct current relay,3
+Direct Digital Synthesizer,1
+Direct quadrature demodulator 700-3800 MHz,4
+"directed
+HF splitter",4
+Directional splitter in the frequency band from 10 MHz to 500 MHz,1
+Discrete network transformation module,4
+Display,4
+Display module,4
+Display unit,4
+Distribution box,4
+"Distributor 1x8
+(468528. 031)",4
+Divider / sumator,4
+Divider/adder,4
+Double ADC,1
+Double N-channel MOSFET,3
+Double-Data-Rate-3 DRAM,1
+Downconverter IC with PLL for satellite tuners,1
+Driver,1
+Driver/receiver,1
+DS+ 2431,4
+DS3232 real-time clock,4
+DSP chip (Digital Signal Processor),1
+DSP digital signal controller,1
+DSP processor,1
+DSP TMS320 digital signal controller,1
+Dual 14-bit analog-to-digital converter,1
+Dual 30 MHz programmable filter and variable gain amplifier,2
+Dual 8A Low V IN DC/DC μModule Regulator,3
+Dual 8A or Single 16A DC/DC μModule Regulator,3
+Dual Asynchronous Communications Element,4
+Dual band wireless - AC 8265 adapter,4
+Dual CMOS D-type flip-flop,4
+Dual digital to analog converter,3
+Dual inverting high speed driver,1
+Dual Isolated RS232 µModule Transceiver,1
+Dual low power transceiver,1
+Dual low-power video amplifier,1
+Dual manchester code transceiver,1
+Dual Manchester Code Transceiver,1
+Dual MOSFET driver,1
+Dual N and P-channel MOSFET,3
+Dual N-channel MOSFET,3
+Dual N-Channel MOSFET PJL9850,3
+Dual operational amplifier,1
+Dual Operational Amplifier,1
+"Dual operational amplifier 26 V, 700 kHz",1
+Dual operational amplifier with a single power supply,1
+Dual Positive-Edge-Triggered D-Type Flip-Flops,4
+Dual programmable filter and variable gain amplifier,2
+Dual pulse regulator,4
+Dual RS232 driver/receiver with low power 5V and 0.1uF capacitors,1
+Dual step-down power supply module,3
+Dual-band antenna,3
+Dual-band GNSS module,2
+Dual-channel digital isolator,1
+Dual-function fuse resistor,3
+Dual-view spherical gimbal,4
+EEPROM,1
+EEPROM memory,1
+EEPROM memory chip,1
+Eight channel mini receiver,4
+Eight-bit bidirectional voltage-level shifter,4
+Eight-bit buffer,4
+Eight-bit buffer register,4
+Eight-channel GNSS jamming system,2
+Electric brushless cardan motors,4
+Electric fuel pumps,4
+Electric motor,4
+electric motor,4
+Electric plug,4
+Electrical connector,3
+Electrical control device (switch),3
+Electrical cut-off sensor,4
+Electrolyte capacitor,3
+Electrolytic capacitor,3
+Electrolytic capacitor:,3
+Electrolytic capacitors,3
+Electromagnetic contactor,4
+Electromagnetic interference filter,2
+Electromagnetic relay,3
+Electromechanical relay,3
+Electronic compass sensor module,4
+Electronic component,4
+Electronic control unit,4
+Electronic identifier,4
+Electronic ignition module,4
+Electronic speed controller (ESC),1
+Electronic thermostat with a sensor,4
+Embedded flash device,1
+Embedded Flash Memory,1
+EMI filter,2
+EMI Suppression Filter,2
+Encoders from 8 lines to 3 rows,1
+Engine,4
+Engine control unit,4
+Engine cooling system fan (car engine),4
+Engine driver,1
+Engine ignition system,4
+Engine throttle servo,4
+Engine.,4
+EPROM memory,1
+Ethernet 10/100BASE-T module,1
+Ethernet chip CTLR Single Chip 10Mbps/100Mbps/1000Mbps,1
+Ethernet controller,1
+Ethernet integrated switch,1
+Ethernet module,1
+Ethernet switch,1
+Ethernet Switch Controller,1
+Ethernet Telecom Transformer,1
+Ethernet transceiver,1
+Ethernet transformer,1
+Ethernet transformer/choke,1
+Exhaust gas treatment system,4
+"Explosion-proof landing seats ""Plasan Terra""",4
+F4106 BRUZ,4
+FA wireless LAN module,4
+Fan,4
+Fast switching power MOSFET,3
+Fastening (loop) of the armored escape hatch,4
+FBGA-48 Flash memory for 16 MB,1
+Ferroelectric RAM,1
+FET (field-effect transistor),3
+FET bus switch,3
+FET transistor,3
+Fibre optic gyroscope,3
+Field effect transistor,3
+Field effect transistor (MOSFET),3
+Field MOSFET transistor,3
+Field programmable arrays,4
+Field Programmable Gate Array,4
+Field programmable gate array,4
+Field programmable gate array (FPGA),1
+Field Programmable Gate Array (FPGA),1
+Field transistor,3
+Field-effect transistor,3
+Field-programmable gate array (FPGA),1
+Field-Programmable Gate Array (FPGA),1
+Film capacitors,3
+Filter,2
+Filter for direct current lines,2
+Filter on surface acoustic waves,2
+Fit Fintek,4
+five-point fixation systems,4
+Fixed and adjustable low-drop positive voltage stabilizers,3
+Fixed point digital signal processor,1
+Fixed-point digital signal processor,1
+Flash drive 8 GB,1
+Flash mediaSan Disk Ultra,1
+Flash memory,1
+FLASH memory,1
+Flash memory 128 MB,1
+Flash memory 45DB642D,1
+Flash memory chip,1
+Flash memory chip 80C17D9,1
+Flash memory for the boot sector,1
+Flash memory JS28F128J3F75,1
+Flash memory M25P10,1
+Flash memory M25P128,1
+Flash memory SBC chip,1
+Flash memory support,1
+Flash memory Winbond integrated circuit,1
+Flash memory with serial interface,1
+Flight controller,1
+Floating Point Digital Signal Processor (DSP),1
+FM demodulation IC for broadcast satellite receivers,4
+Four-channel 2.5 kV isolators with a built-in DC-DC converter,3
+Four-channel D-type trigger,4
+"Four-channel digital potentiometer
+with digital interface",1
+Four-channel multiplexer,1
+Four-channel multiplexer / demultiplexer,1
+Four-channel operational amplifier,1
+"Four-element small-sized adaptive antenna array ""Comet-M""",3
+Four-element small-sized adaptive antenna array of the series,3
+Four-line receiver,4
+Four-stroke aircraft engine,4
+FPGA,1
+FPGA ALTERA Cyclone V,2
+FPGA based on a dual ARM® Cortex™-A9 processor,1
+FPGA chip,1
+FPGA chip of the ALTERA Cyclone III family 39600 cells 402 MHz 65nm technology 1.2V 324 pins,2
+FPGA chip of the ALTERA Cyclone IV family 49888 cells 65nm technology 1.2V 672 pins,2
+FPGA configuration memory,1
+FPGA is managed memory,1
+FPGA microcircuit,1
+FPGA SPARTAN-6,1
+FPV Camera,3
+FPV camera in the visible optical wavelength range,3
+FRAM memory,1
+FRAM memory chip,1
+FRAM Module,1
+Frequency Converter,3
+Frequency divider,4
+Frequency filter,2
+Frequency mixer,4
+Frequency stabilizer,3
+Frequency synthesiser,1
+Frequency synthesizer,1
+Frequency synthesizer in the AFC system,1
+Frequency synthesizer with fractional delay factor,1
+Front brake chamber K002623N00 series SN7 (brake system,4
+Front suspension arms,4
+Front wheel brake disc (brake system),4
+Fuel coarse filter with fuel heating,2
+Fuel control pedal,4
+Fuel filter,2
+Fuel filter (engine fuel supply system),2
+Fuel pump,4
+Full duplex transceiver,1
+Full duplex transceivers,1
+Full-featured single crystal controller,1
+Full-HD IP Camera SoC,3
+Fuse,3
+Fuse Series 443 NANO2,3
+Gas analyzer,4
+"Gas analyzer ""Sensis 500""",4
+Gate array programmed,4
+Gate Driver,1
+General purpose RF directional coupler,4
+Generator,4
+Generator of clock signals with three systems of phase auto-adjustment of frequency,4
+Geomagnetic sensor (magnetometer),4
+Germanium diode,3
+Gigabit Ethernet (GbE) transceiver,1
+Gigabit Ethernet controller,1
+Gigabit Ethernet PHY,1
+Gigabit Ethernet transceiver,1
+Gigabit Ethernet Transceiver with RGMII Support,1
+Gigabit Ethernet transformer,1
+Gimbal motor,4
+GLONASS/GPS module,2
+GNAV-14M,4
+GNSS antenna,2
+GNSS Chip,2
+GNSS module,2
+GNSS module MAX-M10S based on M10050-KB,2
+GNSS module NEO-M8N based on the receiver M8030-KT,2
+GNSS module NEO-M9N based on the receiver M9140-KB,2
+GNSS receiver,2
+GNSS receiver (receiver),2
+GNSS receiver MAX-M10S based on M10050-KB,2
+GNSS signal receiver,2
+GOAT,4
+GPS antenna,2
+GPS antennas,2
+GPS GLONASS antenna,2
+GPS module,2
+GPS navigation receiver,2
+GPS navigation receiver GLONASS STA8088F,2
+GPS receiver,2
+GPS receiver based on Ublox GPS module,2
+GPS signal receiver,2
+GPS tracker chip,2
+GPS-antenna CGGP.18.4.C.02 T-003,2
+GPS-GLONASS microcircuit,2
+GPS/ RTK receiver,2
+GPS/GLONASS ceramic antenna,2
+GPS/GLONASS receiver chip,2
+Graphics core,4
+Graphics processor,1
+GS3703FEY module,4
+GS859X operational amplifier,1
+GSM/GPRS module,2
+GSM/GPS module,2
+Gyroscope,3
+Gyroscope board,3
+Gyroscope/accelerometer,3
+Gyroscopic sensor,3
+Hall Effect Current Sensor,3
+Hall effect current sensor,3
+Hall-effect linear current sensor,3
+Hardware microcircuit,1
+HC4046,4
+HCT04 Assembly of inverters,4
+HDMI switcher with configurable HPD output,3
+Hemisphere Phantom P34 OEM 10Hz RTK board. High-precision GNSS board module GPS receiver,2
+Hex inverter,4
+Hex Inverter with a Schmitt Trigger,4
+Hex inverting Schmitt trigger,4
+Hex non-inverting buffer,4
+Hex non-inverting precision Schmitt-trigger,4
+Hex Schmitt-Trigger Inverter,4
+Hex schmitt-trigger inverter,4
+Hexagonal inverter,4
+Hexagonal inverter (high performance CMOS with silicon gate),4
+Hexagonal inverter with Schmitt trigger input,4
+"Hexagonal power MOSFET (case filled with resin, marking damaged)",3
+HF filters,2
+HF frequency mixer,4
+HF mixer,4
+HF transformer,3
+HF Transformer,3
+High current inductor,3
+High electron mobility transistor (HEMT),3
+High folding microcontroller,1
+High frequency amplifier,1
+High Linearity LNA Gain Block,4
+High performance 8-bit microcontroller with low power consumption,1
+High performance clock generator,1
+High performance CMOS static storage attachment,4
+High performance digital signal module with fixed point DSP,1
+High performance hybrid connector,3
+High performance InGaP HBT MMIC amplifier,1
+High performance microcontroller,1
+High performance programmable logic device,1
+High performance radio frequency transmitter,4
+High Performance RF Agile Transceiver,1
+High Performance Schottky Rectifier,3
+High performance signal generator,4
+High power resistor,3
+High precision operational amplifier,1
+High precision reference,1
+High Precision Voltage Reference,1
+High resolution CMOS dynamic RAM,1
+High speed CMOS switch,3
+High speed instrument amplifier with programmable gain,1
+High speed linear driver/receiver,1
+High voltage MOSFET and IGBT drivers,1
+High Voltage Rectifier,3
+High-frequency amplifier,1
+High-frequency multiphase controller,1
+High-frequency transistor,3
+High-line amplifier,1
+High-performance active mixer,4
+High-performance AMD processor,1
+High-performance digital media processor,1
+High-performance four-channel wideband radio frequency receiver,4
+High-performance fully static 32-bit X86 processor,1
+High-performance low-power digital signal processor,1
+High-power automotive relay (electrical equipment),3
+High-precision reference voltage source,1
+high-quality 100-megabit Ethernet transformer for SMD mounting,1
+High-quality RF coaxial cable RG-174 A/U (made according to the requirements of the military standard MIL-17-D),4
+High-resolution three-axis accelerometer,3
+High-side current-sense amplifier,1
+High-speed 2-channel transceiver with interface,1
+High-speed 2-channel transceiver with RS-232 interface,1
+High-speed asynchronous CMOS static RAM,1
+High-speed bus interface,1
+High-speed CMOS dynamic RAM,1
+High-speed controller,1
+High-speed CVOS 20-bit bus switch with flow separation,3
+High-Speed Differential Line Driver,1
+High-speed dual comparator,1
+High-speed dynamic random access memory,1
+High-speed dynamic random access memory with an asynchronous interface,1
+High-speed instrumental amplifier with programmable gain,1
+High-speed intelligent transceivers,1
+High-speed linear regulator,1
+High-speed optocoupler,3
+High-speed SD/HD video encoder,4
+High-speed static RAM,1
+High-speed transceiver,1
+High-speed two-channel transceiver,1
+"High-speed, +3.3 V, 2-channel RS232/V.28 receiver/transmitter with 460 kbps data rate",4
+"High-speed, energy-efficient chip",1
+"High-speed, synchronous, switchable, two-port, static OZP",3
+High-voltage contact tip,4
+High-voltage power module,3
+High-voltage power rectifier,3
+"High-voltage, high-voltage array of Darlington transistors",3
+Highly dynamic memory with sufficient access,1
+Highly integrated 8-bit microcontroller,1
+Highly integrated encoder/decoder (codec) for power and audio control,1
+Highly Integrated System on a Chip (SoC) IEEE 802.11 2.4GHz,1
+"Highly integrated, low-profile, highly efficient synchronous power system",1
+Highly productive programmed matrix,4
+Highly productive programming logic (PLD) based on CMOS,1
+Highly stable quartz generator,3
+"High−voltage, high−current Darlington driver",1
+Hinges of the hatch of the company's evacuation production,4
+Honpho TS130C-01 camera,3
+Humidity and Temperature Sensor,4
+Humidity and temperature sensor on board,4
+Hybrid,4
+Hybrid capillary for a frequency of 1200 - 1700 MHz,4
+Hybrid Coupler,4
+"Hybrid Coupler 3 dB, 90°",4
+Hybrid DC-DC converter,3
+Hydraulic planetary winch,4
+Hydropneumatic explosion-proof suspension,4
+Hytera tangent,4
+I/O accelerator,4
+I/O controller,1
+I/Q modulator,4
+I2C-programmable to any frequency,4
+IC ADC driver,1
+IC transistor,3
+IC with programmable logic,1
+iCMOS multiplexer,1
+ICOM radio receiver,4
+IDT 71024 chip (1Mb static RAM (128K x 8-bit)),1
+IDT 74FCT chip (fast cmos 1-of-8 decoder with enable),1
+IDT integrated circuit,1
+IF path of a narrowband FM receiver,4
+Image Signal Processor,1
+Impulse controller,1
+IMU (Inertial measurement unit),3
+IMU and geomagnetic sensor,3
+IMU module,3
+In the corner nest,4
+In-phase throttle chip,1
+In-system programmable configuration of the Flash platform,1
+Indilinx controller,1
+Individual RF isolator with coaxial isolator,1
+Inductance coil,3
+Inductance coil 150μH,3
+Inductance coil 221,3
+Industrial battery,4
+Industrial system-on-module (SoM),4
+Inertia module,4
+Inertial Measurement Unit (IMU),3
+Inertial module,3
+Inertial Sensor,3
+Inertial sensor,3
+Inertial sensor I,3
+Inferion Optimos 3 Power-MOSFET,3
+Infineon microcontroller,1
+Infrared matrix,4
+Infrared module,4
+Initiator of the explosion,4
+Instrument amplifier,1
+Intake pipe,4
+Integral accelerometer,3
+Integral converter,3
+Integral gyroscope,3
+Integrated 10A FET regulator with programmable LDO,1
+Integrated chip,1
+"Integrated chip DATACOM, transceiver ETHERNET",1
+Integrated circuit,1
+integrated circuit,1
+Integrated circuit 7942,1
+Integrated circuit for processing video data,1
+Integrated circuit for sound processing,1
+Integrated circuit FPGA (programmable gate matrix),1
+Integrated circuit of the buffer network driver,1
+"Integrated circuit, as recognized for duplex communication",1
+Integrated circuits AV receiver,1
+Integrated circuits for multimedia processing type,1
+Integrated compass module,1
+Integrated logic circuit,1
+Integrated microcircuit,1
+Integrated microcircuit (voltage stabilizer ± 10V),1
+Integrated microcircuit - receiver line,1
+Integrated microcircuit for the distribution of the clock frequency,1
+Integrated microcircuit of 8-bit microcontroller,1
+Integrated microcircuit XILINX,1
+Integrated power management circuit,1
+Integrated programmable logic device,1
+Integrated radio frequency transceiver with surveillance path,1
+Integrated satellite navigation receiver,1
+Integrated silicon pressure sensor,1
+Integrated single crystal controller,1
+Integrated switching regulators,1
+Integrated synthesizer,1
+Integrated transceiver,1
+Intel i386EX - 368 series processor,1
+Intel processor N100,1
+Intel SSD,4
+Intelligent module of the 5th generation SX-5,4
+"Intelligent power switch (power supply) 39V, 7A",3
+Intel® Core™2 Duo processor,1
+Interface,1
+Interface chip (multi-channel driver/receiver),1
+Interface Chip 1 Mbit/s 5.5 V 3 Driver/5 Receiver RS-232 Transceiver,1
+Interface chip 20-85 MHz 32-bit serializer Channel Link II 64-TQFP,1
+Interface Chip Gigabit Ethernet Transceiver,1
+Interface chip simple transmitter/receiver RS-422/RS-485 8-pin SOIC NT/R,1
+Interface converter microcircuit,1
+Interface of four buses with three plug-in buffer stations,1
+Interface RS-232 - [TSSOP-16]: TX: 2: RX: 2:,1
+Interference-proof CRP antenna,3
+Intermediate frequency switch,3
+Inverter,4
+Inverter microcircuit,1
+Inverter switch,3
+Inverter with open drain outputs,4
+Inverting pulse regulator,4
+Ionistor,4
+IOT module,4
+IP camera module,3
+IRF4905,4
+Isolated amplifier,1
+Isolated CAN transceiver,1
+Isolated DC Converter Module 1 Output 5V 400mA 4.5V - 5.5V,3
+Isolated DC converters,3
+Isolated DC-DC converter,3
+Isolated DC/DC converter,3
+Isolated DC/DC converters with one output,3
+Isolated RS-485 transceiver,1
+Isolated RS-485 transceivers,1
+Isolated RS485/RS422 transceiver + power,1
+Isolation transformer,3
+Isolator,1
+Isolator CAP CER 0.1uF 50V Y5V AXIAL,1
+ISP156BM USB controller microcircuit,1
+ISSI IS61WV20488FBLL-10T2LI,4
+Jetson TX2 module,4
+KamAZ engine,4
+KNA-10A network card,4
+KONTRON motherboard,4
+L22,4
+LAN and Ethernet transformer,1
+LAN Transformer,3
+Laser driver,1
+Laser range finder,4
+Last programmed clock speed,4
+LattePanda mini computer (computing unit),4
+LCT3783 is a current mode LED driver and controller,1
+LD1117AS33TR Voltage regulator 3.3V,1
+LDMOS 2-stage integrated Doherty MMIC,1
+LDO High efficiency switching regulator,1
+LDO regulator,1
+LDO stabilizer,1
+LDO stabilizer ADP3335,1
+"LDO-regulatory controller, optimized for a quick reception of the input.",1
+LED driver,1
+LED indicators,3
+Li-Ion cell: INR-18650-M35A type 18650,4
+Light filter,2
+Light-sensitive sensor,4
+Limit Switch,3
+Line driver,1
+Line Driver,1
+Line driver/receiver with ESR protection,1
+Line interface module,1
+Line stabilizer,3
+Line transceiver RS-232,1
+Linear Accelerometer,3
+Linear amplifier,1
+Linear CMOS regulator with low drop,4
+Linear driver,1
+Linear interface module,1
+Linear pulse transformer,3
+Linear receiver driver,1
+Linear regulator,1
+Linear Regulator,1
+Linear regulator with low droop,1
+Linear regulator with low noise and high PSRR,1
+Linear regulator with two outputs and low drop PS767D301,1
+Linear stabiliser,4
+Linear stabilizer,3
+Linear stabilizer for 5A,3
+Linear transmitter,4
+Linear voltage regulator,1
+Linear Voltage Regulator,1
+LINEAR voltage regulator,1
+Linear voltage regulator L78L05ABUTR,1
+Linear voltage stabilization chip (IC 1 Output 100 mA 8-SOIC),1
+Linear Voltage Stabilization Chip (IC 1 Output 500mA 8-MSOP) – 5219 5.0Y,1
+Linear voltage stabilizer,3
+Lithium polymer battery,4
+Lithium-polymer batteries of the battery pack,4
+LK245,4
+LM317,4
+LM5117 Step-down voltage converter,3
+Logarithmic detector,4
+"Logic Controller Telecom Circuit, 1 Function, CMOS, PDSO16, 4.4mm, 0.65mm Pitch, TSSOP-16 Crossover Switch 800Mbps LVDS/LVPECL to LVDS 2 x 2",1
+Logic integrated circuit,1
+Long-range data transmission module,4
+Loop of phase auto-adjustment of frequency,4
+LoRa radio module,2
+Low Additive Jitter LVDS Buffer,4
+Low drop voltage regulator,1
+Low Dropout High Current Linear Regulator LDO Pos 1.25V to 25V 5A 6-Pin Tube TO-263,1
+Low dropout linear regulator,1
+Low Dropout Regulator,4
+Low dropout regulator REG 1117-3.3,4
+"Low jitter LVCMOS clock buffer, up to 12 outputs",1
+Low noise 3-axis MEMS accelerometer,3
+Low Noise Amplifier,1
+Low noise regulator,4
+"Low noise, low droop micropower regulator",4
+Low power and current amplifier,1
+Low power frequency synthesizer,1
+Low Power LoRa Transceiver,2
+Low Power Microprocessor,1
+Low Power Microprocessor Supervisory Circuit,1
+Low profile PCB relay,3
+Low Signal Relay,3
+Low Voltage 4-Bit 1-of-2 FET Multiplexer/Demultiplexer,1
+Low Voltage CMOS Hex Schmitt Inverter,4
+Low Voltage Comparator,1
+Low voltage comparator,1
+Low voltage FM IF mixer with high speed RSSI,4
+Low voltage hex inverter with Schmitt trigger input,4
+Low voltage high efficiency low voltage FM mixer,4
+Low voltage linear regulator,1
+Low voltage linear voltage regulator,1
+Low voltage sound power amplifier,1
+Low-Dropout Linear Regulator,1
+Low-noise 3-axis MEMS accelerometer,3
+Low-noise amplifier,1
+Low-noise amplifier for the radio receiving path,1
+Low-Noise Bias Supply,4
+Low-noise differential amplifier,1
+Low-noise linear regulator 1.5 A,1
+Low-Noise Linear Voltage Regulator,1
+Low-power 3.3 V transceiver for RS-485 and RS-422 communication.,1
+Low-power audio amplifier,1
+Low-power converter,3
+Low-power operational amplifier with unipolar power supply,1
+Low-power quad 2-CMOS differential linear receiver,4
+Low-power receiver/transmitter,4
+Low-power RS-232 receiver/transmitter,4
+Low-power stereo audio codec,1
+Low-power transceiver chip,1
+Low-power transceiver voltage,1
+Low-power voice range CODEC 16-bit,1
+"Low-power, high-performance 8/16-bit microcontroller",1
+Low-Threshold PIN Diode Limiter,3
+Low-voltage 16-bit I/O expander,4
+"Low-voltage high-quality 8-character 5x7 pixel intelligent LED indicator, character height 3.71 mm",3
+Low-voltage micropower comparator,1
+Low-voltage mixer,4
+Low-voltage reference,1
+Low-voltage silicon RF power amplifier (RA),1
+Low-voltage step-down regulator with synchronous rectification and internal switches,3
+Low-voltage step-down regulator with synchronous rectifiers and internal jumpers,3
+Low-voltage temperature sensor,4
+Low-voltage two-channel single-pole switch for two directions,3
+"Low-voltage, step-down regulator with synchronous rectification and internal switches",3
+Lower Hub Arm Bushing No. SSE99234 (Front Axle),4
+Lowering voltage stabilizer,3
+LPC to 4 UART controller,1
+LPC2138FBD64,4
+LTE Cat-4 communication module,2
+LTK3,4
+LTM8055Y,4
+LVDS Receiver,4
+LVDS transmitter,4
+LWIR Sensor,4
+M2M module,4
+M8030-KT GPS tracker chip,2
+MAFR‐000230‐000001: 2300‐2500 MHz Single Junction Drop In Circulator,4
+Magnetic field sensor,4
+Magnetic field sensor module,4
+Magnetic module,4
+Magnetometer,4
+Main memory,1
+Manchester Code Transceiver,1
+Matrix radiation receiver,4
+Matrix receiver of TV camera radiation,3
+MAX II family CPLD chip 440 macrocells 201.1MHz 0.18μm 2.5V/3.3V technology 100-pin TFBGA,1
+MAX220ESE,4
+MAX233AEWP,4
+MAX3160EAP 1612,4
+MAX3232,4
+MAX3232 transceiver,1
+MAX3232E,4
+max3378eeud,4
+MAX3387E 1816,4
+"MAXIM chip (Global Navigation Satellite System (GNSS) receiver covering GPS, GLONASS and Galileo on a single chip)",2
+"MAXIM microcircuit (transceiver with protection against electrostatic discharge,)",1
+Maxim transceiver,1
+MCL,4
+Measuring potentiometer,4
+Media Converter,3
+Medium power relay,3
+Medium power relay (5-20A),3
+Memory,1
+Memory 256 MB (32 MB x 8),1
+Memory card,1
+Memory Card Transcend,1
+Memory chip,1
+Memory chip and data transmission Spansion,1
+"Memory chip DDR1, 512Mb",1
+Memory configuration chip,1
+Memory controller,1
+Memory IC 8 Megabit (1 M x 8-Bit/512 K x 16-Bit) CMOS 3.0 Volt-only Boot Sector Flash Memory 8 Mbit 3.0 V 44-pin SO and 48-pin TSOP,1
+Memory management controller,1
+Memory management module,1
+Memory module,1
+Memory package,1
+MEMS gyroscope,3
+MEMS gyroscope Frequency: 250 Hz,3
+MEMS Inertial Sensor Low Voltage 3-Axis Linear Accelerometer with Digital Output ±2g/±6g,3
+MEMS гіроскоп,4
+Mesh modem,2
+Mesh Network XK-F358 modem,2
+Micro disassembly,4
+Micro switch,3
+Microassembly,4
+Microchip,1
+Microchip analog switch,1
+Microchip for analog switch,1
+Microcircuit,1
+microcircuit,1
+"Microcircuit (16-bit low-power microcontroller, low supply voltage: 1.8 ... 3.6 Volts, dual synchronous 12-bit DAC, built-in comparator)",1
+Microcircuit (16-megabit static RAM),1
+"Microcircuit (500 mA, low-noise micropower LDO regulator)",1
+"Microcircuit (550 MHz low-power frequency synthesizer generates a stable signal for controlling the local oscillator of the radio frequency receiver., operating voltage 2.3 - 5.5 Volts)",1
+Microcircuit (8-bit AVR microcontroller with 16 KB of programmable internal flash memory),1
+Microcircuit (8-channel analog multiplexer with fail-safe protection),1
+"Microcircuit (8-pole precision active filter with a fixed frequency at a user-specified corner frequency in the range from 1 Hz to 100 kHz, operating range: from ± 5 to ± 18 V DC, operation at temperatures from 0 to + 70°C)",2
+Microcircuit (Blackfin processor with a clock frequency of up to 600 MHz),1
+Microcircuit (double input amplifier on field-effect transistors at 17 MHz),1
+Microcircuit (dual 12-bit DAC-PORT),1
+"Microcircuit (four-channel amplifier with unipolar power supply, works with voltage from 2.7 to 12 Volts)",1
+Microcircuit (four-channel OR gate with 2 inputs),1
+"Microcircuit (FPS Spartan-3E Family of 500K gates 10476 cells 572MHz 90nm (CMOS) Technology 1.2V 208-pin PQFP, operating temperature range -40...100 °C, operating supply voltage 1.2 Volts)",1
+Microcircuit (high-speed bus switch),1
+"Microcircuit (intermediate frequency subsystem of the low-power receiver/ARU/RSSI 3 Volts, works at input frequencies up to 500 MHz and IF from 400 kHz to 12 MHz)",1
+Microcircuit (line receiver),1
+"Microcircuit (non-volatile EPROM memory with a capacity of 16 Mbit, supply voltage during programming from 2.7 to 3.6 Volts)",1
+"Microcircuit (operational amplifier with unipolar power supply, power supply from +1.7 to ±18 Volts, operating temperature range: -40...+125 ˚С)",1
+"Microcircuit (precision operational amplifiers with a current of 17 μA, double and quadruple, with a single supply)",1
+Microcircuit (processor),1
+Microcircuit (programmable reference voltage),1
+"Microcircuit (Quadrature modulator from 30 MHz to 300 MHz, supply voltage: 5 Volts, low power consumption: 15 mA/5 Volts)",1
+"Microcircuit (quadruple buffer, 3 states,)",1
+Microcircuit (receiver with eight-time latching and double inclusion (3 states)),1
+Microcircuit (RON SPST switch),1
+"Microcircuit (single/double digital potentiometer with SPI interface, supply voltage 2.7 – 5.5 Volts, temperature range: from -40 to +125°C)",1
+"Microcircuit (ultra-low power operational amplifier with Rail-to-Rail output, unipolar power supply from 2.7 to 12 Volts, low elimination voltage of 1.5 mV, operating temperature range -40...+85 ˚С)",1
+Microcircuit 1816 I-7,1
+Microcircuit 36A401M,1
+Microcircuit 81CTS9K ABT573A G4,1
+Microcircuit ADM485 (+5 V low-power receiver),1
+Microcircuit AT17LV010A (serial configuration memory),1
+Microcircuit CY62157EV30L,1
+Microcircuit for controlling fluorescent panels,1
+Microcircuit LPDDR SDRAM,1
+Microcircuit MICREL,1
+Microcircuit of a half-bridge driver for an electronic transformer or a halogen lamp,1
+Microcircuit of a linear positive voltage regulator,1
+Microcircuit of a rectifier with a Schottky barrier,1
+Microcircuit of network signal conversion,1
+Microcircuit of the RF receiver,1
+Microcircuit OXFORD SEMICOND,1
+Microcircuit RM7000C-600T,1
+Microcircuit XC18V04,1
+Microcircuit XILINX Spartan,1
+Microcircuit XILINX Virtex-II PRO,1
+Microcircuits,1
+microcircuits,1
+Microcircuits:,1
+Microcomputer,4
+Microcontroller,1
+microcontroller,1
+Microcontroller 32 bit real clock for signal processing,1
+Microcontroller 32-bit,1
+Microcontroller 8-bit,1
+Microcontroller architecture,1
+Microcontroller ATMEGA128L,1
+Microcontroller ATMega8A,1
+Microcontroller based on the ARM Cortex-M4 core,1
+Microcontroller based on the ARM Cortex-M4 core with a frequency of 180 MHz,1
+Microcontroller based on the ARM Cortex-M4 processor,1
+Microcontroller based on the processor ARM Cortex-M4 32,1
+Microcontroller M5-1-4 in the case,1
+Microcontroller M5-1-4 in TQFP44 package,1
+Microcontroller with built-in flash memory,1
+Microcontroller with built-in flash memory STM32FH05 RGT6,1
+Microcontroller with EPCS64N,1
+Microcontroller with ultra-low power consumption,1
+Microelectro-mechanical barometric height sensor,4
+Microelectromechanical barometric height sensor,4
+Microelectromechanical position sensor,4
+Microelectronic compass,4
+Microelectronic computer,4
+"Microelectronic power supply IC HEXFET Power MOSFET, photoelectric relay bipolar, normally open",3
+microphone amplifier,1
+"Microphone-telephone headset ""GUIDE""",4
+Micropower precision reference voltage source,1
+Microprocessor,1
+Microprocessor (x86 compatible SoC),1
+Microprocessor (µP) control circuit,1
+Microprocessor control circuit,1
+Microprocessor supervisory circuit,1
+Microprocessor Supervisory Circuits,1
+microwave amplifier,1
+Microwave filter (up to 70 MHz),2
+miniature 1 W isolated adjustable DC/DC converters,3
+Miniature 1 W Isolated Adjustable DC/DC Converters,3
+Miniature analog-digital converter,3
+Miniature high power relay,3
+Miniature module,4
+Miniature relay of high power,3
+MirrorBit® non-volatile flash memory,1
+MMG (MEMS) Gyroscope,3
+Modem,2
+Modem Mesh Network XK-F358,2
+Modular connector,3
+modular converter,3
+Modular converter,3
+Modular DC regulator,4
+"Modular dispersed-ceramic armor is made in accordance with the US patent US20040020353A1 ""Ballistic Armor"", the current owner of this patent is the company ""Plasan"", the patent corresponds to the modular armor ""Plasan Sasa"", which is a commercial offer of the company ""Plasan""",4
+Modular flash memory,1
+Module,4
+Module for processing and converting video information (LVDS stream into analog HD or SD signal),4
+Module JETSON TX2,4
+Module with N-channel MOSFET transistors,3
+MOH transistor,3
+MOH-transistor VP230,3
+Monochrome display Driver,1
+Monochrome OLED display with Bolymin passive matrix and built-in controller,1
+Monolithic two-channel analog-digital converter,3
+MOSFET,3
+MOSFET Driver,1
+MOSFET driver LTC1871EMS-7,1
+MOSFET transistor,3
+Mosfet transistor,3
+MOSFET type transistor,3
+Motherboard,4
+Motor Driver,1
+Motor driver,1
+Motor Driver with Integrated Current-Sense,1
+"Motor driver/controller, SOIC-20 L6205PD G 990W3",1
+MP7731DF sound amplifier,1
+Multi-band high-frequency GNSS antenna,2
+Multi-channel linear driver,1
+Multi-channel linear driver/receiver,1
+Multi-channel range transmitter,4
+Multi-channel receiving and transmitting device,4
+Multi-channel receiving-transmitting device of the standard,4
+Multi-channel RS-232 line driver and receiver,1
+Multi-channel RS-232 line driver/receiver,1
+"Multi-Channel, Narrow-Band RF Transceiver",1
+Multi-function monitor board,4
+Multicell Lithium-Ion Step-Down Battery Charger,4
+Multichannel driver/receiver of RS-232 line,1
+Multichannel RS-232 drivers/receivers with +5V power supply,1
+Multichannel RS-232 line driver and receiver,1
+Multifunctional integrated optical chip,1
+"Multifunctional monitor
+(on-board information and control system of the car)",4
+"Multifunctional monitor 
+(on-board information and control system of the car)",4
+Multilayer ceramic chip capacitor,1
+Multiphase oscillator,3
+Multiplexer,1
+Multiplexer/demultiplexer of analog signals,1
+Multiplier,4
+Multiplier and zero delay buffer,4
+muRata amplifier,1
+MXIC L214084 MX29GL256FHT2I-,4
+N-channel field-effect transistor,3
+N-channel MDN transistor,3
+N-channel MOSFET,3
+N-channel MOSFET 80V 120A,3
+N-channel MOSFET 80V 120A Case type: D²PAK,3
+N-channel MOSFET transistor,3
+"N-channel MOSFET, high-frequency DC-DC converter",3
+n/a,4
+NAND Flash memory,1
+NAND flash memory 1G x 8 Bit / 2G x 8 Bit,1
+Navigation antenna,3
+Navigation module,2
+Navigation receiver,4
+Negative Voltage Regulator,1
+NEO-M8N GNSS module,2
+Network controller,1
+Network controller (3.3 V power supply),1
+Network microcontroller,1
+Network module,4
+Network switch,3
+Network transceiver,1
+Network transmitter,4
+Neutral switch,3
+Non-contact magnetic angle sensor with I2C interface,1
+Non-contact magnetic angle sensor with interface,1
+Non-inverting buffer,4
+Non-isolated DC/DC converter,3
+Non-volatile memory (eMMC),1
+Non-volatile memory EEPROM,1
+Non-volatile power supply with micropower memory crystal,1
+NOR Flash 16Mb 3V 70ns Parallel NOR Flash,1
+Not identified,4
+not identified,4
+NPN bipolar transistor,3
+NPN bipolar transistor 60V 3A,3
+NPN power transistor with an integrated diode,1
+NVMe SSD,4
+NXP chip,1
+NXP microcontroller,1
+Octal Buffer,4
+Octal Buffer / Line Driver,1
+Octal Buffer and Line Driver,1
+Octal buffer and line driver,1
+Octal Buffer and Line Driver With 3-State Outputs,1
+Octal buffer and linear driver,1
+Octal buffer or driver with 3-state outputs,1
+Octal buffer/driver,1
+Octal buffer/line driver,1
+Octal Buffer/Line Driver,1
+"Octal buffer/line driver designed for use as memory and address drivers, clock drivers, and bus-oriented VHC transceiver",1
+Octal buffer/line driver with 3-bit outputs,1
+Octal buffer/line driver with 3-STATE outputs,1
+Octal bus transceiver,1
+Octal D-Type Flip-Flops,4
+Octal D-type Lutch with 3-state outputs,4
+Octal PCI Express UART,4
+Octal serial port device,4
+Octal transparent D-type latche,4
+Oil seals,4
+OLED screen with 800x600 resolution,3
+On-board electronics power regulator,4
+On-screen display video generator,4
+One of four type batteries,4
+One-channel synthesizer with PLL,1
+OP497G,4
+Operational amplifier,1
+Operational Amplifier,1
+operational amplifiers,1
+"operational amplifiers QUAD, LOW PWR RAIL/RAIL OP AMP",1
+Operational video amplifier,1
+Optical camera,3
+Optically isolated amplifier,1
+OptiMOSTM power transistor,3
+Optocoupler,3
+Optocoupler (optocouple) of high voltage,3
+Optocoupler/Optoisolator Logic output optocoupler with three states DC-IN 4CH 16Pin CFPAK,1
+Optocoupler/Optoisolator Tri-State Optocoupler Logic Output DC-IN 2CH 20Pin CLLCC,1
+"Optoelectronic system
+Course camera",3
+Optoisolator,1
+Orange Pi single-board computer,4
+Oscillator,3
+Oscillator AE 803 Series,3
+Oscillators,3
+OSD (On-Screen Display) generator,4
+Output combined filter for suppression of electromagnetic interference,2
+Output resistor,3
+Output voltage/current driver with output signal range,1
+P- and N-channel MOSFET,3
+P-channel 60 V (D-S)MOSFET transistor,3
+P-channel 60 V (DS) MOSFET,3
+P-channel 60-V (D-S) 175 °C MOSFET,3
+P-channel MDN transistor,3
+P-channel MOS transistor,3
+P-channel MOSFET,3
+P-MOSFET field transistor,3
+Parallel NOR flash memory,1
+Parking brake sensor,4
+Patch antenna,3
+Pay,4
+"PCI Express compliant, 2 differential channel switch",3
+PCI express to PCI bus translation bridge,4
+PCM codec filter,2
+PDCI chip,1
+PDI crystal filter,2
+Pendant,4
+Peretvoryuvach struma,4
+Permanent memory device,1
+Photoconductive matrix of a vidicon tube,4
+Photocoupler,4
+Photocoupler (w/ darlington transistor output),3
+Phototransistor,3
+Phototransistor coupler,3
+Phototransistor optocoupler,3
+Photovoltaic Relay,3
+Piezo emitter without generator,4
+Piezoemitter SMD,4
+Pivot head with thread,4
+Platform Flash,1
+Platform Flash In-System Programmable Configuration PROMs.,1
+PLD,1
+PLIS,1
+PLIS SPARTAN,1
+PLIS*,1
+PLIS* XILINX,1
+PLIS* XILINX SPARTAN,1
+PLL frequency synthesizer,1
+PLLATINUM™ wideband RF synthesizer with phase synchronization and support,1
+Plug connector,3
+Plug connector (terminal block),3
+Pneumatic drive for opening and closing cabin doors,4
+Pneumohydraulic amplifier,1
+PNI magnetic sensor chip,1
+PNP low saturation transistor,3
+Positioning system,4
+Positive VoltageRegulator,4
+Positive-to-Negative DC/DC Controller,1
+Potentiometer,4
+Potentiometer (variable resistor),3
+Power amplifier,1
+Power Amplifier,1
+Power amplifier for the radio transmission path,1
+Power amplifier Mini-Circuits ZHL-16W-43X-S,1
+Power amplifier of the radio transmission path,1
+Power amplifierKu-band power amplifier,1
+Power connector,3
+Power control chip,1
+Power controller,1
+Power controller LTC4417,1
+Power detector,4
+Power divider/combiner,4
+Power driver,1
+Power elements,4
+Power filter,2
+Power inductor,3
+Power Inductor (CMD),3
+Power inductor (smd type),3
+Power inductor (SMD),3
+Power inductor coil,3
+Power inductor IHLP3232CZER4R7M11,3
+Power inductors,3
+Power level converter,3
+Power limiter,4
+Power management chip,1
+Power management chip TPS6595,1
+Power management controller,1
+Power management integrated circuit,1
+Power management microcircuit,1
+Power management microprocessor,1
+Power Manager,4
+Power MDN transistor,3
+Power microcircuit,1
+Power module,3
+Power module with optical isolation HW-532,3
+Power monitor with reset,4
+Power MOSFET,3
+Power MOSFET transistor,3
+Power point Engine,4
+Power RF transistor,3
+"Power splitter/adder 2900 MHz to 6200 MHz, 50 Ohm, 1.5 W",4
+"Power splitter/adder 3300 MHz to 3800 MHz, 50 Ohm, 1.5 W",4
+Power splitter/combiner,4
+Power steering pump (power steering),4
+Power steering reservoir (steering),4
+Power supply,3
+Power Supply,3
+Power supply control chip Supervisor 10 Open Collector/Push-Pull 40Pin LFCSP EP Tray,1
+Power supply module,3
+Power supply unit DC/DC 6W,3
+"Power supply unit with step-down mode - input voltage range from 3.6V to 36V; output voltage from 0.8V to 10V; 1A, 71 pins",3
+"Power supply unit with step-down mode - input voltage range from 3.6V to 36V; output voltage from 0.8V to 10V; 2A, BGA-71 pin",3
+Power supply unit with step-down mode - input voltage range from 3.6V to 36V; output voltage from 0.8V to 10V; switching frequency selection: from 200 kHz to 2.4 MHz,3
+"Power supply unit with step-down mode - input voltage range from 3.6V to 36V; output voltage from 0.8V to 24V; 3A, BGA-76 pin",3
+Power switch,3
+Power switcher,3
+Power transistor,3
+Power transistor MOSFET,3
+Power transistor with N-channel boost mode,3
+Powerful MOSFET transistor,3
+"Precision amplifier, power supply range: from ±2.3 V to ±18 V",1
+Precision instrumentation amplifier,1
+Precision Programmable Reference,1
+Precision Reference,1
+Precision resistor divider,3
+Premium four-stroke SPST switch,3
+Prescription quadratic SPST switch,3
+Pressure sensor,4
+Pressure Sensor,4
+"Pressure sensor for installation
+on the board",4
+Processor,1
+"Processor
+ARM",1
+Processor (programmable gate array),1
+Processor (programmable gate matrix),1
+Processor (programmed gate array),1
+Processor i386,1
+Professional HD IP Camera SoC,3
+programmable digital gyro sensor,3
+Programmable digital temperature sensor,4
+Programmable Flash PROM platform,1
+Programmable Gate Array,4
+Programmable gate array (PLA),4
+Programmable gate arrays,4
+Programmable gate matrix,1
+Programmable generator,4
+Programmable highly specialized ASIC chip,1
+Programmable logic device,1
+Programmable logic device (PLD),1
+Programmable logic integrated circuit,1
+Programmable logic integrated circuit on the Virtex-II FPGA platform,1
+"Programmable logic integrated circuit, (FPGA)",1
+Programmable logistic integrated circuit,1
+Programmable logistic integrated circuit FLEX,1
+Programmable logistic scheme,4
+Programmable low-voltage clock frequency buffer,4
+"Programmable memory with a capacity of 1.6 Mbit, operating frequency of 10 MHz",1
+Programmable Oscillators 52MHz,3
+Programmable sinusoidal generator,4
+Programmable Skew PLL Clock Driver,1
+Programmable system on chip (SoC),1
+Programmable valve matrix,4
+Programmable valve matrix XC2V1000tm,4
+Programmed logical integrated circuit,1
+Programming logic integrated circuits (PLIC) with RAM,1
+Programming logic integrated circuits with RAM type,1
+Protective diode,3
+Protective diode with low threshold,3
+Pulse generation diode,3
+Pulse regulator of the maximum switching frequency,3
+Pulse signal transformer,3
+Pulse transformer,3
+Pulse Transformer,3
+Pulse voltage regulator,1
+Pulse voltage regulator 300kHz,1
+Pulse voltage regulator LM256,1
+Pulse voltage regulators,1
+"Pulse Width Modulation Controller for Notebooks, PWM with Step Response to 100 ns Load",1
+"Pump for pumping diesel fuel, Gespasa oil",4
+Pump laser diode,3
+Push button switch,3
+Push-Pull PWM with programmable tilt compensation,4
+PWM chip,1
+PWM controller,1
+PWM controller in a 16-pin case,1
+PWM controller in a 16-pin housing,1
+"PWM controller, supply voltage",1
+PWM synchronous switch,3
+Quad 2-input NAND gate,4
+Quad 2-Input NAND Gate,4
+Quad 2-Input XOR Gate,4
+Quad buffer,4
+Quad buffer/line driver,1
+Quad High-speed Differential Driver,1
+Quad Operational Amplifier,1
+Quad single-pole-single-throw analog switch,3
+Quad SPST CMOS analog switch,3
+Quad-channel digital isolator,1
+Quadrature demodulator,4
+Quadrature digital converter,3
+Quadrature digital converter AD9957,3
+Quadrature digital converter with frequency increase,3
+Quadrature generator,4
+Quadrature modulator,4
+Quadrature modulator/demodulator,4
+"Quadrilateral buffer, has four outputs",4
+Quadruple 2-Input Exclusive-OR Gate,4
+Quadruple 2-Input Positive-NAND Gate,4
+Quadruple 2-Input XNOR gates,4
+Quadruple bus buffer,4
+Quadruple Bus Buffer Gates With 3-State Outputs,4
+Quadruple D-Type flip-flop,4
+Quadruple single-pole single-pass analog switch,3
+Quadruple tire buffer gate,4
+Quartz accelerometers,3
+Quartz crystal,3
+Quartz crystal 8 MHz,3
+Quartz Crystal Oscillator,3
+Quartz Crystal Oscillator 12MHz,3
+Quartz Crystal Oscillator 62MHz,3
+Quartz element,3
+Quartz element00601-236-R,3
+Quartz filter,2
+Quartz generator,3
+Quartz generator 50 MHz,3
+Quartz generator 50MHz,3
+Quartz oscillator,3
+Quartz resonator,3
+Quartz resonator 16 MHz,3
+Quartz resonator at a frequency of 12.8 MHz,3
+Quartz resonator with a frequency of 12.8 MHz,3
+Radial aluminum electrolytic capacitor with lead - JRB,3
+Radial contact bearing,4
+Radio frequency amplifier,1
+Radio frequency matcher,4
+Radio frequency mixer,4
+Radio frequency modulator,4
+Radio frequency module,4
+Radio frequency splitter,4
+Radio frequency switch,3
+Radio frequency synthesizer,1
+Radio frequency transistor,3
+Radio modem,2
+Radio module with transmitter power up to 20 dBm,2
+Radio signal power detector,4
+Radio signal power detector 	AD8361,4
+Rail-to-Rail Buffer,4
+RAM,1
+RAM 2 GB DDR2 Transcend,1
+RAM 256m 2Rx16,1
+RAM 512Mb LPDDR SDRAM,1
+RAM chip,1
+"RAM chip (4-Mbit, 256K x 16, SRAM)",1
+RAM DDR3 SDRAM 4Gb,1
+RAM memory,1
+RAM memory chip,1
+RAM memory chip 7TD12,1
+Rangefinder,4
+Raskat Start 107 personal computer,4
+RASPBERRY PI 4 MODEL microcomputer,4
+Raspberry Pi5 microcomputer,4
+Real Hour Yearbook Module,4
+Real time clock with calendar,4
+Real-time clock,4
+Real-time clock module interface,1
+Real-time microcontroller with DSP connection manager,1
+Real-time microcontroller with DSP connection manager TMS320,1
+Real-time serial clock chips,1
+Rear brake chamber K004052N00 series SN7 (brake system),4
+Receiver,4
+Receiver for bus interface,1
+Receiver module,2
+Receiver of increased accuracy,4
+Receiver-transmitter,4
+Receiving converter Ku-band frequency converter,3
+Rechargeable battery,4
+Rectifier,3
+Rectifier diode,3
+Rectifier diode VS-MUR2020CT,3
+Reference power supply,1
+Reference voltage programming microcircuit,1
+Reference voltage source,1
+Regulator,4
+Regulator switching modules,3
+"Regulatory controller, optimization for swedish reception",1
+Relay,3
+Reley,4
+REN34,4
+RES47,4
+Resistive network,4
+Resistor,3
+Resistor assembly,3
+Resistors,3
+Resistors with wire winding,3
+Reverse switch,3
+Reversible Motor Driver,1
+RF Agile transceiver,1
+RF Agile Transceiver,1
+RF amplifier,1
+RF Amplifier HMC311SC70,1
+RF circulator,4
+RF Design RFD900x telemetry information exchange module,4
+RF driver amplifier,1
+RF JFET DC-6GHz 28V 25W Gain 13dB Gallium Nitride (GaN) High Electron Mobility Transistor (HEMT),3
+RF power amplifier,1
+RF transceiver,1
+RF transistor,3
+RF-transformer,3
+RGB to NTSC/PAL encoder,4
+RHP-225+,4
+Rich channel driver/primer,1
+RIS Controller Built-in 64-bit microprocessor built on RIS Core 4000,1
+RISC processor microcircuit,1
+RISC-controller,1
+RISController Embedded 64-bit microprocessor based on RISCore 4000,1
+RISController Embedded 64-bit microprocessor built on RISCore 4000,1
+RLM-23-1WL,4
+RN chokes that attenuate common-mode or unbalanced interference signals,3
+Rotary optical decoder,1
+Rotary optical encoder,4
+Round connector 13 pins,3
+Round connector 19 pins,3
+Round connector 22 pins,3
+Round connector 6 pins,3
+Router,4
+RS-232 driver,1
+RS-232 driver chip,1
+RS-232 Driver/Receiver,1
+RS-232 interface,1
+RS-232 interface driver,1
+RS-232 line driver,1
+RS-232 Line Driver,1
+RS-232 line driver and receiver,1
+RS-232 line driver/receiver,1
+RS-232 Line Driver/Receiver,1
+RS-232 multi-channel driver/receiver,1
+RS-232 standard multi-channel receiving-transmitting device,4
+RS-232 transceiver,1
+RS-232 Transceiver,1
+RS-232 transceiver with automatic shutdown,1
+RS-232 transmitter/receiver,4
+RS-232/RS-485/RS-422 Multiprotocol Transceiver,1
+RS-232/RS-485/RS-422 transceiver,1
+RS-422 module,4
+RS-422/RS-485 receiver,4
+"RS-422/RS-485 simple transmitter/receiver interface chip, 4.75-5.25V power supply, 4 drivers, 16-pin TSSOP",1
+RS-485,4
+RS-485 interface transceiver,1
+RS-485 serial data interface transceiver,1
+RS-485 transceiver,1
+RS-485/422 Multiprotocol Transceiver,1
+RS-485/RS-422 converter,3
+RS-485/RS-422 Data Interface,1
+RS-485/RS-422 transceiver,1
+RS-485/RS-422 Transceiver,1
+RS-845/ RS-422 protocol converter chip,1
+RS-RS-485/RS-422 converter,3
+RS232 line driver,1
+RS232 Transceiver,1
+RS232 transceiver,1
+"RS232 transceiver interface chip, 460 Kbit/s, LFCSP-32",1
+RS232 transmitter,4
+"RS422/RS485 transceiver interface chip, full duplex, electrostatic discharge protection ± 15 kV, power supply 3 V-3.6 V,",1
+"RS422/RS485 Transceiver Interface Chip, Full Duplex, ESD Protection ± 15kV, Power Supply 3V-3.6V, SOIC-14",1
+RS485 transceiver,1
+RS485/RS422 Transceiver,1
+RS485/RS422 transceiver,1
+RS485/RS422 µModule Transceiver,1
+"Rubber-metal silent block (front, middle, rear bridge)",4
+Runcam Owl Plus FPV Camera Review – Night Flying,3
+Safety belt of an explosion-proof seat,4
+Saito engine,4
+"Same buffer, same output signals",4
+Samsung memory chip,1
+Satellite communication terminal,4
+Satellite navigation antenna,3
+Satellite navigation module,2
+Satellite navigation signal receiver,4
+Satellite signal conversion tuner,4
+Satellite signal patch antenna GPS/GNSS/Beidou,2
+Satellite signal processing processor BeiDou-3,1
+SAW Filter,2
+SB to UART Bridge Controller,1
+Scheme of combining electric pulses with infrared pulses,4
+Schmitt Inverter Trigger 6-element CMOS 14-pin TSSOP,4
+Schmitt trigger,4
+Schmitt-trigger,4
+Schottka rectifier,3
+Schottky diode,3
+Schottky diode 2-pin,3
+Schottky diode is double,3
+Schottky diode is paired,3
+Schottky Power Rectifier,3
+Schottky Rectifier,3
+Schottky rectifier,3
+Schottky rectifier module,3
+Schottky rectifier/diode,3
+Screw matrix,4
+SD/HD video encoder,4
+SDRAM,1
+SDRAM memory,1
+Secondary operational supporter,4
+"Secondary side synchronous rectifier, drain to source voltage",3
+Self-healing polymer fuse,3
+Semiconductor,4
+Sensitive element unit,4
+Sensor of angular velocities,4
+Sequencer,4
+Sequential digital memory,1
+Serial bus EEPROM,1
+Serial Configuration (EPCS) Device,4
+Serial configuration device,1
+Serial EEPROM,1
+Serial flash memory,1
+Serial flash memory (16 Mbit),1
+Serial flash memory (16 Mbit) 25Q16JVIQ,1
+Serial Flash Memory 32Mbit,1
+Serial link controller extension,1
+Serial NOR Flash Memory,1
+Serial NOR Flash Memory 256Mb,1
+Serial NOR Flash Memory 8Mbit,1
+Serial Port Transceiver,1
+Serial port transceiver,1
+Serial Port Transceivers,1
+Serializer,4
+Serializer / Deserializer,4
+Servo,4
+"Servo ""Monster Torque""",4
+Servo drive,4
+Servo drives,4
+Servomotor,4
+Shielded SMD inductor with metal composite core,3
+"Shift register with serial input, parallel output",4
+Short Wave Infrared camera,3
+Shovels,4
+Shrinkable tubes,4
+Shutter control driver,1
+Sigma-delta codec AD74111,1
+Signal gain and phase detector,4
+Signal generator,4
+Signal generator module,4
+Signal processor,1
+"Signal processor, matrix",1
+Signal relay,3
+Signal relay for switching signals,3
+Signal relay HFD4/12-LS,3
+Signal transformer,3
+Signal Transformer,3
+Silicon flat bias diode,3
+Silicon N-MOSFET transistor,3
+Silicon pressure sensor,4
+Single board computer,4
+Single channel video encoder,4
+Single cylinder engine,4
+Single port transceiver,1
+Single-board minicomputer,4
+Single-board minicomputer NanoPi Neo Core-LTS 512 M,4
+Single-channel RS-232 receiver,4
+Single-channel synthesizer,1
+Single-channel synthesizer ADF4110,1
+Single-chip 16-bit/32-bit microcontroller,1
+Single-chip microcomputer optimized for digital signal processing (DSP),1
+Single-phase inductor,3
+Single-phase solid-state DC relay,3
+SiR180DP N-channel MOSFET,3
+Sitara processor,1
+Slave to UART Converter,3
+SMAJ30CA protection diode,3
+Small module,4
+small-sized thermocompensated quartz generator,3
+SMD choke,3
+SMD component,4
+SMD fuse,3
+SMD Quartz Crystal Oscillator,3
+SMD rectifier diod,3
+SMD resistor,3
+SMD single port transformer,3
+SMT double balanced mixer,4
+SMT high current inductor,3
+SMT powerful inductor in an unshielded drum core,3
+SoC (system-on-chip) — microprocessor and FPGA,1
+SoC protocol microprotocol module,4
+Socket for external engine start (electrical equipment),4
+SOIC-8N SOIC-8N 10Mbps 5V Half-duplex RS-485 Transceiver with Enhanced Low Electromagnetic Interference Chip,1
+Solid metal cord tires 16.00,4
+Solid state drive,4
+Solid state drive (SSD),4
+Solid state relay,3
+Solid state storage,4
+Solid-state drive (SSD),4
+Solid-state drive of industrial level,4
+Solid-state high-frequency module,4
+Solid-state lithium battery,4
+Solid-state relay,3
+SONY,4
+SOP16 integrated circuit,1
+Sound generator,4
+Spark plug,4
+Spark plugs Torch,4
+SPDT RF protection switch,3
+SPDT RF switch without reflection,3
+SPDT switch,3
+SPDT Switch,3
+SPI flash,1
+SPI FLASH BIOS memory chip,1
+Split-type guide bridges,4
+SRAM 64kx16 asynchronous 5.0V statistical RAM,1
+SRAM Chip Asynchronous Single 3.3V 16MBit 512K x 32 10ns 90pin,1
+SRAM is a parallel integrated circuit of 4 Mbit asynchronous memory,1
+SRAM memory,1
+SRAM memory chip,1
+SRAM RAM,1
+SSD drive (Industrial),4
+"SSD solid-state drive, 240GB",4
+ST 78M05,4
+Stabilizer,3
+Stainless steel barometric pressure sensor,4
+Stand-alone CAN controller,1
+Starter,4
+Starter relay,3
+Static pressure measurement sensor,4
+Static RAM,1
+Static RAM 64 Mbit,1
+Static RAM capacity 16Mb,1
+Static RAM with Error-Correcting Code (ECC),1
+Steering mechanism,4
+Steering wheel angle sensor,4
+Step Down DC-DC Converter,3
+Step-down controller with synchronous rectifier for CPU power,1
+Step-down converter,3
+Step-Down Converter,3
+Step-down DC converter,3
+Step-down DC-DC converter,3
+Step-Down DC-DC Switching Converter,3
+Step-down DC/DC module,3
+Step-down integrated switching regulator,1
+Step-down module with current and voltage regulation,4
+Step-down pulse regulator,4
+Step-down regulator,4
+Step-down switching DC regulator,3
+Step-down switching regulator,3
+Step-down voltage converter,3
+Step-down voltage regulator,1
+Step-Down Voltage Regulator,1
+Step-up/step-down/inverting pulse regulator for 1.5 Amps,4
+Stepper motor controller,1
+Stirling rotary cooler,4
+STM32 microcontroller,1
+STM321,4
+STM32F030F4P6,4
+STM32F405RGT6,4
+Sub-driver/receiver,1
+Subsystem for digitization frequency converter,3
+Supercapacitors FG series,3
+Superluminescent diode,3
+Suppressor (Protective Diode),3
+Suputnikovy router,4
+"Suspended, 26VIN, 4A DC/DC μModule (life module) regulator",3
+SWID-coded two-channel interface component,1
+Switch,3
+Switch Controller,1
+Switch controller,1
+Switch JFET transistors,3
+Switchboard,3
+Switches,3
+Switching controller,1
+Switching voltage regulators,1
+Swivel knuckles of the front suspension,4
+SX1231H,4
+Synchronous buck PWM switcher with integrated FETs,1
+Synchronous Buck Regulator,4
+Synchronous buck regulator,4
+Synchronous dynamic memory with random access,1
+Synchronous dynamic random access memory,1
+Synchronous lowering stabilizer,3
+Synchronous PWM switch,3
+Synchronous PWM switcher,3
+Synchronous regulator,4
+Synchronous step-down constant converter,3
+Synchronous step-down converter,3
+Synchronous Step-Down Converter,3
+Synchronous step-down converter LMR23610А,3
+Synchronous Step-Down Converter MP1495,3
+Synchronous Step-Down DC-DC Converter,3
+Synchronous step-down regulator,4
+Synchronous step-down voltage regulator TPS565208,1
+"System on a crystal, built on an x86-compatible core",3
+System-on-a-chip,1
+Tact button marked France,4
+Tantalum capacitor,3
+Tantalum Capacitor,3
+Tantalum capacitor 593D series,3
+Tantalum capacitor 686,3
+Tantalum capacitors,3
+Tantalum SMD capacitor,3
+TAO970A,4
+Taoglas dual-band patch antenna,3
+Taoglas GPS signal receiver,2
+Target acquisition module,4
+TDC-GP22 2111,4
+TDK InvenSense ICM-42688-P 6-Axis Motion Tracking IMU,3
+Telecommunication transformer,3
+"Telecommunication transformer with extended temperature range, magnetic module E-Ultra 10/100BASE-TX SOIC-16",3
+Telemetry data overlay module over video signal,4
+Temperature Controller for Peltier Module,1
+Temperature sensor,4
+Temperature sensor	DS18S20,4
+Temperature sensor with a double trigger point in the range -40°C to +125°C,4
+Temperature sensors,4
+Temperature-digital converter with a built-in temperature sensor,3
+Terminal block,4
+TGA 2703 0747 3609 – 3,4
+The chip is programmed by LATTICE,1
+The crane of the hydraulic mechanism for raising and lowering the car cabin,4
+The DC-DC converter is integral,3
+The electronic control unit of the hydropneumatic suspension level adjustment system of the car,4
+"The engine is a single-cylinder, gasoline, four-stroke engine",4
+The interface board is specialized,1
+The locking mechanism of the armored escape hatch,4
+The microcircuit is logical,1
+The operational amplifier is double or quadruple,1
+The output power amplifier uses a solid-state high-frequency module,1
+The shift register,4
+"Thermal imager of high distribution quality Catrine F, commander's thermal vision control panel",4
+"Thermal imager of high distribution quality Catrine F, gunner's thermal sight control panel",4
+Thermal imaging camera,3
+Thermal switch,3
+Thermocompensated quartz generator,3
+Thermocompensating quartz generator,3
+Thermocouple cold junction compensator and matched amplifier,1
+Thick film resistors,3
+Thin film resistor,3
+Three serial 7-bit shift registers and four low-voltage differential signaling (LVDS) line receivers,4
+Three-axis accelerometer,3
+Three-axis digital compass chip,1
+Three-axis digital compass chip HMC5883L,1
+Three-channel digital isolator,1
+Three-Terminal Regulator,4
+Throttle,4
+Throttle common mode,4
+Timer,1
+Timer for motherboards,1
+Tire driver,1
+Tires,4
+TIVA TM4C129x series microcontroller; Architecture: ARM Cortex-M4F; Number of bits: 32 bits; Processor frequency: 120 MHz; Program memory size: 512 KB; RAM size: 256 KB,1
+TIVA YEF series microcontroller,1
+TLC2741 G4,4
+TLP126 optocoupler,3
+TLP2361 High-speed optocoupler,3
+TLP250 optocoupler,3
+Toggle switch,3
+TQP3M9009,4
+TRACO POWER,4
+Transceiver,1
+transceiver,1
+Transceiver 5 V RS-232 with external capacitors 0.1 uF,1
+Transceiver microcircuit,1
+Transceiver RS-232,1
+Transceiver with electrostatic discharge protection,1
+"Transceiver, Uzhivl, B = 3.0...5.5; Max. Swiss per, kbit/c = 460; Texp, °С = -40...+85; Input type interf. = Full Duplex",1
+Transceivers,1
+Transcend 4 Gb memory card,1
+Transcoder ZL38010,4
+Transformer,3
+Transformer Pulse,3
+Transformers Audio & Signal,3
+Transient Voltage Suppressor,4
+Transient Voltage Suppressors,4
+Transistor,3
+Transistor (power MOSF),3
+Transistor with low resistance,3
+Transiver,4
+Transmission,4
+Transmitter,4
+Trigger,4
+Trimmer potentiometer,4
+Triple 3-Input Gate,4
+Triple 8-Bit High Speed Video DAC,1
+Triple balanced general purpose mixer that can be used as a frequency converter,3
+Triple high-speed digital-to-analog converter on one monolithic chip,1
+Triple-Balanced Mixer,4
+Triple-channel digital isolator,1
+TRSF3232EI 4BCO6TK,4
+TTL series digital transistor logic integrated circuit with schottky diodes,1
+Turbocharger mod.,4
+Turbojet engine,4
+Turbojet engine TELEFLY TF-TJ2000A,4
+TV module,4
+TVS diode SM712,3
+TW 2835,4
+TW2835,4
+Two 4-channel three-state shapers with output inversion,4
+Two D-triggers,4
+Two-axis accelerometer with an interface,1
+Two-channel controller,1
+Two-channel digital isolator,1
+Two-channel digital isolators,1
+Two-channel driver and receiver evaluation module,1
+Two-channel high-speed transceiver,1
+Two-channel operational amplifier,1
+Two-channel radio frequency amplifier,1
+Two-channel receiver,4
+Two-fold bus buffer gate,4
+Two-port differential pressure sensor,4
+Two-port Gigabit Ethernet controller,1
+Two-port inline piezoresistive monolithic differential pressure sensor,4
+Two-sided DC/DC converter board,3
+Two-stage amplifier for portable radio stations,1
+Two-stroke gasoline engine,4
+Two-stroke gasoline engine DLE-60,4
+Two-stroke petrol engine,4
+Two-way transceiver with protocol,1
+TXB0108 8-Bit bidirectional voltage-level translator,4
+TXB0108RGYR 8-bit bidirectional voltage level translator with automatic direction value and OT protection ECP 15kV,4
+TXS0108E 8-Bit Bidirectional Voltage Converter for Open-Drain and Push-Pull Applications,3
+Tyre driver,1
+u-blox omnidirectional antenna module,3
+UART,4
+Ublox receiver module,2
+UHF switch,3
+Ultra-fast plastic straightener,4
+Ultra-high accuracy reference voltage source,1
+Ultra-high-efficiency noise filter,2
+Ultra-high-efficiency noise filter of the SMD type,2
+Ultra-low power Analog Comparator,1
+Ultra-low power analog comparator with single/dual power supply,1
+Ultra-low power video decoder,1
+Ultracapacitor,3
+Ultrafast Rectifier,3
+Ultrafast single supply comparator,1
+Ultraprecision operational amplifier,1
+Undervoltage and reverse supply protection controller LTC4367,1
+Unidentified,4
+Unidirectional buffer,4
+Unipolar DC/DC power converter,3
+Unistrong Phantom P34 navigation module (part no. 21602824),2
+"Universal 3.3V/5V auto-sensing PCI bus buffer, UART IC 8-channel RS485 64-bit",4
+Universal flat cable,4
+Universal GPS receiver,2
+Universal GPS Receiver MAX2769 (MAX2769ETI+),2
+Universal PCI bridge up to four serial and parallel ports,4
+Universal signal receiver,4
+Universal tire,4
+Universal transceiver chip,1
+Unknown component,4
+Unspecified destination,4
+USB 3.0 Type-A,4
+USB HUB Controller Chip,1
+USB to UART Bridge Controller,1
+USB to UART Converter,3
+USB-UART interface converter,1
+User Programmable Gate Array (FPGA),1
+UU-type in-phase choke for suppression of pulses and linear filters of power sources,2
+V to 5.5 V RS 232 transceiver with automatic shutdown,1
+Variable Zener Diode,3
+"Variable-gain, voltage-regulated amplifier/attenuator for use in applications up to 3 GHz",1
+Versatile GNSS module,2
+Very Low Dropout Linear Regulator,1
+Very low voltage drop regulator with inhibit,4
+Very low voltage drop regulator with lf33a inhibit,4
+Vibration Rejecting Yaw Rate Gyroscope,3
+Video and audio digitizing and decoding chip,1
+Video camera,3
+video camera,3
+Video camera SONY,3
+video cameras,3
+Video capture board,4
+Video capture card,4
+Video clip generator,4
+Video codec,1
+Video decoder,1
+Video Decoder IC Analog 10 Bit 57.27 MSPS 6 Channel 1.71V to 1.89V LFCSP-40,1
+Video encoder,4
+Video encoder cover,4
+Video processor,1
+Video signal distributor,4
+Video signal encoder,4
+Video Sync Separator,4
+Video sync separator,4
+Video transmitter,4
+Video transmitter antenna,3
+Virtex Field programmable gate matrix,1
+Vocoder,4
+Voice codec,1
+Voice synthesizer,1
+Volt microwire serial EEPROM – serial PPZU,1
+Voltage and Power Level Converter 8-Channel CMOS High Voltage Logic Level Translator 3.3V to -10/30V 20-Pin Tssop,1
+Voltage comparator,1
+Voltage controlled generator,3
+Voltage Controlled Oscillator,3
+Voltage controller,1
+Voltage conversion module,4
+Voltage converter,3
+Voltage increase coil,3
+Voltage jumper,4
+Voltage limiter,4
+Voltage output analog multiplier,4
+Voltage regulator,1
+Voltage Regulator,1
+Voltage regulator generator,1
+Voltage regulator with frequency synchronisation,1
+Voltage regulator with low dropout,1
+Voltage regulator with low input/low dropout,1
+Voltage regulator with two outputs,1
+"Voltage regulator, iseries resistor",1
+Voltage sensor,4
+Voltage stabiliser,4
+Voltage stabiliser (step-down PWM DC voltage converter),3
+"Voltage Stabilization Chip (Voltage Regulator, Input 2.6V to 11V, Dropout 200mV, Output 1.5V to 10V/500mA, SOIC-8)",1
+Voltage stabilization chip 0.5V to 3.4V 4A 16pin,1
+Voltage stabilizer,3
+Voltage translator,4
+Voltage-controlled oscillator surface-mount module,3
+Voltage-Mode Synchronous Buck Regulator,4
+Volume buffer/line driver with 3 outputs,1
+Wabco air compressor,4
+Watchdog RTC 32-bit Binary Counter,1
+Water pump,4
+We program a logic integrated circuit,1
+We program a logical integrated circuit,1
+Whip antenna ASh-2.4,3
+Wide frequency synthesizer,1
+Wide range synchronous controller,1
+Wide-range level indicator,4
+Wide-Scope Transistor,3
+Wideband radio frequency limiter,4
+Wideband Synthesizer,1
+Wideband synthesizer with integrated VCO,1
+Wideband Synthesizer with Integrated VCO,1
+WiFi and Bluetooth communication module TIWI-BLE p/n 450-0064,2
+WiFi and Bluetooth module,2
+WiFi module,2
+Wifi routing module,2
+Wilkinson Splitter,4
+Winbond microcircuit,1
+Wireless board,4
+Wireless SoC,4
+Wireless transceiver module,2
+XC6SLX,4
+XH Female Connector,3
+XILINX microcircuit,1
+Xilinx Spartan chip (Virtex Field programmable gate array),1
+Xilinx Spartan XCV150tm,4
+Xilinx Spartan ХC2S200 FPGA,1
+"XL chip (3-axis accelerometer with signal-converting voltage outputs, measures acceleration with a minimum full-scale range of ±3g, measures free-fall static acceleration in tilt-sensing applications, as well as dynamic acceleration due to motion, shock, or vibration, supply voltage ot 1 .8 V to 3.6 V)",1
+XR16V798,4
+Zilog serial link controller extension,1
+ZR10 camera with 3-axis stabilisation,3
+¼ Watt RF Driver Amplifier,1
+× 2 RF transceiver with built-in 12-bit DAC and ADC,1
+μP Supervisory Circuits,1
+"АЦП 1,5-GSPS",4
+Конденсатор,4
+Микросхема,4
+Процессор,4
+Синтезатор частоти,4

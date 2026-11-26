@@ -5,11 +5,11 @@ Reads data/raw/*.csv, writes:
   data/derived/headline.json   the headline figures
 and refreshes the headline block in README.md.
 
-The tables in data/raw/ are the published output of the scoring pipeline
-(GUR scrape of 30 Oct 2026, family de-duplication, weighting, bootstrap).
-That pipeline is not in this repository yet; this script recomputes every
-derived figure the page shows from those tables, so the page, the README and
-this script always agree.
+The tables in data/raw/ are the output of the scoring pipeline in
+scripts/pipeline/ (GUR scrape of 30 Oct 2026, family de-duplication,
+weighting, bootstrap). This script recomputes every derived figure the page
+shows from those tables, so the page, the README and this script always
+agree.
 
 Standard library only. Run from the repository root:  python scripts/build.py
 """
@@ -55,7 +55,7 @@ def main():
              and r["country"] not in EU_MEMBERS and float(r["index_share"]) > eu_share]
 
     headline = {
-        "edition": 1,
+        "edition": "1.1",
         "gur_snapshot": "2026-10-30",
         "eu_index_group": eu_share,
         "eu_range_group": [float(eu["ci_low"]), float(eu["ci_high"])],
