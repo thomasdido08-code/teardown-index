@@ -77,7 +77,7 @@ The EU is second under every weighting, and the top four never change order.
 
 1. **The repo is already public on GitHub** (you described it as private). If that was not intended, change it yourself; I haven't touched visibility.
 2. **The GUR snapshot is now in the repo** (`data/raw/gur/`, 6,252 rows) so that the index can be rebuilt. GUR publishes it openly, but it carries no explicit licence. Keep it, or replace it with the scraper alone?
-3. **Related link to the Diversion Risk Scorer**: not added, because that repo is private. When it's public, add under "Related" in README.md:
+3. **Related link to the Diversion Risk Scorer**: added on 26 November, once the repo was public. The text under "Related" in README.md is:
    `[Diversion Risk Scorer](https://thomasdido08-code.github.io/diversion-risk-scorer/): which recipient states carry the highest risk that arms sold to them are diverted.`
 4. **Out of scope, as you asked:** the firm-by-firm match against CAR iTrace and RUSI.
 

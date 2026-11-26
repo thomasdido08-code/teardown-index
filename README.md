@@ -78,6 +78,8 @@ This project is independent and not affiliated with any of these sources.
 
 [Burn Rate Index](https://thomasdido08-code.github.io/burn-rate-index/): how many foreign component records Russia fires each month in Shahed-type drones, built on the same GUR teardown data.
 
+[Diversion Risk Scorer](https://thomasdido08-code.github.io/diversion-risk-scorer/): which recipient states carry the highest risk that arms sold to them are diverted.
+
 ## Licence
 
 - **Analysis, derived data and text:** © Thomas Di Domenico, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
