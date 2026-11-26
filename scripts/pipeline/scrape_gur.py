@@ -114,8 +114,26 @@ def main():
     out = a.resume or os.path.join(OUT_DIR, f"gur_raw_{today}.jsonl.gz")
     done = set()
     if a.resume and os.path.exists(a.resume):
-        with gzip.open(a.resume, "rt", encoding="utf-8") as f:
-            done = {json.loads(line)["id"] for line in f}
+        # A scrape that was killed leaves a truncated gzip stream: keep every
+        # complete record, rewrite the file cleanly, then append to it.
+        lines = []
+        try:
+            with gzip.open(a.resume, "rt", encoding="utf-8") as f:
+                for line in f:
+                    lines.append(line)
+        except EOFError:
+            print("Resume file was cut off mid-write; keeping the complete records")
+        while lines and not lines[-1].endswith("\n"):
+            lines.pop()
+        good = []
+        for line in lines:
+            try:
+                done.add(json.loads(line)["id"])
+                good.append(line)
+            except (ValueError, KeyError):
+                pass
+        with gzip.open(a.resume, "wt", encoding="utf-8") as f:
+            f.writelines(good)
         print(f"Resuming: {len(done):,} components already saved")
 
     first = fetch(LIST.format(page=1))
